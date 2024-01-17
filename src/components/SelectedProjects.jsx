@@ -1,34 +1,13 @@
 // Projects.js
 import React from 'react';
 // import './Projects.css';
+import { Route, Routes, useLocation, Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom';
 import '../styles/global.css';
 
-const Projects = () => {
-  // Replace with your actual project data
-  const projects = [
-    {
-      id: 1,
-      title: 'Project 1',
-      description: 'Description of Project 1.',
-      image: 'project1.jpg',
-      link: '#',
-    },
-    {
-      id: 2,
-      title: 'Project 2',
-      description: 'Description of Project 2.',
-      image: 'project2.jpg',
-      link: '#',
-    },
-    {
-      id: 3,
-      title: 'Project 3',
-      description: 'Description of Project 3.',
-      image: 'project3.jpg',
-      link: '#',
-    },
-  ];
+import Project from '../pages/Project';
 
+const Projects = ({ projects }) => {
   return (
     <section className="projects">
       <h2>Top Projects</h2>
@@ -39,6 +18,12 @@ const Projects = () => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+
+            <a href={`/projects/${project.link}`} target="_blank" rel="noopener noreferrer">View Real</a>
+          
+            {/* <Routes>
+              <Route path={`/projects/${project.link}`} element={<Project/>}></Route>
+            </Routes> */}
           </div>
         ))}
       </div>
