@@ -1,9 +1,9 @@
 import React from 'react'
 
-const project_1 = () => {
+const Project_1 = () => {
   return (
     <div>Project 1</div>
   )
 }
 
-export default project_1
+export default Project_1

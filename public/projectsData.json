@@ -4,7 +4,7 @@
     "title": "Project 1",
     "description": "Description of Project 1.",
     "image": "project1.jpg",
-    "link": "1"
+    "path": "/project_1"
   },
   {
     "id": 2,
