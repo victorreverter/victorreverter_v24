@@ -1,88 +1,133 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 // import '../styles/Header.css';
 import { Link } from 'react-router-dom';
 import '../styles/global.css';
 import '../styles/header.css';
 
 const Header = () => {
-  // const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  // const toggleMobileMenu = () => {
-  //   setMobileMenuOpen(!isMobileMenuOpen);
-  // };
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [HTMLTag, setHTMLTag] = useState(document.documentElement);
-  const [BodyTag, setBodyTag] = useState(document.body);
+
+  const menuBtnRef = useRef(null);
+  const menuOptionsRef = useRef(null);
+  const logoHomeRef = useRef(null);
 
   useEffect(() => {
-    const menuBtn = document.getElementById('menuContainer');
-    const menuOptions = document.getElementById('menuOptions');
-    const logoHome = document.getElementById('logoHome');
-
     const handleMenuClick = () => {
+      const menuBtn = menuBtnRef.current;
+      const menuOptions = menuOptionsRef.current;
+      const logoHome = logoHomeRef.current;
+
       if (!menuOpen) {
         menuBtn.classList.add('open');
         menuOptions.classList.add('menu-mobile-open');
         logoHome.classList.add('svg-menu-open');
-        HTMLTag.style.overflow = 'hidden';
-        BodyTag.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
         setMenuOpen(true);
       } else {
         menuBtn.classList.remove('open');
         menuOptions.classList.remove('menu-mobile-open');
         logoHome.classList.remove('svg-menu-open');
-        HTMLTag.style.overflow = 'initial';
-        BodyTag.style.overflow = 'initial';
+        document.documentElement.style.overflow = 'initial';
+        document.body.style.overflow = 'initial';
         setMenuOpen(false);
       }
     };
 
+    const menuBtn = menuBtnRef.current;
     menuBtn.addEventListener('click', handleMenuClick);
 
     return () => {
       // Cleanup: Remove the event listener when the component unmounts
       menuBtn.removeEventListener('click', handleMenuClick);
     };
-  }, [menuOpen, HTMLTag, BodyTag]);
+  }, [menuOpen]);
+
+  // ===================================================================
+
+  // const [menuOpen, setMenuOpen] = useState(false);
+  // const [HTMLTag, setHTMLTag] = useState(document.documentElement);
+  // const [BodyTag, setBodyTag] = useState(document.body);
+
+  // useEffect(() => {
+  //   const menuBtn = document.getElementById('menuContainer');
+  //   const menuOptions = document.getElementById('menuOptions');
+  //   const logoHome = document.getElementById('logoHome');
+
+  //   const handleMenuClick = () => {
+  //     if (!menuOpen) {
+  //       menuBtn.classNameList.add('open');
+  //       menuOptions.classList.add('menu-mobile-open');
+  //       logoHome.classList.add('svg-menu-open');
+  //       HTMLTag.style.overflow = 'hidden';
+  //       BodyTag.style.overflow = 'hidden';
+  //       setMenuOpen(true);
+  //     } else {
+  //       menuBtn.classList.remove('open');
+  //       menuOptions.classList.remove('menu-mobile-open');
+  //       logoHome.classList.remove('svg-menu-open');
+  //       HTMLTag.style.overflow = 'initial';
+  //       BodyTag.style.overflow = 'initial';
+  //       setMenuOpen(false);
+  //     }
+  //   };
+
+  //   menuBtn.addEventListener('click', handleMenuClick);
+
+  //   return () => {
+  //     // Cleanup: Remove the event listener when the component unmounts
+  //     menuBtn.removeEventListener('click', handleMenuClick);
+  //   };
+  // }, [menuOpen, HTMLTag, BodyTag]);
+
+  // ===================================================================
+
+  // const [menuOpen, setMenuOpen] = useState(false);
+  // const HTMLTag = document.documentElement;
+  // const BodyTag = document.body;
+
+  // const menuBtnRef = useRef(null);
+  // const menuOptionsRef = useRef(null);
+  // const logoHomeRef = useRef(null);
+
+  // useEffect(() => {
+  //   const menuBtn = menuBtnRef.current;
+  //   const menuOptions = menuOptionsRef.current;
+  //   const logoHome = logoHomeRef.current;
+
+  //   if (!menuBtn || !menuOptions || !logoHome) {
+  //     return; // Elements not available, do nothing
+  //   }
+
+  //   const handleMenuClick = () => {
+  //     if (!menuOpen) {
+  //       menuBtn.classList.add('open');
+  //       menuOptions.classList.add('menu-mobile-open');
+  //       logoHome.classList.add('svg-menu-open');
+  //       HTMLTag.style.overflow = 'hidden';
+  //       BodyTag.style.overflow = 'hidden';
+  //       setMenuOpen(true);
+  //     } else {
+  //       menuBtn.classList.remove('open');
+  //       menuOptions.classList.remove('menu-mobile-open');
+  //       logoHome.classList.remove('svg-menu-open');
+  //       HTMLTag.style.overflow = 'initial';
+  //       BodyTag.style.overflow = 'initial';
+  //       setMenuOpen(false);
+  //     }
+  //   };
+
+  //   menuBtn.addEventListener('click', handleMenuClick);
+
+  //   return () => {
+  //     menuBtn.removeEventListener('click', handleMenuClick);
+  //   };
+  // }, [menuOpen, HTMLTag, BodyTag]);
 
   return (
-    // <header className="header">
-    //   <h1>Your Name</h1>
-    //   <nav className={`nav ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-    //     <div className="burger-menu" onClick={toggleMobileMenu}>
-    //       <div className="bar"></div>
-    //       <div className="bar"></div>
-    //       <div className="bar"></div>
-    //     </div>
-    //     <ul>
-    //       <li><Link to="/">Home</Link></li>
-    //       <li><Link to="/work">Work</Link></li>
-    //       <li><Link to="/projects/:id">Projects</Link></li>
-    //       <li><Link to="/about">About</Link></li>
-    //     </ul>
-    //   </nav>
-    //   <nav role="navigation">
-    //     <div id="menuToggle">
-    //       <input type="checkbox" />
-          
-    //       <span></span>
-    //       <span></span>
-    //       <span></span>
-          
-    //       <ul id="menu">
-    //         <li><Link to="/">Home</Link></li>
-    //         <li><Link to="/work">Work</Link></li>
-    //         <li><Link to="/projects/:id">Projects</Link></li>
-    //         <li><Link to="/about">About</Link></li>
-    //       </ul>
-    //     </div>
-    //   </nav>
-    //   <h1>Your Name</h1>
-    // </header>
-
-    <div class="head-container">
-        {/* <a href="index.html" id="logoHome" class="logo-home">
+    <div className="head-container">
+        {/* <a href="index.html" id="logoHome" className="logo-home">
             <svg width="30px" height="30px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                 <g transform="matrix(1,0,0,1,-3000.63,-14.6824)">
                     <g transform="matrix(0.444829,0,0,0.444829,2985.94,0)">
@@ -99,28 +144,28 @@ const Header = () => {
             </svg>
         </a> */}
 
-        <h1 id="logoHome" class="logo-home">Your Name</h1>
+        <h1 id="logoHome" className="logo-home" ref={logoHomeRef}>Your Name</h1>
 
-        <div class="menus-container">
-            <div id="menuContainer" class="menu-btn">
-                <div class="menu-btn-burguer"></div>
-            </div>
+        <div className="menus-container">
+          <div id="menuContainer" className="menu-btn"  ref={menuBtnRef}>
+            <div className="menu-btn-burger"></div>
+          </div>
         </div>
 
-        <div id="menuOptions" class="menu-options">
-          <div class="links-container">
-              {/* <a href="work.html" id="work-m-link" class="link-menu">Work</a> */}
-              {/* <a href="about.html" id="about-m-link" class="link-menu">About</a> */}
-              <li class="link-menu"><Link to="/">Home</Link></li>
-              <li class="link-menu"><Link to="/work">Work</Link></li>
-              <li class="link-menu"><Link to="/projects/:id">Projects</Link></li>
-              <li class="link-menu"><Link to="/about">About</Link></li>
+        <div id="menuOptions" className="menu-options" ref={menuOptionsRef}>
+          <div className="links-container">
+              <li className="link-menu"><Link to="/">Home</Link></li>
+              <li className="link-menu"><Link to="/work">Work</Link></li>
+              <li className="link-menu"><Link to="/projects/:id">Projects</Link></li>
+              <li className="link-menu"><Link to="/about">About</Link></li>
           </div>
-          <div class="menu-footer">
-              <p>© Victor Reverter Devs 2022</p>
-              <div class="menu-footer-container-links">
+          <div className="menu-footer">
+              <p>© 2024 Victor Reverter. All rights reserved.</p>
+              <div className="menu-footer-container-links">
                   <a href="https://www.instagram.com/victorreverter/">Instagram</a>
                   <a href="https://www.behance.net/VictorReverter">Behance</a>
+                  {/* <a href="#">Dribble</a> */}
+                  {/* <a href="#">X (Twitter)</a> */}
                   <a href="https://www.linkedin.com/in/victor-manuel-herrera-reverter-a9312348/">LinkedIn</a>
               </div>
           </div>
