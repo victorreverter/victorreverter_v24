@@ -22,19 +22,10 @@
     .logo-home {
         z-index: 40;
 
-        svg {
-            width: 55px;
-            height: 55px;
-        }
-
-        .svg-menu-open {
-            circle {
-                stroke: $black !important;
-            }
-
-            path {
-                fill: $black !important;
-            }
+        img {
+            display: block;
+            width: 50px;
+            height: auto;
         }
     }
 
@@ -117,7 +108,7 @@
     width: 100%;
     height: 100vh;
 
-    background: $colorResalte;
+    background: $colorResalteAlt;
 
     transition: .5s;
 
@@ -132,7 +123,7 @@
         flex-direction: column;
         // align-items: center;
 
-        width: 90%;
+        width: 95%;
         max-width: 1280px;
         padding: 3em 0 0;
 
@@ -149,31 +140,31 @@
             font-weight: 900;
 
             margin: 0.6em 0;
-            color: $colorMenuText;
+            color: $colorText;
             list-style-type: none;
 
             transition: .25s ease-in-out;
-
-            &:hover {
-                color: $colorText;
-                transition: .1s ease-in-out;
-            }
-
+            
             a {
-                color: $colorMenuText;
+                color: $colorText;
                 text-decoration: none;
+                
+                &:hover {
+                    color: $colorTextAlt;
+                    transition: .1s ease-in-out;
+                }
             }
         }
 
-        .selected {
-            color: $colorText;
-            border-bottom: 4px solid $white;
-            transition: .25s ease-in-out;
-        }
+        // .selected {
+        //     color: $colorText;
+        //     border-bottom: 4px solid $white;
+        //     transition: .25s ease-in-out;
+        // }
 
-        .l-m-m-active {
-            color: $colorText;
-        }
+        // .l-m-m-active {
+        //     color: $colorText;
+        // }
     }
 
     .menu-footer {
@@ -201,7 +192,7 @@
 
             font-size: 1em;
             font-weight: 400;
-            color: $colorMenuText;
+            color: $colorText;
 
             margin: 0.4em auto;
         }
@@ -224,6 +215,39 @@
         // top: 50%;
         opacity: 1;
         transition: .6s ease-in-out;
+    }
+}
+
+.menu-options-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .head-container .menus-container {
+        display: none;
+    }
+
+    .menu-options-desktop {
+        display: block;
+        
+        .links-container {
+            display: flex;
+            flex-direction: row;
+
+            list-style-type: none;
+            
+            li {
+                padding: 0 0.8em;
+                a {
+                    color: $colorTextAlt;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $colorResalte
+                    }
+                }
+            }
+        }
     }
 }
 

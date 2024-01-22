@@ -1,19 +1,21 @@
 $white: #ffffff;
-$black: #2d2d2d;
+$black: #0A0A0A;
+$red: #7D090A;
+$light: #FEF4E8;
+$blue: #14445A;
+$yellow: #EAD296;
+$light_alt: #F3EEC8;
+$gray: #5A5A5A;
+$gray_alt: #D2D2D2;
 
-$colorResalte: #FF3254;
-$colorResalteAlt: #E94560;
-$colorResalte2: #EFA22E;
-$colorResalte3: #2EEF7A;
-$colorResalte4: #2EA2EF;
-$colorResalte5: #972EEF;
-$colorGradient: #8E2CFF;
+$colorResalte: $red;
+$colorResalteAlt: $yellow;
 
-$colorText: #e2e2e2;
-$colorTextAlt: #898989;
-$colorTextAlt2: $black;
-$colorMenuText: $colorTextAlt2;
-$colorTextGray: darken($white, 40%);
+$colorText: $light;
+$colorTextAlt: $gray;
+// $colorTextAlt2: $black;
+// $colorMenuText: $colorTextAlt2;
+// $colorTextGray: darken($white, 40%);
 
 $maxWidth: 1280px;
 
