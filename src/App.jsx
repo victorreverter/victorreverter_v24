@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { useLocation, Routes, Route } from 'react-router-dom';
 
@@ -45,7 +46,7 @@ const projects = [
 ];
 
 const App = () => {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
   const location = useLocation()
 
   useEffect(() => {
