@@ -42,7 +42,8 @@
     }
 
     // Menu Mobile
-    .menu-btn {
+    #menuContainer.menu-btn {
+        display: block;
         position: relative;
         display: flex;
         justify-content: flex-end;
@@ -57,54 +58,75 @@
         // border: 3px solid $white;
         z-index: 100;
 
-        background: $colorResalteAlt;
+        background: $colorTextMenuMobile;
 
-        .menu-btn-burguer {
-            width: 40px;
-            height: 4px;
-            margin: 0 auto;
+        // #menu-btn-burguer {
+        //     width: 40px;
+        //     height: 4px;
+        //     margin: 0 auto;
 
-            background: $white;
-            border-radius: 5px;
-            transition: all .5s ease-in-out;
+        //     background: $white;
+        //     border-radius: 5px;
+        //     transition: all .5s ease-in-out;
 
-            &::before,
-            &::after {
-                content: "";
-                position: absolute;
-                width: 25px;
-                height: 4px;
-                background: $white;
-                border-radius: 5px;
-                transition: all .5s ease-in-out;
-            }
+        //     &::before,
+        //     &::after {
+        //         content: "";
+        //         position: absolute;
+        //         width: 25px;
+        //         height: 4px;
+        //         background: $white;
+        //         border-radius: 5px;
+        //         transition: all .5s ease-in-out;
+        //     }
 
-            &::before {
-                transform: translateX(0px) translateY(-10px);
-            }
+        //     &::before {
+        //         transform: translateX(0px) translateY(-10px);
+        //     }
 
-            &::after {
-                transform: translateX(20px) translateY(10px);
-            }
-        }
+        //     &::after {
+        //         transform: translateX(20px) translateY(10px);
+        //     }
+        // }
     }
 
-    // Animation of Menu
-    .menu-btn.open .menu-btn-burguer {
-        transform: translateX(-45px);
-        background: transparent;
+    // // Animation of Menu
+    // #menuContainer.menu-btn.open #menu-btn-burguer {
+    //     transform: translateX(-45px);
+    //     background: transparent;
 
-        &::before {
-            width: 30px;
-            background: $black;
-            transform: rotate(45deg) translate(35.5px, -35.5px);
-        }
+    //     &::before {
+    //         width: 30px;
+    //         background: $black;
+    //         transform: rotate(45deg) translate(35.5px, -35.5px);
+    //     }
 
-        &::after {
-            width: 30px;
-            background: $black;
-            transform: rotate(-45deg) translate(35.5px, 35.5px);
-        }
+    //     &::after {
+    //         width: 30px;
+    //         background: $black;
+    //         transform: rotate(-45deg) translate(35.5px, 35.5px);
+    //     }
+    // }
+}
+
+.menu-btn {
+    // display: block;
+    // background-color: red;
+
+    .menu-icons {
+        display: none;
+        width: 50px;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // transition: 2s;
+    }
+
+    .menu-icons-open {
+        display: block !important;
     }
 }
 
@@ -182,7 +204,7 @@
 
         position: absolute;
         transform: translate(-50%, 0%);
-        bottom: 5%;
+        bottom: 7%;
         left: 50%;
 
         .menu-footer-container-links {
@@ -214,7 +236,7 @@
             transition: .3s;
             
             &:hover {
-                color: $colorText;
+                color: $colorTextMenuMobileAlt;
             }
         }
     }

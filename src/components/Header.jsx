@@ -7,6 +7,9 @@ import '../styles/header.css';
 import VRLogo from '../assets/Red_VR.png'
 import VRLogoMenu from '../assets/Light_VR.png'
 
+import MenuIcon from '../assets/MenuIcon.png'
+import CloseIcon from '../assets/CloseIcon.png'
+
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,6 +18,8 @@ const Header = () => {
   const menuOptionsRef = useRef(null);
   const logohomeRef = useRef(null);
   const logohomemenuRef = useRef(null);
+  const menuIconRef = useRef(null);
+  const closeIconRef = useRef(null);
   // const logoHomeRef = useRef(null);
 
   useEffect(() => {
@@ -23,6 +28,8 @@ const Header = () => {
       const menuOptions = menuOptionsRef.current;
       const logoHome = logohomeRef.current;
       const logoHomeMenu = logohomemenuRef.current;
+      const menuIcon = menuIconRef.current;
+      const closeIcon = closeIconRef.current;
       // const logoHome = logoHomeRef.current;
 
       if (!menuOpen) {
@@ -32,6 +39,9 @@ const Header = () => {
 
         logoHomeMenu.classList.add('vr-logo-open');
         logoHome.classList.remove('vr-logo-open');
+
+        menuIcon.classList.remove('menu-icons-open');
+        closeIcon.classList.add('menu-icons-open');
 
         document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
@@ -43,6 +53,9 @@ const Header = () => {
 
         logoHome.classList.add('vr-logo-open');
         logoHomeMenu.classList.remove('vr-logo-open');
+
+        closeIcon.classList.remove('menu-icons-open');
+        menuIcon.classList.add('menu-icons-open');
 
         document.documentElement.style.overflow = 'initial';
         document.body.style.overflow = 'initial';
@@ -93,31 +106,24 @@ const Header = () => {
 
         <div className="menus-container">
           <div id="menuContainer" className="menu-btn"  ref={menuBtnRef}>
-            <div className="menu-btn-burger"></div>
+            <img id="menu_icon" className="menu-icons menu-icons-open" src={MenuIcon} alt="menu_icon" ref={menuIconRef} />
+            <img id="close_icon" className="menu-icons" src={CloseIcon} alt="close_icon" ref={closeIconRef} />
           </div>
         </div>
 
         <div id="menuOptions" className="menu-options" ref={menuOptionsRef}>
           <div className="links-container">
               <li className="link-menu">
-                <Link to="/" onClick={handleMobileLinkClick}>
-                  Home
-                </Link>
+                <Link to="/" onClick={handleMobileLinkClick}>Home</Link>
               </li>
               <li className="link-menu">
-                <Link to="/work" onClick={handleMobileLinkClick}>
-                  Work
-                </Link>
+                <Link to="/work" onClick={handleMobileLinkClick}>Work</Link>
               </li>
               <li className="link-menu">
-                <Link to="/about" onClick={handleMobileLinkClick}>
-                  About
-                </Link>
+                <Link to="/about" onClick={handleMobileLinkClick}>About</Link>
               </li>
               <li className="link-menu">
-                <Link to="mailto:victorreverterdesign@gmail.com" onClick={handleMobileLinkClick}>
-                  Contact
-                </Link>
+                <Link to="mailto:victorreverterdesign@gmail.com" onClick={handleMobileLinkClick}>Contact</Link>
               </li>
           </div>
           <div className="menu-footer">

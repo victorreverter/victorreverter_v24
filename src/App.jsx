@@ -1,6 +1,7 @@
 // import React, { useState, useEffect } from 'react';
 import React, { useEffect } from 'react';
 import './App.css';
+import './styles/global.css';
 import { useLocation, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';

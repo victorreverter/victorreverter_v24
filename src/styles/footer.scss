@@ -1,0 +1,31 @@
+@import "normalize", "meyer", "basevalues";
+
+#footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $colorResalte;
+    color: $colorFooterText;
+    text-align: center;
+    padding: 10px 0;
+    // position: fixed;
+    // bottom: 0;
+    width: 100%;
+}
+
+.descriptive-container {
+    display: block;
+    width: 90%;
+
+    .footer-pic {
+        display: block;
+        width: auto;
+        height: 85px;
+    }
+
+    .explicative-text {
+        display: block;
+        padding: 1em 0;
+    }
+}
