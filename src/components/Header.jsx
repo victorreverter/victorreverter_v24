@@ -127,7 +127,6 @@ const Header = () => {
               </li>
           </div>
           <div className="menu-footer">
-              <p>© 2024 Victor Reverter. All rights reserved.</p>
               <div className="menu-footer-container-links">
                   <a href="https://www.instagram.com/victorreverter/">Instagram</a>
                   <a href="https://www.behance.net/VictorReverter">Behance</a>
@@ -135,6 +134,7 @@ const Header = () => {
                   {/* <a href="#">X (Twitter)</a> */}
                   <a href="https://www.linkedin.com/in/victor-manuel-herrera-reverter-a9312348/">LinkedIn</a>
               </div>
+              <p>© 2024 Victor Reverter. All rights reserved.</p>
           </div>
         </div>
 
