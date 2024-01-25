@@ -1,6 +1,7 @@
-/* Projects.css */
+@import "normalize", "meyer", "basevalues";
+
 .projects {
-    background-color: #fff;
+    background-color: $black;
     padding: 50px 20px;
     text-align: center;
 }
@@ -21,7 +22,7 @@
     max-width: 300px;
     margin: 20px;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .project-item img {

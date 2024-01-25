@@ -7,7 +7,7 @@ import GlobalData from '../projectsData.json';
 
 const Work = () => {
   return (
-    <div className="app">
+    <div className="work">
       {/* <Header /> */}
       <Projects projects={GlobalData} />
       {/* <Footer /> */}

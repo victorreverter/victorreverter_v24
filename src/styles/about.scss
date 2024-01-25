@@ -1,22 +1,27 @@
+@import "normalize", "meyer", "basevalues";
+
 .about {
-    background-color: #f8f8f8;
+    // background-color: #f8f8f8;
     padding: 50px 20px;
     text-align: center;
-}
 
-.about h2 {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
+    h3, h4 {
+        color: $colorText;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
 
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
+    h4 {
+        font-size: 1.5em;
+    }
 
-.about p {
-    color: #666;
-    font-size: 1.2em;
-    line-height: 1.6;
+    ul li {
+        color: $colorTextAlt;
+    }
+
+    p {
+        color: $colorText;
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
 }

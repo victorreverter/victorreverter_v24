@@ -45,7 +45,7 @@ const Home = () => {
     // ]
 
     return (
-        <div className="app">
+        <div className="home">
             {/* <Header /> */}
             {/* <h3>Dedal</h3> */}
             <HeroHome />
