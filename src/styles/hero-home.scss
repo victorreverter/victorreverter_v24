@@ -1,23 +1,64 @@
 @import "normalize", "meyer", "basevalues";
 
 .hero-home {
-    background-color: $black;
-    padding: 50px 20px;
+    display: block;
+    position: relative;
+    background: url("../assets/Home_Pic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // padding: 50px 20px;
     text-align: center;
+    min-height: 80vh;
+
+    overflow: hidden;
+}
+
+.gradient-over {
+    display: block;
+    width: 100%;
+    height: 102%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+
+    background: linear-gradient(160deg, $black, rgba(0, 0, 0, 0), $black);
+    opacity: 1;
 }
 
 .hero-home-content {
-    max-width: 800px;
+    display: block;
+    width: 90%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0 auto;
+
+    z-index: 10;
+
+    h1 {
+        display: block;
+        color: $colorHeroText;
+        font-size: 6em;
+        font-weight: 700;
+        line-height: 0.6em;
+
+        text-transform: uppercase;
+
+        span {
+            font-size: 0.7em;
+        }
+    }
+
+    p {
+        // margin-top: 20px;
+        padding: 1em 0 0;
+        font-size: 1.4em;
+        color: $colorHeroTextAlt;
+    }
 }
 
-.hero-home h1 {
-    font-size: 2.5em;
-    color: #333;
-}
-
-.hero-home p {
-    font-size: 1.2em;
-    color: #666;
-    margin-top: 20px;
-}

@@ -1,21 +1,28 @@
 @import "normalize", "meyer", "basevalues";
 
+.footer-box {
+    display: block;
+    width: 100%;
+    background-color: $colorResalte;
+}
+
 #footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1280px;
 
-    background-color: $colorResalte;
     color: $colorFooterText;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0 10px;
     // position: fixed;
     // bottom: 0;
     width: 100%;
+    margin: 0 auto;
 }
 
 .descriptive-container, .menu-footer-links, .copyright {
-    width: 90%;
+    width: 95%;
 }
 
 .descriptive-container {

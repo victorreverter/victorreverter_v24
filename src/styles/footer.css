@@ -468,19 +468,26 @@ table {
   border-spacing: 0;
 }
 
+.footer-box {
+  display: block;
+  width: 100%;
+  background-color: #7D090A;
+}
+
 #footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #7D090A;
+  max-width: 1280px;
   color: #F3EEC8;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0 10px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .descriptive-container, .menu-footer-links, .copyright {
-  width: 90%;
+  width: 95%;
 }
 
 .descriptive-container {

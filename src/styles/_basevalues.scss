@@ -17,6 +17,9 @@ $colorHeaderTextAlt: $red;
 $colorText: $light;
 $colorTextAlt: $gray;
 
+$colorHeroText: $colorHeaderText;
+$colorHeroTextAlt: $colorHeaderText;
+
 $colorTextMenuMobile: $light_alt;
 $colorTextMenuMobileAlt: $black;
 
@@ -26,7 +29,6 @@ $colorFooterLinks: $light_alt;
 $colorFooterLinksAlt: $black;
 
 $maxWidth: 1280px;
-
 
 // Iphone 6/7/8
 $breakOneWidth: 375px;

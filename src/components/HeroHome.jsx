@@ -6,9 +6,10 @@ import '../styles/hero-home.css';
 const Home = () => {
   return (
     <section className="hero-home">
+      <div className='gradient-over'></div>
       <div className="hero-home-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm a passionate Product Designer with a focus on creating meaningful and user-centric experiences.</p>
+        <h1>Victor <span>Reverter</span></h1>
+        <p>Creative and problem solving designer using my knowledge and passion to get things rightly done.</p>
         {/* Add more content or call-to-action as needed */}
       </div>
     </section>
