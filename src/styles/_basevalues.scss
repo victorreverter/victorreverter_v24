@@ -1,17 +1,19 @@
 $white: #ffffff;
 $black: #0A0A0A;
 $red: #7D090A;
-$light: #FEF4E8;
+$light: #F3EEC8;
+$light_alt: #FEF4E8;
+
 $blue: #14445A;
 $yellow: #EAD296;
-$light_alt: #F3EEC8;
+
 $gray: #5A5A5A;
 $gray_alt: #D2D2D2;
 
 $colorResalte: $red;
 $colorResalteAlt: $yellow;
 
-$colorHeaderText: $light_alt;
+$colorHeaderText: $light;
 $colorHeaderTextAlt: $red;
 
 $colorText: $light;
@@ -20,12 +22,12 @@ $colorTextAlt: $gray;
 $colorHeroText: $colorHeaderText;
 $colorHeroTextAlt: $colorHeaderText;
 
-$colorTextMenuMobile: $light_alt;
+$colorTextMenuMobile: $light;
 $colorTextMenuMobileAlt: $black;
 
-$colorFooterText: $light_alt;
+$colorFooterText: $light;
 $colorFooterTextAlt: $light_alt;
-$colorFooterLinks: $light_alt;
+$colorFooterLinks: $light;
 $colorFooterLinksAlt: $black;
 
 $maxWidth: 1280px;

@@ -144,7 +144,7 @@ const Header = () => {
               <li className="link-menu"><Link to="/work">Work</Link></li>
               {/* <li className="link-menu"><Link to="/projects/:id">Projects</Link></li> */}
               <li className="link-menu"><Link to="/about">About</Link></li>
-              <li className="link-menu"><Link to="mailto:victorreverterdesign@gmail.com">Contact</Link></li>
+              <li className="link-menu link-email"><Link to="mailto:victorreverterdesign@gmail.com">Contact</Link></li>
           </div>
         </div>
     </div>

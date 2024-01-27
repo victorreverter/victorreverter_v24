@@ -218,10 +218,11 @@
         .links-container, .links-container-desktop {
             display: flex;
             flex-direction: row;
+            align-items: center;
 
             list-style-type: none;
             
-            li {
+            .link-menu {
                 padding: 0 0.8em;
                 a {
                     color: $colorHeaderText;
@@ -231,6 +232,18 @@
                         color: $colorHeaderTextAlt;
                     }
                 }
+            }
+
+            .link-email {
+                display: block;
+                width: 100px;
+                margin: 0 auto;
+                padding: 0.6em 0;
+            
+                color: $light;
+                border: 2px solid $light;
+                border-radius: 8px;
+                text-decoration: none;
             }
         }
     }
