@@ -82,6 +82,8 @@ const Header = () => {
     const menuOptions = menuOptionsRef.current;
     const logoHome = logohomeRef.current;
     const logoHomeMenu = logohomemenuRef.current;
+    const menuIcon = menuIconRef.current;
+    const closeIcon = closeIconRef.current;
 
     menuBtn.classList.remove('open');
     menuOptions.classList.remove('menu-mobile-open');
@@ -89,6 +91,9 @@ const Header = () => {
 
     logoHome.classList.add('vr-logo-open');
     logoHomeMenu.classList.remove('vr-logo-open');
+
+    closeIcon.classList.remove('menu-icons-open');
+    menuIcon.classList.add('menu-icons-open');
 
     document.documentElement.style.overflow = 'initial';
     document.body.style.overflow = 'initial';

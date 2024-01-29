@@ -3,14 +3,16 @@
     "id": 1,
     "title": "Project 1",
     "description": "Description of Project 1.",
-    "image": "project1.jpg",
+    "image": "/assets/projects/project_1/0_cover.jpg",
+    "alt_text": "project_1",
     "path": "#"
   },
   {
     "id": 2,
     "title": "Project 2",
     "description": "Description of Project 2.",
-    "image": "project2.jpg",
+    "image": "../projects/project_1/cover.jpg",
+    "alt_text": "project_2",
     "path": "#"
   },
   {
@@ -18,6 +20,7 @@
     "title": "Project 3",
     "description": "Description of Project 3.",
     "image": "project3.jpg",
+    "alt_text": "project_3",
     "path": "#"
   },
   {
@@ -25,6 +28,7 @@
     "title": "Project 4",
     "description": "Description of Project 4.",
     "image": "project4.jpg",
+    "alt_text": "project_4",
     "path": "#"
   }
 ]

@@ -1,13 +1,8 @@
-// import React, { useEffect, useState } from 'react';
 import React from 'react';
-// import Header from '../components/Header';
-// import HomeContent from '../components/Home/Home';
-// import Footer from '../components/Footer';
 
 import HeroHome from '../components/HeroHome';
 import SelectedProjects from '../components/SelectedProjects';
 
-// import '../styles/App.css';
 import '../styles/global.css'
 import GlobalData from '../projectsData.json'
 

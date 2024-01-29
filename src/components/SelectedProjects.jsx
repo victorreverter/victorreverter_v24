@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import '../styles/global.css';
 import '../styles/selected-projects.css';
 
+const coverProjects = require.context('../assets/project_covers', true)
+
 const SelectedProjects = ({ projects }) => {
   return (
     <section className="selected-projects">
@@ -16,11 +18,17 @@ const SelectedProjects = ({ projects }) => {
       <div className="projects-list">
         {projects.map(project => (
           <div key={project.id} className="selected-project-item">
-            <img src={project.image} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-
-            <Link to={`/project_${project.id}`}>View Project</Link>
+            <Link to={`/project_${project.id}`}>
+              <img 
+                // src={project.image}
+                src={ coverProjects(`./${project.alt_text}.jpg`) }
+                alt={project.alt_text} />
+              
+              <div className='project-side-container'>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

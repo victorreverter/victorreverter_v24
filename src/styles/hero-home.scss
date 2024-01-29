@@ -62,3 +62,16 @@
     }
 }
 
+@media (orientation: landscape) {
+    .hero-home-content {
+        width: 45%;
+
+        h1 {
+            font-size: 4em;
+        }
+
+        p {
+            font-size: 0.85em;
+        }
+    }
+}

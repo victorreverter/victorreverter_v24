@@ -249,3 +249,16 @@
     }
 }
 
+@media (orientation: landscape) {
+    .menu-mobile-open .links-container,
+    .menu-mobile-open .links-container-desktop {
+        padding: 2em 0 0;
+
+        .link-menu {
+            font-size: 1.4em;
+            padding: 0.4em 0;
+            margin: 0;
+        }   
+    }
+}
+
