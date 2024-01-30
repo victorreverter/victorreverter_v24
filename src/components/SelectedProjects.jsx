@@ -11,11 +11,8 @@ const SelectedProjects = ({ projects }) => {
     <section className="selected-projects">
       <div className='container-projects'></div>
       <h3 className='projects-title'>Here are some selected projects that showcase skils and knowledge applied in solutions to problems</h3>
-      <Link to={"/work"} className='btn-view-allpro'>
-        <p>View All</p>
-        <p>Projects</p>
-      </Link>
-      <div className="projects-list">
+      
+      <div className="selected-projects-list">
         {projects.map(project => (
           <div key={project.id} className="selected-project-item">
             <Link to={`/project_${project.id}`}>
@@ -27,11 +24,17 @@ const SelectedProjects = ({ projects }) => {
               <div className='project-side-container'>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
+                <h5>Branding · UX/UI Design</h5>
               </div>
             </Link>
           </div>
         ))}
       </div>
+
+      <Link to={"/work"} className='btn-view-allpro'>
+        <p>View All</p>
+        <p>Projects</p>
+      </Link>
     </section>
   );
 };
