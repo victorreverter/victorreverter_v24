@@ -9,8 +9,8 @@ const coverProjects = require.context('../assets/project_covers', true)
 const SelectedProjects = ({ projects }) => {
   return (
     <section className="selected-projects">
-      <div className='container-projects'></div>
-      <h3 className='projects-title'>Here are some selected projects that showcase skils and knowledge applied in solutions to problems</h3>
+      <h2 className='selected-projects-title'>Selected Projects</h2>
+      <h4 className='selected-projects-subtitle'>Here are some selected projects that showcase skils and knowledge applied in solutions to problems</h4>
       
       <div className="selected-projects-list">
         {projects.map(project => (
@@ -24,7 +24,7 @@ const SelectedProjects = ({ projects }) => {
               <div className='project-side-container'>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <h5>Branding · UX/UI Design</h5>
+                <h5>{project.categories}</h5>
               </div>
             </Link>
           </div>

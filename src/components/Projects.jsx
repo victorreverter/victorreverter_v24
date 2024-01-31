@@ -3,17 +3,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/work.css';
 
+const coverProjects = require.context('../assets/project_covers', true)
+
 const Projects = ({ projects }) => {
     return (
         <section className="projects">
-            <h2>My Projects</h2>
+            <h2 className='projects-title'>Projects</h2>
+            <h4>Check out projects where I have had the pleasure of working on</h4>
             <div className="projects-list">
                 {projects.map(project => (
                     <div key={project.id} className="project-item">
-                        <img src={project.image} alt={project.title} />
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <Link to={`/project_${project.id}`}>View Project</Link>
+                        <Link to={`/project_${project.id}`}>
+                            <div className='contain-title'>
+                                <h3 className='item-title'>{project.title}</h3>
+                                <h5 className='item-date'>{project.date}</h5>
+                            </div>
+                            <p className='item-description'>{project.description}</p>
+                            <img 
+                                // src={project.image} 
+                                src={ coverProjects(`./${project.alt_text}.jpg`) }
+                                alt={project.title} />
+                            <h5 className='item-categories'>{project.categories}</h5>
+                        </Link>
                     </div>
                 ))}
             </div>

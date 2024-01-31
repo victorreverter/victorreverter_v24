@@ -2,48 +2,135 @@
 
 .projects {
     background-color: $black;
-    padding: 50px 20px;
+    // padding: 50px 20px;
     text-align: center;
+
+    .projects-title {
+        padding: 0.5em 0;
+        color: $colorText;
+        font-family: "Oswald", sans-serif;
+        font-size: 5em;
+        text-transform: uppercase;
+    }
+    
+    .projects-list {
+        // display: flex;
+        // justify-content: space-around;
+        // flex-wrap: wrap;
+        display: block;
+        width: 100%;
+        max-width: $maxWidth;
+
+        .project-item {
+            display: block;
+            width: 100%;
+            margin: 30px auto 0;
+            // padding: 10px;
+        
+            position: relative;
+            // box-shadow: 0 0 10px rgba($light, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .contain-title {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                width: 95%;
+                margin: 0 auto;
+                padding: 0.5em 0 0;
+                // padding: 0.5em 1em 1em;
+
+                .item-title, .item-date {
+                    color: $colorText;
+                    font-weight: 500;
+                }
+
+                .item-title {
+                    font-size: 2em;
+                }
+
+                .item-date {
+                    font-size: 0.6em;
+                    padding: 6px 0 0 5px;
+                }
+            }
+
+            .item-description {
+                display: block;
+                width: 95%;
+                margin: 0 auto;
+
+                padding: 1em 0 0.8em;
+                font-size: 0.9em;
+                font-weight: 300;
+                line-height: 1.2em;
+                color: $colorTextAlt;
+
+                text-align: left;
+            }
+    
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+            .item-categories {
+                width: fit-content;
+                // margin: 1em auto 0;
+                margin: 1em 0 0;
+                padding: 1em 1em;
+                border-radius: 100px;
+            
+                font-size: 0.7em;
+                color: $colorTextAlt;
+            
+                background: rgba($gray, 0.5);
+            }
+        }
+    }
 }
 
-.projects h2 {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 20px;
+@media (min-width: 768px) {
+    .projects {
+        .projects-list {
+                .project-item {
+                    width: 90%;
+                    max-width: $maxWidth;
+
+                    .contain-title {
+                        width: 100%;
+                        padding: 1em 0;
+
+                        .item-title {
+                            font-size: 4em;
+                        }
+
+                        .item-date {
+                            font-size: 1em;
+                            padding: 10px 0 0 5px;
+                        }
+
+                    }
+                    
+                    .item-description {
+                        width: 100%;
+                        font-size: 1.2em;
+                    }
+                    
+                    .item-categories {
+                        font-size: .9em;
+                        transition: .3s;
+                    }
+                }
+            }
+    }
 }
 
-.projects-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
-.project-item {
-    max-width: 300px;
-    margin: 20px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.project-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.project-item h3 {
-    color: #333;
-    margin-top: 10px;
-}
-
-.project-item p {
-    color: #666;
-}
-
-.project-item a {
-    display: block;
-    margin-top: 10px;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-}
