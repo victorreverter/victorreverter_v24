@@ -8,8 +8,9 @@ const coverProjects = require.context('../assets/project_covers', true)
 const Projects = ({ projects }) => {
     return (
         <section className="projects">
-            <h2 className='projects-title'>Projects</h2>
-            <h4>Check out projects where I have had the pleasure of working on</h4>
+            {/* <h2 className='projects-title'>Projects</h2>
+            <h4 className='projects-subtitle'>Check out projects where I have had the pleasure of working on</h4> */}
+            
             <div className="projects-list">
                 {projects.map(project => (
                     <div key={project.id} className="project-item">
@@ -19,11 +20,11 @@ const Projects = ({ projects }) => {
                                 <h5 className='item-date'>{project.date}</h5>
                             </div>
                             <p className='item-description'>{project.description}</p>
+                            <h5 className='item-categories'>{project.categories}</h5>
                             <img 
                                 // src={project.image} 
                                 src={ coverProjects(`./${project.alt_text}.jpg`) }
                                 alt={project.title} />
-                            <h5 className='item-categories'>{project.categories}</h5>
                         </Link>
                     </div>
                 ))}

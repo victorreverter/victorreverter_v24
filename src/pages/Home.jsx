@@ -4,7 +4,7 @@ import HeroHome from '../components/HeroHome';
 import SelectedProjects from '../components/SelectedProjects';
 
 import '../styles/global.css'
-import GlobalData from '../projectsData.json'
+import GlobalData from '../selectedProjectsData.json'
 
 const Home = () => {
 
@@ -44,7 +44,8 @@ const Home = () => {
             {/* <Header /> */}
             {/* <h3>Dedal</h3> */}
             <HeroHome />
-            <SelectedProjects projects={GlobalData.slice(0,3)} />
+            {/* <SelectedProjects projects={GlobalData.slice(0,3)} /> */}
+            <SelectedProjects projects={GlobalData} />
             {/* <Footer /> */}
         </div>
     );

@@ -6,11 +6,20 @@
     text-align: center;
 
     .projects-title {
-        padding: 0.5em 0;
+        padding: 0.5em 0 0.3em;
         color: $colorText;
         font-family: "Oswald", sans-serif;
-        font-size: 5em;
+        // font-size: 5em;
+        font-size: 2.5em;
         text-transform: uppercase;
+    }
+
+    .projects-subtitle {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0.5em 0 1.5em;
+        color: $colorText;
+        font-size: 1em;
     }
     
     .projects-list {
@@ -20,12 +29,15 @@
         display: block;
         width: 100%;
         max-width: $maxWidth;
+        margin: 0 auto;
+        padding: 0 0 5em;
 
         .project-item {
             display: block;
             width: 100%;
-            margin: 30px auto 0;
-            // padding: 10px;
+            // margin: 30px auto 0;
+            margin: 0 auto;
+            padding: 0 0 2em;
         
             position: relative;
             // box-shadow: 0 0 10px rgba($light, 0.1);
@@ -78,13 +90,13 @@
             img {
                 max-width: 100%;
                 height: auto;
-                border-radius: 5px;
+                // border-radius: 5px;
             }
 
             .item-categories {
                 width: fit-content;
                 // margin: 1em auto 0;
-                margin: 1em 0 0;
+                margin: 0 0 1em 2.5%;
                 padding: 1em 1em;
                 border-radius: 100px;
             
@@ -99,10 +111,24 @@
 
 @media (min-width: 768px) {
     .projects {
+        .projects-title {
+            padding: .2em 0 0.2em;
+            // font-size: 10em;
+            font-size: 6em;
+        }
+
+        .projects-subtitle {
+            font-size: 1.2em;
+        }
+
         .projects-list {
+                padding: 0 0 10em;
+
                 .project-item {
                     width: 90%;
                     max-width: $maxWidth;
+                    padding: 0 0 3em;
+                    margin: 0 auto;
 
                     .contain-title {
                         width: 100%;
@@ -120,13 +146,36 @@
                     }
                     
                     .item-description {
+                        // display: none;
                         width: 100%;
-                        font-size: 1.2em;
+                        font-size: 0.2em;
+                        opacity: 0;
+
+                        transition: .3s;
+                    }
+
+                    img {
+                        border-radius: 20px;
+                        transition: .3s;
                     }
                     
                     .item-categories {
+                        margin: 0.5em 0 1em;
                         font-size: .9em;
-                        transition: .3s;
+                    }
+
+                    &:hover {
+                        .item-description {
+                            display: block;
+                            font-size: 1.2em;
+                            opacity: 1;
+                        }
+
+                        img {
+                            transform: scale(0.9);
+                            margin: -2% auto 0;
+                            // opacity: 0.6;
+                        }
                     }
                 }
             }
