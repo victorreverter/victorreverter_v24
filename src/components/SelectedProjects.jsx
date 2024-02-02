@@ -9,8 +9,8 @@ const coverProjects = require.context('../assets/project_covers', true)
 const SelectedProjects = ({ projects }) => {
   return (
     <section className="selected-projects">
-      <h2 className='selected-projects-title'>Selected Projects</h2>
-      <h4 className='selected-projects-subtitle'>Here are some selected projects that showcase skils and knowledge applied in solutions to problems</h4>
+      <h2 className='title'>Selected Projects</h2>
+      <h4 className='subtitle'>See a selection of projects that show my skills and knowledge through real-world challenges. These examples showcase my practical approach to problem-solving and my dedication to creating meaningful solutions through design.</h4>
       
       <div className="selected-projects-list">
         {projects.map(project => (

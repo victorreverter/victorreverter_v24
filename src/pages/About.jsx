@@ -1,45 +1,83 @@
 import React from 'react';
-import '../styles/about.css'
+import '../styles/global.css';
+import '../styles/about.css';
+
+import aboutImage from '../assets/About_Pic.jpg';
 
 const About = () => {
   return (
     <div className="about">
       {/* <Header /> */}
-      <h3>Victor Reverter - Designer, Product Creator</h3>
-      <p>I am Victor Reverter, a designer and product creator under RevDesign - a digital brand that frames my products. With a long experience in the creation of graphic, web, and identity products, thinking about the next trends and solutions is one of my mottos.</p>
-      <p>At this moment in my life, I keep myself looking for improvement and a sense of completion through day-by-day endeavors.</p>
-      <h4>Skills</h4>
+      <h3 className='title'>Victor Reverter, Designer & Product Creator</h3>
+      
+      <div className='top-container'>
+
+        <div className="subtitle-container">
+          <h4 className='subtitle'>I am Victor Reverter, a designer and product creator. With a long experience in the creation of graphic, web, and identity products. With each project, I push my work to new horizons, focused on creating functional and user-centered digital products with visually stunning designs.</h4>
+          <h4 className='subtitle'>At this moment in my life, I keep myself looking for improvement and a sense of completion through  endeavors and challenges.</h4>
+          <h4 className='subtitle'>Always doing more...</h4>
+        </div>
+
+        <img className='about-pic' src={aboutImage} alt={"about-pic"} />
+      </div>
+      
+
+      <h5>Skills</h5>
+
       <ul>
         <li>Graphic Design</li>
         <li>Branding Design</li>
         <li>UX/UI</li>
         <li>Web Design</li>
         <li>Design Management</li>
-        <li>Frontend Development</li>
         <li>Team Work</li>
         <li>Storytelling</li>
         <li>Digital Production</li>
+        <li>Frontend Development</li>
       </ul>
-      <h4>Softskills</h4>
+
+      <h5>Softskills</h5>
+
       <ul>
         <li>Communication</li>
         <li>Empathy</li>
-        <li>Collaboration & Teamwork</li>
         <li>Adaptability</li>
         <li>Problem Solving</li>
         <li>Time Management</li>
         <li>Decision Making</li>
+        <li>Collaboration & Teamwork</li>
       </ul>
-      <h4>Alternative Skills</h4>
+
+      <h5>Tools</h5>
+
       <ul>
-        <li>Designing & Managing at Telecoming</li>
-        <li>Running 1/2 Marathons</li>
+        <li>Figma</li>
+        <li>Jira</li>
+        <li>Adobe CC</li>
+        <li>HTML · CSS</li>
+        <li>SCSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Time Management</li>
+        <li>Decision Making</li>
+        <li>Collaboration & Teamwork</li>
       </ul>
-      <h4>My Resume</h4>
-      <p>
-        {/* <a href="CV.pdf" target="_blank" rel="noopener noreferrer">CV.pdf link</a> */}
-        <a href="" target="_blank" rel="noopener noreferrer">CV.pdf link</a>
-      </p>
+
+      <h5>Other passions</h5>
+
+      <ul>
+        <li>Running 1/2 Marathons</li>
+        <li>Read non-fiction books</li>
+        <li>Drawing & Painting</li>
+        <li>Play Chess</li>
+        <li>Learn Languages</li>
+      </ul>
+
+      <h5>My Resume</h5>
+
+      <a className='cv-link' href="" target="_blank" rel="noopener noreferrer">
+        <p>See my CV</p>
+      </a>
       {/* <Footer /> */}
     </div>
   );

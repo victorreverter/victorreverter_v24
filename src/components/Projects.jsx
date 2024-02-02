@@ -8,8 +8,8 @@ const coverProjects = require.context('../assets/project_covers', true)
 const Projects = ({ projects }) => {
     return (
         <section className="projects">
-            {/* <h2 className='projects-title'>Projects</h2>
-            <h4 className='projects-subtitle'>Check out projects where I have had the pleasure of working on</h4> */}
+            {/* <h2 className='title'>Projects</h2>
+            <h4 className='subtitle'>Check out projects where I have had the pleasure of working on</h4> */}
             
             <div className="projects-list">
                 {projects.map(project => (

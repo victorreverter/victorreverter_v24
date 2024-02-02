@@ -114,7 +114,7 @@
 
         .link-menu {
             font-size: 3em;
-            font-weight: 900;
+            font-weight: 600;
 
             margin: 0.6em 0;
             color: $colorText;
@@ -208,6 +208,10 @@
 }
 
 @media (min-width: 768px) {
+    .head-container {
+        width: 90%;
+    }
+
     .head-container .menus-container {
         display: none;
     }
