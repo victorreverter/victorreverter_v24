@@ -31,9 +31,20 @@ const SelectedProjects = ({ projects }) => {
         ))}
       </div>
 
-      <Link to={"/work"} className='btn-view-allpro'>
+      {/* <Link to={"/work"} className='btn-view-allpro'>
         <p>View All</p>
         <p>Projects</p>
+      </Link> */}
+
+      <Link to={"/work"} className='btn-view-allpro-txt'>
+        <div className="container-text">
+          <span>View All</span>
+          <span>Projects</span>
+        </div>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
       </Link>
     </section>
   );

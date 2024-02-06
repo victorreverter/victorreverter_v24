@@ -149,7 +149,19 @@ const Header = () => {
               <li className="link-menu"><Link to="/work">Work</Link></li>
               {/* <li className="link-menu"><Link to="/projects/:id">Projects</Link></li> */}
               <li className="link-menu"><Link to="/about">About</Link></li>
-              <li className="link-menu link-email"><Link to="mailto:victorreverterdesign@gmail.com">Contact</Link></li>
+              <li className="link-menu btn-view-allpro-txt">
+                <Link to="mailto:victorreverterdesign@gmail.com">
+                  <li className="link-menu btn-view-allpro-txt">
+                    <div className="container-text">
+                      <span>Contact</span>
+                    </div>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </li>
+                </Link>
+              </li>
           </div>
         </div>
     </div>

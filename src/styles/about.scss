@@ -9,7 +9,8 @@
     margin: 0 auto;
 
     .about-pic {
-        width: 100%;
+        // width: 100%;
+        width: 85%;
         margin: 1em 0;
     }
 
@@ -28,49 +29,141 @@
         li {
             margin: 0 0 1em 2.5%;
             padding: 1em 1em;
-            border-radius: 100px;
+
+            cursor: pointer;
+            border-radius: 10px;
             font-size: .7em;
             color: $colorTextAlt;
             background: rgba(90, 90, 90, .5);
+            transition: .3s;
+
+            &:hover {
+                background: rgba(90, 90, 90, .2);
+            }
         }
     }
 
-    .cv-link {
-        text-decoration: none;
+    // .cv-link {
+    //     text-decoration: none;
         
-        p {
-            display: block;
-            width: 170px;
-            margin: 20px auto 60px;
-            padding: .6em 0;
+    //     p {
+    //         display: block;
+    //         width: 170px;
+    //         margin: 20px auto 60px;
+    //         padding: .6em 0;
             
-            font-size: 1.2em;
-            line-height: 1.6;
+    //         font-size: 1.2em;
+    //         line-height: 1.6;
 
-            color: $colorText;
-            border: 2px solid $colorText;
+    //         color: $colorText;
+    //         border: 2px solid $colorText;
+    //         border-radius: 8px;
+    //         text-decoration: none;
+    //         text-decoration: none;
+    //     }
+    // }
+
+    .cv-link-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 48px;
+        position: relative;
+        margin: 0px auto 80px;
+        padding: 0px 0px 0px 14px;
+        // padding: 6px 0px;
+        // padding: 12px 50px;
+        transition: all .2s ease;
+        text-decoration: none;
+        color: $colorText;
+        background: rgba($colorResalte, .5);
+        border: 2px solid $colorText;
+        border-radius: 10px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
             border-radius: 8px;
-            text-decoration: none;
-            text-decoration: none;
+            // background: rgba($colorResalte, .5);
+            background: rgba($colorResalte, 1);
+            width: 100%;
+            // width: 78px;
+            height: 48px;
+            transition: all .3s ease;
         }
+
+        .container-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        span {
+            position: relative;
+            font-size: 16px;
+            line-height: 18px;
+            // font-weight: 900;
+            font-weight: 400;
+            // text-transform: uppercase;
+            vertical-align: middle;
+        }
+
+        svg {
+            position: relative;
+            top: 0;
+            margin-left: 10px;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: $colorText;
+            stroke-width: 2;
+            // transform: translateX(-5px) rotate(0deg);
+            transform: translateX(0) rotate(45deg);
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            &:before {
+                // width: 100%;
+                // width: 58px;
+                width: 0px;
+                // background: rgba($colorResalte, 1);
+                background: rgba($colorResalte, .5);
+            }
+
+            svg {
+                transform: translateX(-5px) rotate(0deg);
+                // transform: translateX(0) rotate(45deg);
+            }
+        }
+
+        // &:active {
+        //     transform: scale(.96);
+        // }
     }
 }
 
 @media (min-width: 768px) {
     .about {
         width: 90%;
-        
+
         .top-container {
             display: flex;
             flex-direction: row;
     
             .subtitle-container {
                 width: 40%;
-                margin: 0 20% 0 0;
+                margin: 0 10% 0 0;
             }
     
             .about-pic {
-                width: 40%;
+                width: 50%;
+                border-radius: 10px;
             }
         }
 
@@ -80,6 +173,9 @@
         }
 
         ul {
+            // width: 80%;
+            width: 65%;
+            margin: 0 auto;
             li {
                 font-size: 0.9em;
                 color: $colorTextAlt;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/global.css';
 import '../styles/about.css';
 
@@ -17,7 +18,7 @@ const About = () => {
           <h4 className='subtitle'>At this moment in my life, I keep myself looking for improvement and a sense of completion through  endeavors and challenges.</h4>
           <h4 className='subtitle'>Always doing more...</h4>
         </div>
-
+        
         <img className='about-pic' src={aboutImage} alt={"about-pic"} />
       </div>
       
@@ -75,9 +76,20 @@ const About = () => {
 
       <h5>My Resume</h5>
 
-      <a className='cv-link' href="" target="_blank" rel="noopener noreferrer">
+      {/* <a className='cv-link' href="" target="_blank" rel="noopener noreferrer">
         <p>See my CV</p>
-      </a>
+      </a> */}
+
+      <Link to={"#"} className='cv-link-btn' href="" target="_blank">
+        <div className="container-text">
+          <span>See my CV</span>
+        </div>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </Link>
+
       {/* <Footer /> */}
     </div>
   );

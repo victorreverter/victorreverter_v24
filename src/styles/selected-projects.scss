@@ -47,6 +47,90 @@
             font-size: 1em;
         }
     }
+
+    .btn-view-allpro-txt {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 48px;
+        position: relative;
+        margin: 80px auto;
+        padding: 0px 0px 0px 14px;
+        // padding: 6px 0px;
+        // padding: 12px 50px;
+        transition: all .2s ease;
+        text-decoration: none;
+        color: $colorText;
+        background: rgba($colorResalte, .5);
+        border: 2px solid $colorText;
+        border-radius: 10px;
+    
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            border-radius: 8px;
+            // background: rgba($colorResalte, .5);
+            background: rgba($colorResalte, 1);
+            width: 100%;
+            // width: 78px;
+            height: 48px;
+            transition: all .3s ease;
+        }
+
+        .container-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        span {
+            position: relative;
+            font-size: 16px;
+            line-height: 18px;
+            // font-weight: 900;
+            font-weight: 400;
+            // text-transform: uppercase;
+            vertical-align: middle;
+        }
+    
+        svg {
+            position: relative;
+            top: 0;
+            margin-left: 10px;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: $colorText;
+            stroke-width: 2;
+            // transform: translateX(-5px) rotate(0deg);
+            transform: translateX(0) rotate(45deg);
+            transition: all .3s ease;
+        }
+    
+        &:hover {
+            &:before {
+                // width: 100%;
+                // width: 58px;
+                width: 0px;
+                // background: rgba($colorResalte, 1);
+                background: rgba($colorResalte, .5);
+            }
+    
+            svg {
+                transform: translateX(-5px) rotate(0deg);
+                // transform: translateX(0) rotate(45deg);
+            }
+        }
+    
+        // &:active {
+        //     transform: scale(.96);
+        // }
+    }
 }
 
 .selected-projects-list {
