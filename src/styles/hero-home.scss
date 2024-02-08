@@ -44,7 +44,7 @@
     h1 {
         display: block;
         color: $colorHeroText;
-        font-size: 2.5em;
+        font-size: 3.5em;
         font-weight: 700;
 
         text-transform: uppercase;
@@ -81,18 +81,33 @@
     }
 
     .hero-home-content {
-        width: 45%;
+        width: 50%;
         top: 50%;
         left: 5%;
         transform: translate(0%, -50%);
         text-shadow: 0 0 10px rgba($black, .8);
 
         h1 {
-            font-size: 6em;
+            font-size: 3.5em;
         }
 
         p {
             font-size: 0.85em;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-home-content {
+        top: 45%;
+
+        h1 {
+            font-size: 4em;
+        }
+
+        h3 {
+            padding: 0;
+            font-size: 2em;
         }
     }
 }

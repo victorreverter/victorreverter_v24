@@ -10,8 +10,10 @@ const Home = () => {
 
       <div className="hero-home-content">
         <h3>Victor Reverter</h3>
-        <h1>Product Design</h1>
-        <h1>& Web Developer</h1>
+
+        <h1>Full Stack</h1>
+        <h1>Designer</h1>
+
         {/* <p>Product Designer & Web Developer</p> */}
       </div>
     </section>
