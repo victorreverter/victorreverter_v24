@@ -9,12 +9,12 @@ const About = () => {
   return (
     <div className="about">
       {/* <Header /> */}
-      <h3 className='title'>Victor Reverter, Designer & Product Creator</h3>
+      <h3 className='title'>Victor Reverter<br/>Full Stack Designer</h3>
       
       <div className='top-container'>
 
         <div className="subtitle-container">
-          <h4 className='subtitle'>I am Victor Reverter, a designer and product creator. With a long experience in the creation of graphic, web, and identity products. With each project, I push my work to new horizons, focused on creating functional and user-centered digital products with visually stunning designs.</h4>
+          <h4 className='subtitle'>I am Victor Reverter, a full stack designer. With a long experience in the creation of graphic, web, and identity products. With each project, I push my work to new horizons, focused on creating functional and user-centered digital products with visually stunning designs.</h4>
           <h4 className='subtitle'>At this moment in my life, I keep myself looking for improvement and a sense of completion through  endeavors and challenges.</h4>
           <h4 className='subtitle'>Always doing more...</h4>
         </div>
@@ -53,23 +53,22 @@ const About = () => {
 
       <ul>
         <li>Figma</li>
-        <li>Jira</li>
+        <li>Framer</li>
         <li>Adobe CC</li>
         <li>HTML · CSS</li>
-        <li>SCSS</li>
         <li>JavaScript</li>
         <li>React.js</li>
-        <li>Time Management</li>
-        <li>Decision Making</li>
-        <li>Collaboration & Teamwork</li>
+        <li>SCSS</li>
+        <li>Jira</li>
+        <li>Notion</li>
       </ul>
 
       <h5>Other passions</h5>
 
       <ul>
-        <li>Running 1/2 Marathons</li>
+        <li>Run 1/2 Marathons</li>
         <li>Read non-fiction books</li>
-        <li>Drawing & Painting</li>
+        <li>Draw & Paint</li>
         <li>Play Chess</li>
         <li>Learn Languages</li>
       </ul>

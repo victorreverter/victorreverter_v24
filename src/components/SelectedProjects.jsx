@@ -36,7 +36,7 @@ const SelectedProjects = ({ projects }) => {
         <p>Projects</p>
       </Link> */}
 
-      <Link to={"/work"} className='btn-view-allpro-txt'>
+      <Link to={"/work"} className='btn-item'>
         <div className="container-text">
           <span>View All</span>
           <span>Projects</span>

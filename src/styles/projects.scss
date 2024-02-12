@@ -1,3 +1,122 @@
+@import "normalize", "meyer", "basevalues";
+
 .project-container {
     color: red;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $maxWidth;
+
+    .project-header {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+
+        .title-project {
+            width: 100%;
+            font-size: 2em;
+            color: $colorText;
+            text-align: left;
+        }
+
+        .description-project {
+            width: 100%;
+            font-size: 1em;
+            line-height: 1.2em;
+            padding: 0.5em 0;
+            color: $colorTextAlt;
+            font-weight: 100;
+            text-align: left;
+        }
+
+        .section-project {
+            width: 100%;
+            padding: 0 0 0.5em;
+
+            h5, p {
+                text-align: left;
+            }
+
+            h5 {
+                padding: 0 0 0.25em;
+                color: $colorTextAlt;
+                font-weight: 100;
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 1.2em;
+                color: $colorText;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .cover-image-pro {
+        width: 100%;
+    }
+
+    .project-main {
+        width: 100%;
+
+        p {
+            width: 95%;
+            margin: 0 auto;
+            padding: 1em 0;
+
+            font-size: 1em;
+            line-height: 1.2em;
+            text-align: left;
+            color: $colorTextAlt;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .project-container {
+        width: 90%;
+        margin: 0 auto;
+
+        .project-header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .section-project {
+                width: 30%;
+            }
+        }
+    }
+}
+
+// SLIDER ====================
+
+/* external css: flickity.css */
+.carousel {
+    width: 100%;
+    background: #EEE;
+    overflow: hidden;
+}
+
+.gallery-cell {
+    width: 66%;
+    // height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
 }
