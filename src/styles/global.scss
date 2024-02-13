@@ -92,7 +92,8 @@ body::-webkit-scrollbar-thumb {
     color: $colorText;
     background: rgba($colorResalte, .5);
     border: 2px solid $colorText;
-    border-radius: 10px;
+    // border-radius: 10px;
+    border-radius: 50px;
 
     &:before {
         content: "";
@@ -100,7 +101,8 @@ body::-webkit-scrollbar-thumb {
         top: 0;
         left: 0;
         display: block;
-        border-radius: 8px;
+        // border-radius: 8px;
+        border-radius: 50px;
         // background: rgba($colorResalte, .5);
         background: rgba($colorResalte, 1);
         width: 100%;

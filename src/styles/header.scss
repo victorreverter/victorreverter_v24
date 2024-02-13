@@ -227,7 +227,8 @@
             list-style-type: none;
             
             .link-menu {
-                padding: 0 0.8em;
+                padding: 0 0 0 1.2em;
+
                 a {
                     color: $colorHeaderText;
                     text-decoration: none;
@@ -261,13 +262,14 @@
                 height: 40px;
                 position: relative;
                 margin: 0 auto;
+                padding: 0 0.5em 0 1em;
                 // padding: 6px 0px;
                 // padding: 12px 50px;
                 transition: all .2s ease;
                 text-decoration: none;
                 color: $colorText;
                 border: 2px solid $colorText;
-                border-radius: 10px;
+                border-radius: 50px;
 
                 &:before {
                     content: "";

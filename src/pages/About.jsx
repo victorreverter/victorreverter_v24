@@ -9,17 +9,38 @@ const About = () => {
   return (
     <div className="about">
       {/* <Header /> */}
-      <h3 className='title'>Victor Reverter<br/>Full Stack Designer</h3>
+      <h3 className='title'>About me</h3>
       
       <div className='top-container'>
 
         <div className="subtitle-container">
-          <h4 className='subtitle'>I am Victor Reverter, a full stack designer. With a long experience in the creation of graphic, web, and identity products. With each project, I push my work to new horizons, focused on creating functional and user-centered digital products with visually stunning designs.</h4>
-          <h4 className='subtitle'>At this moment in my life, I keep myself looking for improvement and a sense of completion through  endeavors and challenges.</h4>
-          <h4 className='subtitle'>Always doing more...</h4>
+          <h4 className='subtitle'>Full stack designer with 9 years of experience focused in the creation of graphic, web, and identity products with that mojo of make things as better as possible and good to be used.</h4>
+
+          <Link to={"#"} className='btn-item' href="" target="_blank">
+            <div className="container-text">
+              <span>My Resume</span>
+            </div>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </Link>
         </div>
         
         <img className='about-pic' src={aboutImage} alt={"about-pic"} />
+      </div>
+
+      <div className='top-container'>
+
+        <div className="subtitle-container">
+          <h4 className='subtitle'>Growing up in Havana, Cuba, where life is full of colorful vibes and lively rhythms, I moved to Spain when I was quite young. I went to a Design School there, and it was in Web Design that I found my true passion – the cool mix of design, art, and the technical side of things.</h4>
+          <h4 className='subtitle'>From the bustling streets of Havana to the modern scenes of Spain, my experiences have made my view of the world pretty diverse. It's kind of like how Brasília, the modern capital of Brazil, has a mix of influences.</h4>
+          <h4 className='subtitle'>I got into design because, like in the example, I was drawn to it at a young age. Think of it like when they talk about the beige computer sparking an interest in technology. Even though I graduated with top marks in Design, my real excitement comes from the way great design, especially like what you see in Apple products, can totally change how we feel.</h4>
+          <h4 className='subtitle'>As I thought about the impact of awesome designs, I wondered if I could make something that leaves a mark on people too.</h4>
+          <h4 className='subtitle'>Nowadays, using my design skills from different areas, I'm on a mission to make things that go beyond just being useful. I want my designs to make people feel something special, turning everyday moments into something inspiring.</h4>
+          <h4 className='subtitle'></h4>
+        </div>
+        
       </div>
       
 
@@ -37,7 +58,7 @@ const About = () => {
         <li>Frontend Development</li>
       </ul>
 
-      <h5>Softskills</h5>
+      <h5>Soft Skills</h5>
 
       <ul>
         <li>Communication</li>

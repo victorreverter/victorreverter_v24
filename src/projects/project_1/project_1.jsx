@@ -9,11 +9,11 @@ import Flickity from 'react-flickity-component'
 
 import coverImagePro from '../../assets/project_covers/project_1.jpg'
 
-import potusPicOne from './pics/AbrahamLincoln.png'
-import potusPicTwo from './pics/BarackO.png'
-import potusPicThree from './pics/BillC.png'
-import potusPicFour from './pics/DonaldT.png'
-import potusPicFive from './pics/FranklinR.png'
+import potusPicOne from './pics/Solution I.jpg'
+import potusPicTwo from './pics/Solution II.jpg'
+import potusPicThree from './pics/Solution III.jpg'
+import potusPicFour from './pics/Solution IV.jpg'
+import potusPicFive from './pics/Solution V.jpg'
 
 const Project_1 = () => {
 
