@@ -3,7 +3,7 @@
 .about {
     width: 95%;
     // background-color: #f8f8f8;
-    padding: 50px 20px;
+    padding: 50px 0px;
     text-align: center;
     max-width: $maxWidth;
     margin: 0 auto;
@@ -11,12 +11,16 @@
     .about-pic {
         // width: 100%;
         width: 85%;
+        height: fit-content;
         margin: 1em 0;
     }
 
     h5 {
-        padding: 1em 0;
-        font-size: 1.5em;
+        width: 85%;
+        margin: 0 auto;
+        padding: 2em 0 1em;
+        font-size: 0.9em;
+        text-align: start;
         color: $colorText;
     }
 
@@ -25,6 +29,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        width: 90%;
+        margin: 0 auto;
 
         li {
             margin: 0 0 1em 2.5%;
@@ -32,15 +38,30 @@
 
             cursor: pointer;
             border-radius: 10px;
-            font-size: .7em;
+            font-size: .8em;
             color: $colorTextAlt;
-            background: rgba(90, 90, 90, .5);
+            background: rgba(90, 90, 90, .15);
+            border: 1px solid $colorTextAlt;
             transition: .3s;
 
             &:hover {
                 background: rgba(90, 90, 90, .2);
             }
         }
+    }
+
+    .description-about {
+        display: block;
+        width: 85%;
+        max-width: 490px;
+        margin: 0 auto;
+        padding: 1em 0 0;
+        font-size: 1.3em;
+        font-weight: 100;
+        line-height: 1.2em;
+        text-align: justify;
+        text-indent: 3%;
+        color: $colorTextAlt;
     }
 
     // .cv-link {
@@ -71,7 +92,7 @@
         width: 170px;
         height: 48px;
         position: relative;
-        margin: 0px auto 80px;
+        margin: 40px auto;
         padding: 0px 0px 0px 14px;
         // padding: 6px 0px;
         // padding: 12px 50px;
@@ -80,7 +101,7 @@
         color: $colorText;
         background: rgba($colorResalte, .5);
         border: 2px solid $colorText;
-        border-radius: 10px;
+        border-radius: 50px;
 
         &:before {
             content: "";
@@ -88,7 +109,7 @@
             top: 0;
             left: 0;
             display: block;
-            border-radius: 8px;
+            border-radius: 50px;
             // background: rgba($colorResalte, .5);
             background: rgba($colorResalte, 1);
             width: 100%;
@@ -146,42 +167,77 @@
         //     transform: scale(.96);
         // }
     }
+
+    // .paragraph-container {
+    //     display: block;
+    //     width: 85%;
+    //     margin: 0 auto;
+        
+    //     .paragraph {
+    //         padding: 0 0 0.5em;
+    //         text-align: justify;
+    //         color: $colorTextAltGray;
+    //         font-size: 1em;
+    //         font-weight: 400;
+    //         line-height: 1.3em;
+    //     }
+    // }
 }
 
 @media (min-width: 768px) {
     .about {
         width: 90%;
+        padding: 50px 20px;
+
+        .description-about {
+            font-size: 1.5em;
+            text-align: start;
+        }
 
         .top-container {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
     
             .subtitle-container {
-                width: 40%;
-                margin: 0 10% 0 0;
+                // width: 40%;
+                // margin: 0 10% 0 0;
+                width: 50%;
+                margin: initial;
             }
     
             .about-pic {
                 width: 50%;
                 border-radius: 10px;
             }
+
+            .paragraph-container {
+                width: 45%;
+                margin: initial;
+            }
         }
 
         h5 {
-            font-size: 2.5em;
-            padding: 0.5em 0 1em;
+            width: 95%;
+            font-size: 1.5em;
+            padding: 1.2em 0 0.8em;
         }
 
         ul {
             // width: 80%;
-            width: 65%;
+            // width: 65%;
+            width: 100%;
             margin: 0 auto;
+
             li {
                 font-size: 0.9em;
                 color: $colorTextAlt;
-                background: rgba(90, 90, 90, .5);
+                // background: rgba(90, 90, 90, .5);
+
+                &:hover {
+                    background: linear-gradient(25deg,rgba($colorText, .2),rgba($colorText, 0));
+                }
             }
         }
-
     }
 }
