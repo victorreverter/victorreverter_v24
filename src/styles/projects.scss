@@ -43,8 +43,8 @@
 
             h5 {
                 padding: 0 0 0.25em;
-                color: $colorTextAlt;
-                font-weight: 100;
+                color: $colorTextAltGray;
+                font-weight: 400;
             }
 
             p {
@@ -87,6 +87,8 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+
+            padding: 0 0 1em;
 
             .section-project {
                 width: 30%;

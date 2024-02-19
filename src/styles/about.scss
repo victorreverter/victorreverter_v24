@@ -99,24 +99,26 @@
         transition: all .2s ease;
         text-decoration: none;
         color: $colorText;
-        background: rgba($colorResalte, .5);
+        // background: rgba($colorResalte, .5);
+        background: transparent;
         border: 2px solid $colorText;
         border-radius: 50px;
 
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            border-radius: 50px;
-            // background: rgba($colorResalte, .5);
-            background: rgba($colorResalte, 1);
-            width: 100%;
-            // width: 78px;
-            height: 48px;
-            transition: all .3s ease;
-        }
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     display: block;
+        //     border-radius: 50px;
+        //     // background: rgba($colorResalte, .5);
+        //     // background: rgba($colorResalte, 1);
+        //     background: transparent;
+        //     width: 100%;
+        //     // width: 78px;
+        //     height: 48px;
+        //     transition: all .3s ease;
+        // }
 
         .container-text {
             display: flex;
@@ -186,6 +188,10 @@
 
 @media (min-width: 768px) {
     .about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
         width: 90%;
         padding: 50px 20px;
 
@@ -218,16 +224,20 @@
         }
 
         h5 {
-            width: 95%;
+            // width: 95%;
+            width: 35%;
             font-size: 1.5em;
-            padding: 1.2em 0 0.8em;
+            // padding: 1.2em 0 0.8em;
+            padding: initial;
+            margin: 2% 0 0;
         }
 
         ul {
             // width: 80%;
             // width: 65%;
-            width: 100%;
-            margin: 0 auto;
+            width: 65%;
+            margin: 2% auto;
+            justify-content: flex-end;
 
             li {
                 font-size: 0.9em;
