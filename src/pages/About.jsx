@@ -10,7 +10,7 @@ const About = () => {
     <div className="about">
       {/* <Header /> */}
       <h3 className='title'>About me</h3>
-      
+
       <div className='top-container'>
 
         <div className="subtitle-container">
@@ -82,7 +82,7 @@ const About = () => {
         
       </div>
 
-      <div className="block-container">
+      <div className="block-container skills-container">
         <h4>Skills</h4>
 
         <ul>
@@ -95,13 +95,6 @@ const About = () => {
           <li>Storytelling</li>
           <li>Digital Production</li>
           <li>Frontend Development</li>
-        </ul>
-      </div>
-
-      <div className="block-container">
-        <h4>Soft Skills</h4>
-
-        <ul>
           <li>Communication</li>
           <li>Empathy</li>
           <li>Adaptability</li>
@@ -112,31 +105,20 @@ const About = () => {
         </ul>
       </div>
 
-      <div className="block-container">
+      <div className="block-container tools-container">
         <h4>Tools</h4>
 
         <ul>
-          <li>Figma</li>
+          <li>Figma <div className='tool-item figma'></div> </li>
           <li>Framer</li>
           <li>Adobe CC</li>
-          <li>HTML · CSS</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass</li>
           <li>JavaScript</li>
           <li>React.js</li>
-          <li>SCSS</li>
           <li>Jira</li>
           <li>Notion</li>
-        </ul>
-      </div>
-
-      <div className="block-container">
-        <h4>Other passions</h4>
-
-        <ul>
-          <li>Run 1/2 Marathons</li>
-          <li>Read non-fiction books</li>
-          <li>Draw & Paint</li>
-          <li>Play Chess</li>
-          <li>Learn Languages</li>
         </ul>
       </div>
 

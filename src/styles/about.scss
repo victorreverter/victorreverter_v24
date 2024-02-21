@@ -60,10 +60,14 @@
             }
     
             li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
                 margin: 0 0 1em 2.5%;
                 padding: 1em 1em;
     
-                cursor: pointer;
+                // cursor: pointer;
                 border-radius: 10px;
                 font-size: .8em;
                 color: $colorTextAlt;
@@ -74,10 +78,24 @@
                 &:hover {
                     background: rgba(90, 90, 90, .2);
                 }
+
+                .tool-item {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 0 0 1em;
+                    // background: red;
+                    transition: .3s;
+                }
             }
         }
     }
 
+    .tools-container {
+        ul li{
+            padding: 0.25em 0.5em;
+        }
+    }
 
     .description-about {
         display: block;
@@ -176,6 +194,12 @@
     }
 }
 
+.figma {
+    background: url("../assets/tools/figma.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @media (min-width: 768px) {
     .about {
         display: flex;
@@ -219,12 +243,13 @@
             align-items: flex-start;
 
             h4 {
-                width: 100%;
+                // width: 100%;
+                width: 95%;
                 // width: 35%;
                 font-size: 1.5em;
                 // padding: 1.2em 0 0.8em;
                 padding: initial;
-                margin: 2% 0 0;
+                margin: 2% auto 0;
             }
     
             ul {
@@ -239,8 +264,40 @@
                     color: $colorTextAlt;
                     // background: rgba(90, 90, 90, .5);
     
-                    &:hover {
-                        background: linear-gradient(25deg,rgba($colorText, .2),rgba($colorText, 0));
+                    // &:hover {
+                    //     background: linear-gradient(25deg,rgba($colorText, .2),rgba($colorText, 0));
+                    // }
+                }
+            }
+        }
+
+        .skills-container, .tools-container {
+            width: 100%;
+
+            h4 {
+                width: 35%;
+            }
+            ul {
+                width: 65%;
+                justify-content: flex-end;
+            }
+        }
+
+        .tools-container {
+            ul li {
+                cursor: pointer;
+                padding: 1em 1em;
+
+                .tool-item {
+                    display: none;
+                }
+
+                &:hover {
+                    padding: 0.25em 0.5em;
+                    background: linear-gradient(25deg, rgba($colorText, .2), rgba($colorText, 0));
+                    
+                    .tool-item {
+                        display: block;
                     }
                 }
             }
