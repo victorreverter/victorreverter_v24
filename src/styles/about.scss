@@ -68,15 +68,15 @@
                 padding: 1em 1em;
     
                 // cursor: pointer;
-                border-radius: 10px;
+                // border-radius: 10px;
                 font-size: .8em;
                 color: $colorTextAlt;
-                background: rgba(90, 90, 90, .15);
-                border: 1px solid $colorTextAlt;
+                // background: rgba(90, 90, 90, .15);
+                // border: 1px solid $colorTextAlt;
                 transition: .3s;
     
                 &:hover {
-                    background: rgba(90, 90, 90, .2);
+                    // background: rgba(90, 90, 90, .2);
                 }
 
                 .tool-item {
@@ -91,9 +91,18 @@
         }
     }
 
+    .skills-container {
+        ul li {
+            border-radius: 10px;
+            border-bottom: 1px solid $colorText;
+        }
+    }
+
     .tools-container {
         ul li{
             padding: 0.25em 0.5em;
+            border-radius: 10px;
+            border-bottom: 1px solid $colorResalte;
         }
     }
 
@@ -200,6 +209,54 @@
     background-repeat: no-repeat;
 }
 
+.framer {
+    background: url("../assets/tools/Framer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.adobe {
+    background: url("../assets/tools/Adobe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.html {
+    background: url("../assets/tools/HTML.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.css {
+    background: url("../assets/tools/CSS.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.javascript {
+    background: url("../assets/tools/JS.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.react {
+    background: url("../assets/tools/React.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jira {
+    background: url("../assets/tools/JIRA.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.notion {
+    background: url("../assets/tools/Notion.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @media (min-width: 768px) {
     .about {
         display: flex;
@@ -272,7 +329,8 @@
         }
 
         .skills-container, .tools-container {
-            width: 100%;
+            width: 95%;
+            margin: 0 auto;
 
             h4 {
                 width: 35%;

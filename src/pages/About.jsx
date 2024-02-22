@@ -109,16 +109,15 @@ const About = () => {
         <h4>Tools</h4>
 
         <ul>
-          <li>Figma <div className='tool-item figma'></div> </li>
-          <li>Framer</li>
-          <li>Adobe CC</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Sass</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Jira</li>
-          <li>Notion</li>
+          <li>Figma <span className='tool-item figma'></span> </li>
+          <li>Framer <span className='tool-item framer'></span></li>
+          <li>Adobe CC <span className='tool-item adobe'></span></li>
+          <li>HTML <span className='tool-item html'></span></li>
+          <li>CSS <span className='tool-item css'></span></li>
+          <li>JavaScript <span className='tool-item javascript'></span></li>
+          <li>React.js <span className='tool-item react'></span></li>
+          <li>Jira <span className='tool-item jira'></span></li>
+          <li>Notion <span className='tool-item notion'></span></li>
         </ul>
       </div>
 
