@@ -1,21 +1,12 @@
 [
   {
-    "id": 1,
-    "title": "Selec Project 1",
-    "date": "2024",
-    "description": "Description of Project 1.",
-    "image": "/assets/projects/project_1/0_cover.jpg",
-    "alt_text": "project_1",
+    "id": 4,
+    "title": "Selec Project 4",
+    "date": "2021",
+    "description": "Description of Project 4.",
+    "image": "project4.jpg",
+    "alt_text": "project_4",
     "categories": "Branding · UX/UI Design"
-  },
-  {
-    "id": 2,
-    "title": "Selec Project 2",
-    "date": "2023",
-    "description": "Description of Project 2.",
-    "image": "../projects/project_1/cover.jpg",
-    "alt_text": "project_2",
-    "categories": "UX/UI Design"
   },
   {
     "id": 3,
@@ -27,12 +18,21 @@
     "categories": "Branding"
   },
   {
-    "id": 4,
-    "title": "Selec Project 4",
-    "date": "2021",
-    "description": "Description of Project 4.",
-    "image": "project4.jpg",
-    "alt_text": "project_4",
+    "id": 2,
+    "title": "Selec Project 2",
+    "date": "2023",
+    "description": "Description of Project 2.",
+    "image": "../projects/project_1/cover.jpg",
+    "alt_text": "project_2",
+    "categories": "UX/UI Design"
+  },
+  {
+    "id": 1,
+    "title": "Selec Project 1",
+    "date": "2024",
+    "description": "Description of Project 1.",
+    "image": "/assets/projects/project_1/0_cover.jpg",
+    "alt_text": "project_1",
     "categories": "Branding · UX/UI Design"
   }
 ]

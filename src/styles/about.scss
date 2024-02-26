@@ -12,6 +12,7 @@
         width: 100%;
         // width: 85%;
         height: fit-content;
+        aspect-ratio: 291/248;
         margin: 1em 0;
     }
 
@@ -182,7 +183,7 @@
             stroke: $colorText;
             stroke-width: 2;
             // transform: translateX(-5px) rotate(0deg);
-            transform: translateX(0) rotate(45deg);
+            transform: translateX(0) rotate(-45deg);
             transition: all .3s ease;
         }
 
@@ -196,7 +197,7 @@
             }
 
             svg {
-                transform: translateX(-5px) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
                 // transform: translateX(0) rotate(45deg);
             }
         }
@@ -285,7 +286,7 @@
     
             .about-pic {
                 width: 50%;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             .paragraph-container {

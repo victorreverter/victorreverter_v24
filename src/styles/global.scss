@@ -138,7 +138,7 @@ body::-webkit-scrollbar-thumb {
         stroke: $colorText;
         stroke-width: 2;
         // transform: translateX(-5px) rotate(0deg);
-        transform: translateX(0) rotate(45deg);
+        transform: translateX(0) rotate(-45deg);
         transition: all .3s ease;
     }
 
@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
         }
 
         svg {
-            transform: translateX(-5px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
             // transform: translateX(0) rotate(45deg);
         }
     }
