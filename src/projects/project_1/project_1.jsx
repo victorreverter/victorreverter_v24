@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom'
 import '../../styles/global.css'
 import '../../styles/projects.css'
@@ -9,16 +9,33 @@ import Flickity from 'react-flickity-component'
 
 import coverImagePro from '../../assets/project_covers/project_1.jpg'
 
-import potusPicOne from './pics/Solution I.jpg'
-import potusPicTwo from './pics/Solution II.jpg'
-import potusPicThree from './pics/Solution III.jpg'
-import potusPicFour from './pics/Solution IV.jpg'
-import potusPicFive from './pics/Solution V.jpg'
+import AFAPicOne from './pics/Solution I.jpg'
+import AFAPicTwo from './pics/Solution II.jpg'
+import AFAPicThree from './pics/Solution III.jpg'
+import AFAPicFour from './pics/Solution IV.jpg'
+import AFAPicFive from './pics/Solution V.jpg'
 
 const Project_1 = () => {
 
   const flickityOptions = {
     initialIndex: 0
+  }
+
+  useEffect(() => {
+    initFlickity();
+  }, []);
+
+  const carousel = useRef(null);
+
+  async function initFlickity() {
+    if (typeof window !== 'undefined' && carousel.current) {
+      const Flickity = (await import('flickity')).default;
+      new Flickity(carousel.current, {
+        lazyLoad: true,
+        wrapAround: true,
+        autoPlay: true,
+      });
+    }
   }
 
   return (
@@ -48,7 +65,7 @@ const Project_1 = () => {
       <div className="project-main">
         <p>With a clean, responsive and adaptative design the data show the evolution through the history in the role of president. POTUS that is the acronym of President of the United States is the shorter way that I decided to define the title of this project.</p>
 
-        <Flickity
+        {/* <Flickity
           className={'carousel'} // default ''
           elementType={'div'} // default 'div'
           options={flickityOptions} // takes flickity options {}
@@ -56,18 +73,20 @@ const Project_1 = () => {
           reloadOnUpdate // default false
           static // default false
         >
-          <img className="gallery-cell" src={potusPicOne} alt="pic_one" />
-          <img className="gallery-cell" src={potusPicTwo} alt="pic_two" />
-          <img className="gallery-cell" src={potusPicThree} alt="pic_three" />
-          <img className="gallery-cell" src={potusPicFour} alt="pic_four" />
-          <img className="gallery-cell" src={potusPicFive} alt="pic_five" />
-          
-          {/* <div className="gallery-cell"></div>
-          <div className="gallery-cell"></div>
-          <div className="gallery-cell"></div>
-          <div className="gallery-cell"></div>
-          <div className="gallery-cell"></div> */}
-        </Flickity>
+          <img className="gallery-cell" src={AFAPicOne} alt="pic_one" />
+          <img className="gallery-cell" src={AFAPicTwo} alt="pic_two" />
+          <img className="gallery-cell" src={AFAPicThree} alt="pic_three" />
+          <img className="gallery-cell" src={AFAPicFour} alt="pic_four" />
+          <img className="gallery-cell" src={AFAPicFive} alt="pic_five" />
+        </Flickity> */}
+
+        <div ref={carousel} className="carousel">
+          <div><img src={AFAPicOne} /></div>
+          <div><img src={AFAPicTwo} /></div>
+          <div><img src={AFAPicThree} /></div>
+          <div><img src={AFAPicFour} /></div>
+          <div><img src={AFAPicFive} /></div>
+        </div>
       
         <Link to={"https://victorreverter.github.io/potusdata/"} target='_blank' className='btn-item'>
           <div className="container-text">
