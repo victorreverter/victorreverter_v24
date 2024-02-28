@@ -117,7 +117,7 @@ const Header = () => {
         </div>
 
         <div id="menuOptions" className="menu-options" ref={menuOptionsRef}>
-          <div className="links-container">
+          <ul className="links-container">
               <li className="link-menu">
                 <Link to="/" onClick={handleMobileLinkClick}>Home</Link>
               </li>
@@ -130,7 +130,7 @@ const Header = () => {
               <li className="link-menu">
                 <Link to="mailto:victorreverterdesign@gmail.com" onClick={handleMobileLinkClick}>Contact</Link>
               </li>
-          </div>
+          </ul>
           <div className="menu-footer">
               <div className="menu-footer-container-links">
                   <a href="https://www.instagram.com/victorreverter/">Instagram</a>
@@ -144,7 +144,7 @@ const Header = () => {
         </div>
 
         <div id="menuOptionsDesktop" className="menu-options-desktop">
-          <div className="links-container-desktop">
+          <ul className="links-container-desktop">
               <li className="link-menu"><Link to="/">Home</Link></li>
               <li className="link-menu"><Link to="/work">Work</Link></li>
               {/* <li className="link-menu"><Link to="/projects/:id">Projects</Link></li> */}
@@ -160,7 +160,7 @@ const Header = () => {
                   </svg>
                 </Link>
               </li>
-          </div>
+          </ul>
         </div>
     </div>
   );

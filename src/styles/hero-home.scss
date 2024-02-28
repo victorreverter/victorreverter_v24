@@ -3,7 +3,7 @@
 .hero-home {
     display: block;
     position: relative;
-    background: url("../assets/Home_Pic.jpg");
+    background: url("../assets/Home_Pic_Small.webp");
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,7 +77,10 @@
 
 @media (orientation: landscape) {
     .hero-home {
+        background: url("../assets/Home_Pic.webp");
         background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .hero-home-content {
