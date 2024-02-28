@@ -123,6 +123,10 @@
     &:focus {
         outline: 0
     }
+
+    div img {
+        aspect-ratio: 16/9;
+    }
 }
 
 .gallery-cell {
@@ -143,3 +147,46 @@
     color: white;
 }
 // SLIDER ====================
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    // height: 100vh;
+    height: auto;
+    overflow-x: scroll;
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-type: x mandatory;
+}
+
+.slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+}
+
+.slider-container::-webkit-scrollbar {
+    width: 4px;
+    /* width of the entire scrollbar */
+}
+
+.slider-container::-webkit-scrollbar-track {
+    /* background: orange; */
+    background: #0A0A0A;
+    /* color of the tracking area */
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+    background-color: #7D090A;
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    /* border: 3px solid orange; */
+    border: 2px solid transparent;
+    /* creates padding around scroll thumb */
+}
+
+// ==============================================
+

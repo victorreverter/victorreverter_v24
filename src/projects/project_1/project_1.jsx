@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import '../../styles/global.css'
 import '../../styles/projects.css'
 
-import Flickity from 'react-flickity-component'
-
+// import Flickity from 'react-flickity-component'
 //cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js
 
 import coverImagePro from '../../assets/project_covers/project_1.jpg'
@@ -17,26 +16,26 @@ import AFAPicFive from './pics/Solution V.jpg'
 
 const Project_1 = () => {
 
-  const flickityOptions = {
-    initialIndex: 0
-  }
+  // const flickityOptions = {
+  //   initialIndex: 0
+  // }
 
-  useEffect(() => {
-    initFlickity();
-  }, []);
+  // useEffect(() => {
+  //   initFlickity();
+  // }, []);
 
-  const carousel = useRef(null);
+  // const carousel = useRef(null);
 
-  async function initFlickity() {
-    if (typeof window !== 'undefined' && carousel.current) {
-      const Flickity = (await import('flickity')).default;
-      new Flickity(carousel.current, {
-        lazyLoad: true,
-        wrapAround: true,
-        autoPlay: true,
-      });
-    }
-  }
+  // async function initFlickity() {
+  //   if (typeof window !== 'undefined' && carousel.current) {
+  //     const Flickity = (await import('flickity')).default;
+  //     new Flickity(carousel.current, {
+  //       lazyLoad: true,
+  //       wrapAround: true,
+  //       autoPlay: true,
+  //     });
+  //   }
+  // }
 
   return (
     <div className='project-container'>
@@ -80,13 +79,22 @@ const Project_1 = () => {
           <img className="gallery-cell" src={AFAPicFive} alt="pic_five" />
         </Flickity> */}
 
-        <div ref={carousel} className="carousel">
+        {/* <div ref={carousel} className="carousel">
           <div><img src={AFAPicOne} /></div>
           <div><img src={AFAPicTwo} /></div>
           <div><img src={AFAPicThree} /></div>
           <div><img src={AFAPicFour} /></div>
           <div><img src={AFAPicFive} /></div>
-        </div>
+        </div> */}
+
+        {/* <div className="slider-container">  
+          <img className="slider-item" src={AFAPicOne} />
+          <img className="slider-item" src={AFAPicTwo} />
+          <img className="slider-item" src={AFAPicThree} />
+          <img className="slider-item" src={AFAPicFour} />
+        </div>   */}
+
+        
       
         <Link to={"https://victorreverter.github.io/potusdata/"} target='_blank' className='btn-item'>
           <div className="container-text">
