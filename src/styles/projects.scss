@@ -63,16 +63,28 @@
     .project-main {
         width: 100%;
 
-        p {
-            width: 95%;
-            margin: 0 auto;
+        .paragraphs-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             padding: 1em 0;
 
-            font-size: 1em;
-            line-height: 1.2em;
-            font-weight: 100;
-            text-align: left;
-            color: $colorTextAlt;
+            .regular-p, .single-p{
+                width: 95%;
+                margin: 0 auto;
+                padding: 0.5em 0;
+    
+                font-size: 1em;
+                line-height: 1.2em;
+                font-weight: 100;
+                text-align: left;
+                color: $colorTextAlt;
+            }
+        }
+
+        .slick-slider {
+            width: 85%;
+            margin: 0 auto;
         }
     }
 }
@@ -94,99 +106,35 @@
                 width: 30%;
             }
         }
-    }
-}
 
-// SLIDER FLICKITY ====================
+        .project-main {
 
-/* external css: flickity.css */
-.carousel {
-    width: 100%;
-    // background: #EEE;
-    position: relative;
-    overflow: hidden;
+            .paragraphs-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
 
-    button {
-        background: rgba(255, 255, 255, 0.15);
-        width: 30px;
-        height: 30px;
-        margin: 10px 10px;
-        border-radius: 20px;
+                .regular-p{
+                    width: 45%;
+                }
+                
+                .single-p {
+                    width: 95%;
+                }
+            }
 
-        svg {
-            width: 20px;
-            height: 20px;
-            margin: 0 auto;
+            .slick-slider {
+                width: 100%;
+                margin: 0 auto;
+            }
         }
     }
-    
-    &:focus {
-        outline: 0
-    }
-
-    div img {
-        aspect-ratio: 16/9;
-    }
-}
-
-.gallery-cell {
-    width: 66%;
-    // height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-}
-// SLIDER ====================
-
-.slider-container {
-    display: flex;
-    width: 100%;
-    // height: 100vh;
-    height: auto;
-    overflow-x: scroll;
-    /* Vamos a añadir esto 👇 */
-    scroll-snap-type: x mandatory;
-}
-
-.slider-container img {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-
-    /* Vamos a añadir esto 👇 */
-    scroll-snap-align: center;
-}
-
-.slider-container::-webkit-scrollbar {
-    width: 4px;
-    /* width of the entire scrollbar */
-}
-
-.slider-container::-webkit-scrollbar-track {
-    /* background: orange; */
-    background: #0A0A0A;
-    /* color of the tracking area */
-}
-
-.slider-container::-webkit-scrollbar-thumb {
-    background-color: #7D090A;
-    /* color of the scroll thumb */
-    border-radius: 10px;
-    /* roundness of the scroll thumb */
-    /* border: 3px solid orange; */
-    border: 2px solid transparent;
-    /* creates padding around scroll thumb */
 }
 
 // ==============================================
 
+.slick-dots li button:before {
+    color: $colorResalte !important;
+}
