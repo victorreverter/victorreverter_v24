@@ -86,6 +86,50 @@ const Project_1 = () => {
     // Add more items as needed
   ];
 
+  //Timing Up a Cover Pic ==========================
+  const [coverPic, setCoverPic] = useState(false);
+
+  useEffect(() => {
+    // Simulate setting coverPic after a delay (e.g., fetching data)
+    const timer = setTimeout(() => {
+      setCoverPic(true);
+    }, 300); // Adjust the delay as needed
+
+    return () => clearTimeout(timer);
+  }, []); // empty dependency array ensures useEffect runs once after initial render
+
+  //Showing UP built ===============================
+
+  const targetRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Adjust this threshold as needed
+    };
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        setIsVisible(entry.isIntersecting);
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    if (targetRef.current) {
+      observer.observe(targetRef.current);
+    }
+
+    // Cleanup the observer when the component is unmounted
+    return () => {
+      if (targetRef.current) {
+        observer.unobserve(targetRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className='project-container'>
       <div className='project-header'>
@@ -108,7 +152,11 @@ const Project_1 = () => {
         </div>
       </div>
 
-      <img className='cover-image-pro' src={coverImagePro} alt={"about-pic"} />
+      {/* <img className='cover-image-pro' src={coverImagePro} alt={"about-pic"} /> */}
+
+      <div>
+        <img className={`cover-image-pro ${coverPic ? 'cover-pic-visible' : 'cover-pic-hidden'}`} src={coverImagePro} alt={"about-pic"} />
+      </div>
 
       <div className="project-main">
 
@@ -116,7 +164,10 @@ const Project_1 = () => {
           <p className="single-p">December 2022. Argentina won their 3rd FIFA World Cup, this event reveal the likely possibility of a rebrand of their Federation mark. With the Argentina victory against France on December 18th. The problem is revealed. It is Argentina with these new 3rd star need a rebrand?</p>
         </div>
 
-        <img className='single-image' src={SubCover} alt={"sub-cover"} />
+        {/* <img className="single-image" src={SubCover} alt={"sub-cover"} /> */}
+
+        <img ref={targetRef}
+      className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SubCover} alt={"sub-cover"} />
 
         <div className="paragraphs-container">
           <p className="single-p">So then the first step was the Research process. For that I looked for the whole history of AFA logos, but also other "3 stars" proposals from Brazil, Italy & Germany when these federations reach the 3rd World Cup win.</p>

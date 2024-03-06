@@ -169,6 +169,21 @@ body::-webkit-scrollbar-thumb {
 
 /* ================ END BUTTON ================== */
 
+/* ================ SHOWING UP ================== */
+
+.cover-pic-hidden, .hiddened {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show the element when the 'visible' class is added */
+.cover-pic-visible, .visibled {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* ================ END SHOWING UP ================== */
+
 /* ================ X ================== */
 
 /* ================ END X ================== */
