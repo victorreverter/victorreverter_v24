@@ -13,6 +13,13 @@
     min-height: 80vh;
 
     overflow: hidden;
+
+    left: 100%;
+    transition: 0.7s ease-in-out;
+}
+
+.hero-home-activated {
+    left: 0%;
 }
 
 .gradient-over {
@@ -40,6 +47,9 @@
     margin: 0 auto;
 
     z-index: 10;
+
+    opacity: 0;
+    transition: 0.5s;
 
     h1 {
         display: block;
@@ -70,9 +80,11 @@
         font-size: 1.1em;
         line-height: 1.2em;
         color: $colorHeroTextAlt;
-    }
+    }    
+}
 
-
+.hero-home-content-activated {
+    opacity: 1;
 }
 
 @media (orientation: landscape) {
