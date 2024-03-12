@@ -204,6 +204,19 @@
     }
 }
 
+// Config About Transition ===================
+
+#SubtitleContainer, #AboutPic, #BlockExperience {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.about-activated-elem {
+    opacity: 1 !important;
+}
+
+// ===========================================
+
 .figma {
     background: url("../assets/tools/figma.png");
     background-size: cover;

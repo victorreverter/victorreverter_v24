@@ -5,7 +5,7 @@ import '../styles/hero-home.css';
 
 const Home = () => {
   useEffect(() => {
-    console.log('Home component mounted');
+    // console.log('Home component mounted');
     
     const HeroName = document.querySelector('#HeroName');
     const HeroNameContent = document.querySelector('#HeroNameContent');

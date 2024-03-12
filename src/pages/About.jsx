@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../styles/global.css';
 import '../styles/about.css';
@@ -6,6 +6,26 @@ import '../styles/about.css';
 import aboutImage from '../assets/About_Pic.jpg';
 
 const About = () => {
+  
+  useEffect(() => {
+    const SubtitleContainer = document.querySelector('#SubtitleContainer');
+    const AboutPic = document.querySelector('#AboutPic');
+    const BlockContainer = document.querySelector('#BlockExperience');
+  
+    setTimeout(() => {
+      SubtitleContainer.classList.add('about-activated-elem');
+    }, 200);
+  
+    setTimeout(() => {
+      AboutPic.classList.add('about-activated-elem');
+    }, 700);
+
+    setTimeout(() => {
+      BlockContainer.classList.add('about-activated-elem');
+    }, 700);
+
+  }, []);
+
   return (
     <div className="about">
       {/* <Header /> */}
@@ -13,7 +33,7 @@ const About = () => {
 
       <div className='top-container'>
 
-        <div className="subtitle-container">
+        <div id="SubtitleContainer" className="subtitle-container">
           <h4 className='description-about'>Full stack designer with 9 years of experience focused in the creation of graphic, web, and identity products with that mojo of make things as better as possible and good to be used.</h4>
           <h4 className='description-about'>Because of my life and experiences working on creative process I think that some key points in everything we do are the passion, keep sharpening skills and always set upper goals.</h4>
 
@@ -30,10 +50,10 @@ const About = () => {
           </Link>
         </div>
         
-        <img className='about-pic' src={aboutImage} alt={"about-pic"} />
+        <img id='AboutPic' className='about-pic' src={aboutImage} alt={"about-pic"} />
       </div>
 
-      <div className="block-container">
+      <div id="BlockExperience" className="block-container">
         <h4>Experience</h4>
 
         <ul className='experience-container'>
