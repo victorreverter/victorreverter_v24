@@ -4,8 +4,8 @@
     "title": "Selec Project 4",
     "date": "2021",
     "description": "Description of Project 4.",
-    "image": "project4.jpg",
-    "alt_text": "project_4",
+    "image": "project_4_big",
+    "alt_text": "project_4_big",
     "categories": "Branding · UX/UI Design"
   },
   {
@@ -13,8 +13,8 @@
     "title": "Selec Project 3",
     "date": "2022",
     "description": "Description of Project 3.",
-    "image": "project3.jpg",
-    "alt_text": "project_3",
+    "image": "project_3_big",
+    "alt_text": "project_3_big",
     "categories": "Branding"
   },
   {
@@ -22,17 +22,17 @@
     "title": "Selec Project 2",
     "date": "2023",
     "description": "Description of Project 2.",
-    "image": "../projects/project_1/cover.jpg",
-    "alt_text": "project_2",
+    "image": "project_2_big",
+    "alt_text": "project_2_big",
     "categories": "UX/UI Design"
   },
   {
     "id": 1,
-    "title": "Selec Project 1",
-    "date": "2024",
-    "description": "Description of Project 1.",
-    "image": "/assets/projects/project_1/0_cover.jpg",
-    "alt_text": "project_1",
-    "categories": "Branding · UX/UI Design"
+    "title": "AFA Rebrand",
+    "date": "2023",
+    "description": "A rebranding after the Argentina World Cup's victory in 2022.",
+    "image": "project_1_big",
+    "alt_text": "project_1_big",
+    "categories": "Branding"
   }
 ]

@@ -133,22 +133,22 @@ const Project_1 = () => {
   return (
     <div className='project-container'>
       <div className='project-header'>
-        <h2 className='title-project'>Project Title</h2>
-        <h4 className='description-project'>A data showcase related with the Presidents of the United States. This is a tool and also an example of in this case historic data through the years.</h4>
+        <h2 className='title-project'>AFA Rebrand</h2>
+        <h4 className='description-project'>A branding redesign after the Argentina World Cup's victory in 2022.</h4>
         
         <div className="section-project">
           <h5>Date</h5>
-          <p>2024</p>
+          <p>2023</p>
         </div>
 
         <div className="section-project">
           <h5>Role</h5>
-          <p>Product Designer & also the Brand elaborator</p>
+          <p>Brand Designer</p>
         </div>
 
         <div className="section-project">
           <h5>Category</h5>
-          <p>Branding · UX</p>
+          <p>Branding</p>
         </div>
       </div>
 

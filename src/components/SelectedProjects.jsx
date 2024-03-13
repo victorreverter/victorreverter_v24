@@ -18,7 +18,7 @@ const SelectedProjects = ({ projects }) => {
             <Link to={`/project_${project.id}`}>
               <img 
                 // src={project.image}
-                src={ coverProjects(`./${project.alt_text}.jpg`) }
+                src={ coverProjects(`./${project.image}.jpg`) }
                 alt={project.alt_text} />
               
               <div className='project-side-container'>

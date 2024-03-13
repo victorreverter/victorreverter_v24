@@ -39,7 +39,7 @@ const About = () => {
 
           {/* <h4 className='description-about'>Currently working as Web Design Manager at Telecoming, and when I am not designing I am running Half Marathons, reading, playing chess and more.</h4> */}
 
-          <Link to={"#"} className='cv-link-btn' href="" target="_blank">
+          <Link to={'https://drive.google.com/file/d/12XN2ZoLcX3i60zjkFP99iNn-MrJYRhqr/view?usp=drive_link'} className='cv-link-btn' target="_blank">
             <div className="container-text">
               <span>My Resume</span>
             </div>
@@ -108,20 +108,28 @@ const About = () => {
         <ul>
           <li>Graphic Design</li>
           <li>Branding Design</li>
-          <li>UX/UI</li>
+          <li>Product Design</li>
           <li>Web Design</li>
+          <li>UX/UI</li>
+          <li>Design Thinking</li>
           <li>Design Management</li>
           <li>Team Work</li>
+          <li>Collaboration</li>
           <li>Storytelling</li>
           <li>Digital Production</li>
           <li>Frontend Development</li>
           <li>Communication</li>
           <li>Empathy</li>
           <li>Adaptability</li>
+          <li>Accessibility</li>
           <li>Problem Solving</li>
           <li>Time Management</li>
           <li>Decision Making</li>
-          <li>Collaboration & Teamwork</li>
+          <li>Performance</li>
+          <li>Prototyping</li>
+          <li>Continuous Learning</li>
+          <li>Agile Methods</li>
+          <li>Public Speaking</li>
         </ul>
       </div>
 

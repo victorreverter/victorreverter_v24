@@ -4,7 +4,7 @@
     "title": "Project 4",
     "date": "2021",
     "description": "Description of Project 4.",
-    "image": "project4.jpg",
+    "image": "project_4",
     "alt_text": "project_4",
     "categories": "Branding · UX/UI Design"
   },
@@ -13,7 +13,7 @@
     "title": "Project 3",
     "date": "2022",
     "description": "Description of Project 3.",
-    "image": "project3.jpg",
+    "image": "project_3",
     "alt_text": "project_3",
     "categories": "Branding"
   },
@@ -22,17 +22,17 @@
     "title": "Project 2",
     "date": "2023",
     "description": "Description of Project 2.",
-    "image": "../projects/project_1/cover.jpg",
+    "image": "project_2",
     "alt_text": "project_2",
     "categories": "UX/UI Design"
   },
   {
     "id": 1,
-    "title": "Project 1",
-    "date": "2024",
-    "description": "Description of Project 1.",
-    "image": "/assets/projects/project_1/0_cover.jpg",
+    "title": "AFA Rebrand",
+    "date": "2023",
+    "description": "A rebranding after the Argentina World Cup's victory in 2022.",
+    "image": "project_1",
     "alt_text": "project_1",
-    "categories": "Branding · UX/UI Design"
+    "categories": "Branding"
   }  
 ]
