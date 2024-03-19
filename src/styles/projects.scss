@@ -1,7 +1,7 @@
 @import "normalize", "meyer", "basevalues";
 
 .project-container {
-    color: red;
+    // color: red;
 }
 
 .project-container {
@@ -117,6 +117,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+            width: 100%;
 
             padding: 0 0 1em;
 
@@ -178,5 +179,5 @@
 // ==============================================
 
 .slick-dots li button:before {
-    color: $colorResalte !important;
+    color: $colorText !important;
 }
