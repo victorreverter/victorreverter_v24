@@ -102,7 +102,7 @@
 
         width: 95%;
         max-width: $maxWidth;
-        padding: 5em 0 0;
+        padding: 4em 0 0;
 
         position: absolute;
         top: 35%;
@@ -113,10 +113,10 @@
         transition: .6s ease-in-out;
 
         .link-menu {
-            font-size: 3em;
+            font-size: 2.5em;
             font-weight: 600;
 
-            margin: 0.6em 0;
+            margin: 0.4em 0;
             color: $colorText;
             list-style-type: none;
 

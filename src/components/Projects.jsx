@@ -1,13 +1,22 @@
 // import React, { useEffect, useState } from 'react';
-import React from 'react';
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../styles/work.css';
 
 const coverProjects = require.context('../assets/project_covers', true)
 
 const Projects = ({ projects }) => {
+    useEffect(() => {
+        const ProjectsContainer = document.querySelector('#ProjectsContainer');
+    
+        setTimeout(() => {
+            ProjectsContainer.classList.add('projects-activated');
+        }, 500);
+
+    }, []);
+
     return (
-        <section className="projects">
+        <section id="ProjectsContainer" className="projects">
             {/* <h2 className='title'>Projects</h2>
             <h4 className='subtitle'>Check out projects where I have had the pleasure of working on</h4> */}
             
@@ -23,7 +32,7 @@ const Projects = ({ projects }) => {
                             <h5 className='item-categories'>{project.categories}</h5>
                             <img 
                                 // src={project.image} 
-                                src={ coverProjects(`./${project.alt_text}.jpg`) }
+                                src={ coverProjects(`./${project.image}.jpg`) }
                                 alt={project.title} />
                         </Link>
                     </div>

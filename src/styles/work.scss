@@ -1,5 +1,15 @@
 @import "normalize", "meyer", "basevalues";
 
+#ProjectsContainer {
+    display: block;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.projects-activated {
+    opacity: 1 !important;
+}
+
 .projects {
     background-color: $black;
     // padding: 50px 20px;

@@ -164,9 +164,9 @@ const Project_1 = () => {
           <p className="single-p">December 2022. Argentina won their 3rd FIFA World Cup, this event reveal the likely possibility of a rebrand of their Federation mark. With the Argentina victory against France on December 18th. The problem is revealed. It is Argentina with these new 3rd star need a rebrand?</p>
         </div>
 
-        {/* <img className="single-image" src={SubCover} alt={"sub-cover"} /> */}
+        <img className="single-image" src={SubCover} alt={"sub-cover"} />
 
-        <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SubCover} alt={"sub-cover"} />
+        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SubCover} alt={"sub-cover"} /> */}
 
         <div className="paragraphs-container">
           <p className="single-p">So then the first step was the Research process. For that I looked for the whole history of AFA logos, but also other "3 stars" proposals from Brazil, Italy & Germany when these federations reach the 3rd World Cup win.</p>
@@ -181,7 +181,9 @@ const Project_1 = () => {
           <p className="single-p">Then after these research and many sketches and proposals I pick this one as the new brand for Argentina & AFA.</p>
         </div>
 
-        <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SolutionI} alt={"solution-1"} />
+        <img className="single-image" src={SolutionI} alt={"solution-1"} />
+
+        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SolutionI} alt={"solution-1"} /> */}
 
         <div className="paragraphs-container">
           <p className="regular-p">The proposal consist in a clean & all integrated elements logo except the 3 stars that have been placed right above the main part of the logo. Also we choose more vibrant colors and pulished the shapes to give a more modern appearance.</p>
@@ -215,7 +217,9 @@ const Project_1 = () => {
 
         <Carousel items={carouselItemsII} />
 
-        <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryII} alt={"stationatery-2"} />
+        <img className="single-image" src={StationateryII} alt={"stationatery-2"} />
+        
+        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryII} alt={"stationatery-2"} /> */}
 
         <div className="paragraphs-container">
           <p className="single-p">In this modern era where social media presency is crutial and very important, I present some elements from the brand applied into this world.</p>
@@ -227,7 +231,9 @@ const Project_1 = () => {
           <p className="single-p">Finally but not less, the stationatery elements that bring support to the brand will be show right below as examples about how the brand will or could be place in different elements, objects and products.</p>
         </div>
 
-        <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryI} alt={"stationatery-1"} />
+        <img className="single-image" src={StationateryI} alt={"stationatery-1"} />
+
+        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryI} alt={"stationatery-1"} /> */}
     
         <Carousel items={carouselItemsIV} />
 
@@ -235,7 +241,9 @@ const Project_1 = () => {
           <p className="single-p">At resume create this rebrand was a really good challenge because always deal with an important brand is a challenge but also an opportunity for show up skills and capacities.</p>
         </div>
 
-        <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={ProjectScreen} alt={"project-screen"} />
+        <img className="single-image" src={ProjectScreen} alt={"project-screen"} />
+
+        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={ProjectScreen} alt={"project-screen"} /> */}
       
         {/* <Link to={"https://victorreverter.github.io/potusdata/"} target='_blank' className='btn-item'>
           <div className="container-text">
