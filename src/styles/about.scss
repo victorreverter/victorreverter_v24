@@ -361,15 +361,15 @@
                 padding: 1em 1em;
 
                 .tool-item {
-                    display: none;
+                    // display: none;
                 }
 
                 &:hover {
-                    padding: 0.25em 0.5em;
+                    // padding: 0.25em 0.5em;
                     background: linear-gradient(25deg, rgba($colorText, .2), rgba($colorText, 0));
                     
                     .tool-item {
-                        display: block;
+                        // display: block;
                     }
                 }
             }

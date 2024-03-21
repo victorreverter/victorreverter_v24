@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // import './Footer.css';
 import '../styles/footer.css';
 
-import FooterLogo from '../assets/Big_VR_Logo_Light.png'
+import FooterLogo from '../assets/FooterLogo.png'
 
 const Footer = () => {
   return (
@@ -17,13 +17,13 @@ const Footer = () => {
           <Link to="/">Home</Link>
           <Link to="/work">Work</Link>
           <Link to="/about">About</Link>
-          <a href="">Blog</a>
+          <Link to="" target='_blank'>Blog</Link>
         </div>
         <div className="menu-footer-links">
-            <a href="https://www.linkedin.com/in/victor-manuel-herrera-reverter-a9312348/">LinkedIn</a>
-            <a href="">X (Twitter)</a>
-            <a href="https://www.instagram.com/victorreverter/">Instagram</a>
-            <a href="https://www.behance.net/VictorReverter">Behance</a>
+            <Link to="https://www.linkedin.com/in/victorreverter/" target='_blank'>LinkedIn</Link>
+            <Link to="#" target='_blank'>X (Twitter)</Link>
+            <Link to="https://www.instagram.com/victorreverter/" target='_blank'>Instagram</Link>
+            <Link to="https://www.behance.net/VictorReverter" target='_blank'>Behance</Link>
         </div>
         <p className='copyright'>&copy; 2024 Victor Reverter. All rights reserved.</p>
       </div>
