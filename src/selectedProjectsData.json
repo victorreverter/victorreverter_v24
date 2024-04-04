@@ -1,14 +1,5 @@
 [
   {
-    "id": 4,
-    "title": "Selec Project 4",
-    "date": "2021",
-    "description": "Description of Project 4.",
-    "image": "project_4_big",
-    "alt_text": "project_4_big",
-    "categories": "Branding · UX/UI Design"
-  },
-  {
     "id": 3,
     "title": "Selec Project 3",
     "date": "2022",
