@@ -19,20 +19,20 @@
   },
   {
     "id": 2,
-    "title": "Project 2",
-    "date": "2023",
-    "description": "Description of Project 2.",
-    "image": "project_2",
-    "alt_text": "project_2",
-    "categories": "UX/UI Design"
-  },
-  {
-    "id": 1,
     "title": "AFA Rebrand",
     "date": "2023",
     "description": "A rebranding after the Argentina World Cup's victory in 2022.",
+    "image": "project_2",
+    "alt_text": "project_2",
+    "categories": "Branding"
+  },
+  {
+    "id": 1,
+    "title": "FOT App",
+    "date": "2022",
+    "description": "Food on time is a seasoned fruits and veggies app for a better life.",
     "image": "project_1",
     "alt_text": "project_1",
-    "categories": "Branding"
+    "categories": "UX Case"
   }  
 ]

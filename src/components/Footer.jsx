@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div className="menu-footer-links">
             <Link to="https://www.linkedin.com/in/victorreverter/" target='_blank'>LinkedIn</Link>
-            <Link to="#" target='_blank'>X (Twitter)</Link>
+            <Link to="https://twitter.com/victor_reverter" target='_blank'>X (Twitter)</Link>
             <Link to="https://www.instagram.com/victorreverter/" target='_blank'>Instagram</Link>
             <Link to="https://www.behance.net/VictorReverter" target='_blank'>Behance</Link>
         </div>

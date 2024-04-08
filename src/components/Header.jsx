@@ -128,7 +128,7 @@ const Header = () => {
                 <Link to="/about" onClick={handleMobileLinkClick}>About</Link>
               </li>
               <li className="link-menu">
-                <Link to="https://www.marca.com/" onClick={handleMobileLinkClick} target='_blank'>Blog</Link>
+                <Link to="https://medium.com/thereverter" onClick={handleMobileLinkClick} target='_blank'>Blog</Link>
               </li>
               <li className="link-menu">
                 <Link to="mailto:victorreverterdesign@gmail.com" onClick={handleMobileLinkClick}>Contact</Link>
@@ -136,11 +136,10 @@ const Header = () => {
           </ul>
           <div className="menu-footer">
               <div className="menu-footer-container-links">
-                  <a href="https://www.linkedin.com/in/victor-manuel-herrera-reverter-a9312348/">LinkedIn</a>
-                  <a href="#">X (Twitter)</a>
-                  <a href="https://www.instagram.com/victorreverter/">Instagram</a>
-                  <a href="https://www.behance.net/VictorReverter">Behance</a>
-                  {/* <a href="#">Dribble</a> */}
+                  <Link to="https://www.linkedin.com/in/victorreverter/" target='_blank'>LinkedIn</Link>
+                  <Link to="https://twitter.com/victor_reverter" target='_blank'>X (Twitter)</Link>
+                  <Link to="https://www.instagram.com/victorreverter/" target='_blank'>Instagram</Link>
+                  <Link to="https://www.behance.net/VictorReverter" target='_blank'>Behance</Link>
               </div>
               <p>© 2024 Victor Reverter. All rights reserved.</p>
           </div>
@@ -152,7 +151,7 @@ const Header = () => {
               <li className="link-menu"><Link to="/work">Work</Link></li>
               {/* <li className="link-menu"><Link to="/projects/:id">Projects</Link></li> */}
               <li className="link-menu"><Link to="/about">About</Link></li>
-              <li className="link-menu"><Link to="https://www.marca.com/" target='_blank'>Blog</Link></li>
+              <li className="link-menu"><Link to="https://medium.com/thereverter" target='_blank'>Blog</Link></li>
               <li className="link-menu">
                 <Link className='btn-view-allpro-txt' to="mailto:victorreverterdesign@gmail.com">
                   <div className="container-text">
