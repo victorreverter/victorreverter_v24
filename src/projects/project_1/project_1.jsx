@@ -5,28 +5,15 @@ import '../../styles/projects.css'
 
 import coverImagePro from './pics/Cover.jpg'
 
-import SubCover from './pics/WorldCupWin.jpg'
+import IntroBackground from './pics/Intro_Background.jpg'
+import IntroAudience from './pics/Intro_Audience.png'
+import IntroSolution from './pics/Intro_Solution.jpg'
 
-import LogoStoryI from './pics/Previous_AFA_Logos.jpg'
-import LogoStoryII from './pics/Other_Champions_3_Stars.jpg'
-
-import SolutionI from './pics/Solution_I.jpg'
-
-import SolutionII from './pics/Solution_II.jpg'
-import SolutionIII from './pics/Solution_III.jpg'
-import SolutionIV from './pics/Solution_IV.jpg'
-import SolutionV from './pics/Solution_V.jpg'
+import DesignProcess from './pics/Design_Process.png'
 
 import AFASolution6 from './pics/Solution_VI.jpg'
 import AFASolution7 from './pics/Solution_VII.jpg'
 import AFASolution8 from './pics/Solution_VIII.jpg'
-
-import ColorI from './pics/Color_I.jpg'
-import ColorII from './pics/Color_II.jpg'
-
-import StationateryI from './pics/Stationatery_1.jpg'
-import StationateryII from './pics/Stationatery_2.jpg'
-
 
 import ProjectScreen from './pics/Project_Screen.jpg'
 
@@ -52,38 +39,6 @@ const Project_1 = () => {
 
     return () => clearTimeout(timer);
   }, []); // empty dependency array ensures useEffect runs once after initial render
-
-  //Showing UP built ===============================
-
-  const targetRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5, // Adjust this threshold as needed
-    };
-
-    const callback = (entries) => {
-      entries.forEach((entry) => {
-        setIsVisible(entry.isIntersecting);
-      });
-    };
-
-    const observer = new IntersectionObserver(callback, options);
-
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
-    }
-
-    // Cleanup the observer when the component is unmounted
-    return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
-      }
-    };
-  }, []);
 
   return (
     <div className='project-container'>
@@ -115,16 +70,62 @@ const Project_1 = () => {
 
       <div className="project-main">
 
+        <h2 className="title-section">1. Introduction</h2>
+        {/* <h2 className="subtitle-section">1.1 Introduction</h2> */}
+        {/* <h1 className="sub-subtitle-section">Defining Scenario</h1> */}
+
+        <h1 className="sub-subtitle-section">Background</h1>
+
         <div className="paragraphs-container">
-          <p className="single-p">December 2022. Argentina won their 3rd FIFA World Cup, this event reveal the likely possibility of a rebrand of their Federation mark. With the Argentina victory against France on December 18th. The problem is revealed. It is Argentina with these new 3rd star need a rebrand?</p>
+          <p className="single-p">This UX Case is based in an already existed product, that is a searcher of seasoned fruits and vegetables on the European Area made by EUFIC.</p>
         </div>
 
-        <img className="single-image" src={SubCover} alt={"sub-cover"} />
+        <img className="single-image" src={IntroBackground} alt={"intro-background"} />
+
+        <h1 className="sub-subtitle-section">Goals defined</h1>
 
         <div className="paragraphs-container">
+
+          <h4 className="header-p">1. Refine</h4>
+          <p className="single-p">Pulish through an app the new experience, visually and in usability. Unifiy and modernize aesthetics.</p>
+
+          <h4 className="header-p">2. Scale</h4>
+          <p className="single-p">Having the base of  the original products, scale the product making it more useful for the user.</p>
+
+          <h4 className="header-p">3. Spread</h4>
+          <p className="single-p">Having this refined and in scaling process product, spread with an app and give better access to this knowledge.</p>
+        </div>
+
+        <h1 className="sub-subtitle-section">Audience</h1>
+
+        <div className="paragraphs-container">
+          <p className="single-p">This UX Case is based in an already existed product, that is a searcher of seasoned fruits and vegetables on the European Area made by EUFIC.</p>
+        </div>
+
+        <img className="single-image" src={IntroAudience} alt={"intro-audience"} />
+
+        <h1 className="sub-subtitle-section">Solution</h1>
+
+        <div className="paragraphs-container">
+          <p className="single-p">And after the execution of a whole design process, we’re here with this product solution. I will explain it in the following screens.</p>
+        </div>
+
+        <img className="single-image" src={IntroSolution} alt={"intro-solution"} />
+
+        <h2 className="title-section">2. Process</h2>
+
+        <div className="paragraphs-container">
+          <p className="single-p">The case design was  developed using the following 4 steps:</p>
+        </div>
+
+        <img className="single-image" src={DesignProcess} alt={"design-process"} />
+
+        <h2 className="subtitle-section">2.1 Empathy</h2>
+
+        {/* <div className="paragraphs-container">
           <p className="regular-p">The proposal consist in a clean & all integrated elements logo except the 3 stars that have been placed right above the main part of the logo. Also we choose more vibrant colors and pulished the shapes to give a more modern appearance.</p>
           <p className="regular-p">In other hand I do not only redesign the main logo but also create another alternative based in history. Each proposal have one variant, the AFA has one without stars and one with, meanwhile the main logo has an outline variant.</p>
-        </div>
+        </div> */}
 
         {/* <div className="multi-pic-block">
           <img className='multi-image' src={SolutionII} alt={"solution-2"} />
@@ -133,7 +134,7 @@ const Project_1 = () => {
           <img className='multi-image' src={SolutionV} alt={"solution-5"} />
         </div> */}
 
-        <Carousel items={carouselItemsI} />
+        {/* <Carousel items={carouselItemsI} /> */}
 
         <img className="single-image" src={ProjectScreen} alt={"project-screen"} />
       

@@ -80,12 +80,43 @@
                 margin: 0 auto 0.5em;
             }
         }
+
+        .title-section, .subtitle-section, .sub-subtitle-section {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            padding: 1em 0;
+
+            font-size: 2em;
+            text-align: center;
+            color: $colorText;
+        }
+
+        .subtitle-section {
+            font-size: 1.5em;
+        }
+
+        .sub-subtitle-section {
+            padding: 1em 0 0.5em;
+            font-size: 1.2em;
+        }
         
         .paragraphs-container {
             display: flex;
             flex-direction: column;
             width: 100%;
-            padding: 1em 0;
+            padding: 0.25em 0;
+
+            .header-p {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0.5em 0;
+            
+                font-size: 1em;
+                text-align: center;
+                color: $colorText;
+            }
 
             .regular-p, .single-p{
                 width: 95%;
@@ -169,7 +200,9 @@
                 }
                 
                 .single-p {
-                    width: 95%;
+                    width: 60%;
+                    text-align: center;
+                    // width: 95%;
                 }
             }
 
