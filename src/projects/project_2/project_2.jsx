@@ -186,8 +186,12 @@ const Project_1 = () => {
         {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SolutionI} alt={"solution-1"} /> */}
 
         <div className="paragraphs-container">
-          <p className="regular-p">The proposal consist in a clean & all integrated elements logo except the 3 stars that have been placed right above the main part of the logo. Also we choose more vibrant colors and pulished the shapes to give a more modern appearance.</p>
-          <p className="regular-p">In other hand I do not only redesign the main logo but also create another alternative based in history. Each proposal have one variant, the AFA has one without stars and one with, meanwhile the main logo has an outline variant.</p>
+          <div className="split-block">
+            <p className="regular-p">The proposal consist in a clean & all integrated elements logo except the 3 stars that have been placed right above the main part of the logo. Also we choose more vibrant colors and pulished the shapes to give a more modern appearance.</p>
+          </div>
+          <div className="split-block">
+            <p className="regular-p">In other hand I do not only redesign the main logo but also create another alternative based in history. Each proposal have one variant, the AFA has one without stars and one with, meanwhile the main logo has an outline variant.</p>
+          </div>
         </div>
 
         <div className="multi-pic-block">

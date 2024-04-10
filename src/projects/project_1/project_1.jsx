@@ -11,6 +11,9 @@ import IntroSolution from './pics/Intro_Solution.jpg'
 
 import DesignProcess from './pics/Design_Process.png'
 
+import TheEnvironment from './pics/2.1_The_Environment.png'
+import TwoKeyProblem from './pics/2.1_Two_Key_Problem.png'
+
 import AFASolution6 from './pics/Solution_VI.jpg'
 import AFASolution7 from './pics/Solution_VII.jpg'
 import AFASolution8 from './pics/Solution_VIII.jpg'
@@ -72,9 +75,9 @@ const Project_1 = () => {
 
         <h2 className="title-section">1. Introduction</h2>
         {/* <h2 className="subtitle-section">1.1 Introduction</h2> */}
-        {/* <h1 className="sub-subtitle-section">Defining Scenario</h1> */}
+        {/* <h3 className="sub-subtitle-section">Defining Scenario</h3> */}
 
-        <h1 className="sub-subtitle-section">Background</h1>
+        <h3 className="sub-subtitle-section">Background</h3>
 
         <div className="paragraphs-container">
           <p className="single-p">This UX Case is based in an already existed product, that is a searcher of seasoned fruits and vegetables on the European Area made by EUFIC.</p>
@@ -82,7 +85,7 @@ const Project_1 = () => {
 
         <img className="single-image" src={IntroBackground} alt={"intro-background"} />
 
-        <h1 className="sub-subtitle-section">Goals defined</h1>
+        <h3 className="sub-subtitle-section">Goals defined</h3>
 
         <div className="paragraphs-container">
 
@@ -96,7 +99,7 @@ const Project_1 = () => {
           <p className="single-p">Having this refined and in scaling process product, spread with an app and give better access to this knowledge.</p>
         </div>
 
-        <h1 className="sub-subtitle-section">Audience</h1>
+        <h3 className="sub-subtitle-section">Audience</h3>
 
         <div className="paragraphs-container">
           <p className="single-p">This UX Case is based in an already existed product, that is a searcher of seasoned fruits and vegetables on the European Area made by EUFIC.</p>
@@ -104,7 +107,7 @@ const Project_1 = () => {
 
         <img className="single-image" src={IntroAudience} alt={"intro-audience"} />
 
-        <h1 className="sub-subtitle-section">Solution</h1>
+        <h3 className="sub-subtitle-section">Solution</h3>
 
         <div className="paragraphs-container">
           <p className="single-p">And after the execution of a whole design process, we’re here with this product solution. I will explain it in the following screens.</p>
@@ -121,6 +124,63 @@ const Project_1 = () => {
         <img className="single-image" src={DesignProcess} alt={"design-process"} />
 
         <h2 className="subtitle-section">2.1 Empathy</h2>
+
+        <h3 className="sub-subtitle-section">The Environment</h3>
+
+        <div className="paragraphs-container">
+          <p className="single-p">Considering that the those are non-profit organizations.</p>
+          <p className="single-p">This "market" or environment is defined by two principal methods for displaying and sharing information about seasonal fruits and vegetables: lists and search.</p>
+          <p className="single-p">We also discovered that there are not very extensive guides available for other regions, such as LATAM or Asia, in contrast to Europe and the US.</p>
+          <p className="single-p">So this position EUFIC as the main reference in Europe for search seasoned fruits and vegetables.</p>
+        </div>
+
+        <img className="single-image" src={TheEnvironment} alt={"the-environment"} />
+
+        <h3 className="sub-subtitle-section">Two key problems</h3>
+
+        <div className="paragraphs-container">
+          <p className="single-p">Two key points are relevant in the research of this need the health and the economical ones. Speaking about this points, we see that make more accessible the knowledge to as much people as possible is crucial for a better health but also to alleviate the families and people expenses.</p>
+        </div>
+
+        <img className="single-image" src={TwoKeyProblem} alt={"two-key-problem"} />
+
+        <h2 className="subtitle-section">Health problems key points</h2>
+
+        <div className="paragraphs-container">
+          <p className="single-p">In the following screens, we will explain the key health-related findings concerning food habits. The key points in this field are Diabetes and Immune system.</p>
+        </div>
+
+        <div className="paragraphs-container">
+          <div className="split-block">
+            <h3 className="sub-subtitle-section">Diabetes</h3>
+            <p className="regular-p">Talking about diabetes is strictly related with obesity and overweight. In 2000, there were an estimated 16.8 million adults with diabetes in the European Union (EU) by 2019, this number had increased to 32.3 million, this represents an increase of 89% over 19 years. The prevalence of diabetes in the EU is expected to continue to increase, reaching 38 million by 2030.</p>
+          </div>
+          <div className="split-block">
+            <h3 className="sub-subtitle-section">Immune system</h3>
+            <p className="regular-p">Immune system is really related with a healthy diet, a diet that is high in processed foods, sugary drinks, and unhealthy fats can also weaken the immune system. These foods can damage the cells of the immune system and make it difficult for them to function properly. Apart whole grains, fatty fish, yogurt and lean protein, fruits and veggies are an essential pillar of any immune system boost strategy.</p>
+          </div>
+        </div>
+
+         <div className="paragraphs-container">
+          <p className="single-p">The increase in diabetes in Europe is due to a number of factors.</p>
+          <h4 className="header-p">Overweight and obesity</h4>
+          <p className="single-p">Obesity is the single most important risk factor for type 2 diabetes. The prevalence of obesity in the EU has increased significantly in recent years, and this is a major driver of the increase in diabetes.</p>
+          
+          <h4 className="header-p">Physical inactivity</h4>
+          <p className="single-p">Physical inactivity is another important risk factor for type 2 diabetes. The prevalence of physical inactivity in the EU has also increased in recent years.</p>
+
+          <h4 className="header-p">Age</h4>
+          <p className="single-p">The risk of developing type 2 diabetes increases with age. The population of the EU is aging, and this is also contributing to the increase in diabetes.</p>
+
+          <h4 className="header-p">Unhealthy diet</h4>
+          <p className="single-p">An unhealthy diet, high in sugary drinks, processed foods, and saturated fats, is also a risk factor for type 2 diabetes. The prevalence of unhealthy diet in the EU has also increased in recent years.</p>
+        </div>
+
+        <div className="paragraphs-container">
+          <h3 className="sub-subtitle-section">Preventing Diabetes</h3>
+          <p className="single-p">The increase in diabetes is a major public health challenge in Europe. It is estimated that diabetes costs the EU economy a ton of millions per year.</p>
+          <p className="single-p">There are a number of things that can be done to address this challenge, including:</p>
+        </div>
 
         {/* <div className="paragraphs-container">
           <p className="regular-p">The proposal consist in a clean & all integrated elements logo except the 3 stars that have been placed right above the main part of the logo. Also we choose more vibrant colors and pulished the shapes to give a more modern appearance.</p>

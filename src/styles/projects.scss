@@ -69,6 +69,10 @@
             margin: 0 auto;
         }
 
+        .split-block {
+            width: 100%;
+        }
+
         .multi-pic-block {
             display: flex;
             flex-direction: column;
@@ -81,7 +85,7 @@
             }
         }
 
-        .title-section, .subtitle-section, .sub-subtitle-section {
+        .title-section, .subtitle-section, .sub-subtitle-section{
             display: block;
             width: 100%;
             margin: 0 auto;
@@ -172,9 +176,13 @@
         }
 
         .project-main {
-
+            
             .single-image {
                 margin: 1em auto;
+            }
+
+            .split-block {
+                width: 50%;
             }
 
             .multi-pic-block {
@@ -191,18 +199,19 @@
             .paragraphs-container {
                 display: flex;
                 flex-direction: row;
-                align-items: center;
+                // align-items: center;
+                align-items: flex-start;
                 flex-wrap: wrap;
                 width: 100%;
-
-                .regular-p{
-                    width: 45%;
-                }
                 
                 .single-p {
                     width: 60%;
                     text-align: center;
                     // width: 95%;
+                }
+
+                .regular-p {
+                    width: 95%;
                 }
             }
 
