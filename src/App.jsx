@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import './styles/global.css';
-import { useLocation, Routes, Route } from 'react-router-dom';
+// import { useLocation, Routes, BrowserRouter as Router, Route } from 'react-router-dom';
+import { useLocation} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
 
@@ -12,6 +14,7 @@ import About from './pages/About';
 
 import Footer from './components/Footer';
 
+import Project0 from './projects/project_0/project_0';
 import Project1 from './projects/project_1/project_1';
 import Project2 from './projects/project_2/project_2';
 import Project3 from './projects/project_3/project_3';
@@ -19,6 +22,12 @@ import Project4 from './projects/project_4/project_4';
 
 // Where projects routes are placed
 const projects = [
+  {
+    id: 0,
+    title: "Project 0",
+    path: "/project_0",
+    component: Project0,
+  },
   {
     id: 1,
     title: "Project 1",
@@ -57,6 +66,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -73,6 +83,21 @@ const App = () => {
         ))}
 
       </Routes>
+
+      {/* <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+
+        {projects.map((project) => (
+          <Route
+            key={project.id}
+            path={project.path}
+            element={<project.component />}
+          />
+        ))}
+
+      </Routes> */}
       <Footer />
     </div>
   );

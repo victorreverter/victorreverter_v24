@@ -8,7 +8,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: $maxWidth;
+    max-width: 805px;
+    position: relative;
+    // max-width: $maxWidth;
+
+    .syllabus-element {
+        a {
+            color: red;
+        }
+    }
 
     .project-header {
         display: flex;
