@@ -132,23 +132,45 @@ const Project_0 = () => {
 
   //Syllabus Scroll ===============================
 
-  const scrollToElement = (id) => {
+  // const scrollToElement = (id) => {
     
-    const element = document.getElementById(id);
+  //   const element = document.getElementById(id);
 
+  //   if (element) {
+  //     const offsetTop = element.offsetTop;
+
+  //     window.scrollTo({
+  //       top: offsetTop,
+  //       behavior: 'smooth'
+  //     });
+  //   }   
+  // };
+
+  const [currentElement, setCurrentElement] = useState(null);
+
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
     if (element) {
       const offsetTop = element.offsetTop;
-
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth'
       });
-    }   
+      setCurrentElement(id); // Set the current element ID
+    }
+  };
+
+  const getElementClass = (id) => {
+    if (id === currentElement) {
+      return 'syllabus-element s-e-current';
+    } else {
+      return 'syllabus-element';
+    }
   };
 
   return (
     <div className='project-box'>
-      <div className="syllabus-container">
+      {/* <div className="syllabus-container">
         <div className="syllabus-element" onClick={() => scrollToElement('projectHeader')}>
           Header
         </div>
@@ -156,6 +178,18 @@ const Project_0 = () => {
           Stationatery II
         </div>
         <div className="syllabus-element" onClick={() => scrollToElement('stationateryII')}>
+          Scroll to Element
+        </div>
+      </div> */}
+
+      <div className="syllabus-container">
+        <div className={getElementClass('projectHeader')} onClick={() => scrollToElement('projectHeader')}>
+          Header
+        </div>
+        <div className={getElementClass('stationateryII')} onClick={() => scrollToElement('stationateryII')}>
+          Stationatery II
+        </div>
+        <div className={getElementClass('scrollToElement')} onClick={() => scrollToElement('scrollToElement')}>
           Scroll to Element
         </div>
       </div>
