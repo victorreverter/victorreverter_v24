@@ -130,136 +130,186 @@ const Project_1 = () => {
     };
   }, []);
 
+  //Syllabus Scroll ===============================
+
+  const [currentElement, setCurrentElement] = useState(null);
+
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offsetTop = element.offsetTop;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+      setCurrentElement(id); // Set the current element ID
+    }
+  };
+
+  const getElementClass = (id) => {
+    if (id === currentElement) {
+      return 'syllabus-element s-e-current';
+    } else {
+      return 'syllabus-element';
+    }
+  };
+
   return (
-    <div className='project-container'>
-      <div className='project-header'>
-        <h2 className='title-project'>AFA Rebrand</h2>
-        <h4 className='description-project'>A branding redesign after the Argentina World Cup's victory in 2022.</h4>
-        
-        <div className="section-project">
-          <h5>Date</h5>
-          <p>2023</p>
+    <div className="project-box">
+      <div className="syllabus-container">
+        <div className={getElementClass('projectHeader')} onClick={() => scrollToElement('projectHeader')}>
+          Header
         </div>
-
-        <div className="section-project">
-          <h5>Role</h5>
-          <p>Brand Designer</p>
+        <div className={getElementClass('historyLogos')} onClick={() => scrollToElement('historyLogos')}>
+          History
         </div>
-
-        <div className="section-project">
-          <h5>Category</h5>
-          <p>Branding</p>
+        <div className={getElementClass('afaProposal')} onClick={() => scrollToElement('afaProposal')}>
+          Proposal
+        </div>
+        <div className={getElementClass('afaVariations')} onClick={() => scrollToElement('afaVariations')}>
+          Variations
+        </div>
+        <div className={getElementClass('colorPalette')} onClick={() => scrollToElement('colorPalette')}>
+          Palette
+        </div>
+        <div className={getElementClass('typographyChoosen')} onClick={() => scrollToElement('typographyChoosen')}>
+          Typography
+        </div>
+        <div className={getElementClass('afaApplication')} onClick={() => scrollToElement('afaApplication')}>
+          Applications
         </div>
       </div>
 
-      {/* <img className='cover-image-pro' src={coverImagePro} alt={"about-pic"} /> */}
-
-      <div>
-        <img className={`cover-image-pro ${coverPic ? 'cover-pic-visible' : 'cover-pic-hidden'}`} src={coverImagePro} alt={"about-pic"} />
-      </div>
-
-      <div className="project-main">
-
-        <div className="paragraphs-container">
-          <p className="single-p">December 2022. Argentina won their 3rd FIFA World Cup, this event reveal the likely possibility of a rebrand of their Federation mark. With the Argentina victory against France on December 18th. The problem is revealed. It is Argentina with these new 3rd star need a rebrand?</p>
-        </div>
-
-        <img className="single-image" src={SubCover} alt={"sub-cover"} />
-
-        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SubCover} alt={"sub-cover"} /> */}
-
-        <div className="paragraphs-container">
-          <p className="single-p">So then the first step was the Research process. For that I looked for the whole history of AFA logos, but also other "3 stars" proposals from Brazil, Italy & Germany when these federations reach the 3rd World Cup win.</p>
-        </div>
-
-        <div className="multi-pic-block">
-          <img className='multi-image' src={LogoStoryI} alt={"logo-story-1"} />
-          <img className='multi-image' src={LogoStoryII} alt={"logo-story-2"} />
-        </div>
-
-        <div className="paragraphs-container">
-          <p className="single-p">Then after these research and many sketches and proposals I pick this one as the new brand for Argentina & AFA.</p>
-        </div>
-
-        <img className="single-image" src={SolutionI} alt={"solution-1"} />
-
-        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SolutionI} alt={"solution-1"} /> */}
-
-        <div className="paragraphs-container">
-          <div className="split-block">
-            <p className="regular-p">The proposal consist in a clean & all integrated elements logo except the 3 stars that have been placed right above the main part of the logo. Also we choose more vibrant colors and pulished the shapes to give a more modern appearance.</p>
+      <div className='project-container'>
+        <div id="projectHeader" className='project-header'>
+          <h2 className='title-project'>AFA Rebrand</h2>
+          <h4 className='description-project'>A branding redesign after the Argentina World Cup's victory in 2022.</h4>
+          
+          <div className="section-project">
+            <h5>Date</h5>
+            <p>2023</p>
           </div>
-          <div className="split-block">
-            <p className="regular-p">In other hand I do not only redesign the main logo but also create another alternative based in history. Each proposal have one variant, the AFA has one without stars and one with, meanwhile the main logo has an outline variant.</p>
+
+          <div className="section-project">
+            <h5>Role</h5>
+            <p>Brand Designer</p>
+          </div>
+
+          <div className="section-project">
+            <h5>Category</h5>
+            <p>Branding</p>
           </div>
         </div>
 
-        <div className="multi-pic-block">
-          <img className='multi-image' src={SolutionII} alt={"solution-2"} />
-          <img className='multi-image' src={SolutionIII} alt={"solution-3"} />
-          <img className='multi-image' src={SolutionIV} alt={"solution-4"} />
-          <img className='multi-image' src={SolutionV} alt={"solution-5"} />
+        {/* <img className='cover-image-pro' src={coverImagePro} alt={"about-pic"} /> */}
+
+        <div>
+          <img className={`cover-image-pro ${coverPic ? 'cover-pic-visible' : 'cover-pic-hidden'}`} src={coverImagePro} alt={"about-pic"} />
         </div>
 
-        <div className="paragraphs-container">
-          <p className="single-p">Here we can see the possible patterns using the brand and certain color combinations.</p>
-        </div>
+        <div className="project-main">
 
-        <Carousel items={carouselItemsI} />
+          <div className="paragraphs-container">
+            <p className="single-p">December 2022. Argentina won their 3rd FIFA World Cup, this event reveal the likely possibility of a rebrand of their Federation mark. With the Argentina victory against France on December 18th. The problem is revealed. It is Argentina with these new 3rd star need a rebrand?</p>
+          </div>
 
-        <div className="paragraphs-container">
-          <p className="single-p">Respect color palette the following was the choosen one. A palette with white, black and some "Argentinian" essential colors.</p>
-        </div>
+          <img className="single-image" src={SubCover} alt={"sub-cover"} />
 
-        <img className='single-image' src={ColorI} alt={"color-1"} />
+          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SubCover} alt={"sub-cover"} /> */}
 
-        <img className='single-image' src={ColorII} alt={"color-2"} />
+          <div id="historyLogos" className="paragraphs-container">
+            <p className="single-p">So then the first step was the Research process. For that I looked for the whole history of AFA logos, but also other "3 stars" proposals from Brazil, Italy & Germany when these federations reach the 3rd World Cup win.</p>
+          </div>
 
-        <div className="paragraphs-container">
-          <p className="single-p">About typography two options were choosen. Belgrano as a serif typography family without more than just one variant and Catamaran as a sans-serif typography with 6 variants.</p>
-        </div>
+          <div className="multi-pic-block">
+            <img className='multi-image' src={LogoStoryI} alt={"logo-story-1"} />
+            <img className='multi-image' src={LogoStoryII} alt={"logo-story-2"} />
+          </div>
 
-        <Carousel items={carouselItemsII} />
+          <div id="afaProposal" className="paragraphs-container">
+            <p className="single-p">Then after these research and many sketches and proposals I pick this one as the new brand for Argentina & AFA.</p>
+          </div>
 
-        <img className="single-image" src={StationateryII} alt={"stationatery-2"} />
-        
-        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryII} alt={"stationatery-2"} /> */}
+          <img className="single-image" src={SolutionI} alt={"solution-1"} />
 
-        <div className="paragraphs-container">
-          <p className="single-p">In this modern era where social media presency is crutial and very important, I present some elements from the brand applied into this world.</p>
-        </div>
+          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SolutionI} alt={"solution-1"} /> */}
 
-        <Carousel items={carouselItemsIII} />
+          <div id="afaVariations" className="paragraphs-container">
+            <div className="split-block">
+              <p className="regular-p">The proposal consist in a clean & all integrated elements logo except the 3 stars that have been placed right above the main part of the logo. Also we choose more vibrant colors and pulished the shapes to give a more modern appearance.</p>
+            </div>
+            <div className="split-block">
+              <p className="regular-p">In other hand I do not only redesign the main logo but also create another alternative based in history. Each proposal have one variant, the AFA has one without stars and one with, meanwhile the main logo has an outline variant.</p>
+            </div>
+          </div>
 
-        <div className="paragraphs-container">
-          <p className="single-p">Finally but not less, the stationatery elements that bring support to the brand will be show right below as examples about how the brand will or could be place in different elements, objects and products.</p>
-        </div>
+          <div className="multi-pic-block">
+            <img className='multi-image' src={SolutionII} alt={"solution-2"} />
+            <img className='multi-image' src={SolutionIII} alt={"solution-3"} />
+            <img className='multi-image' src={SolutionIV} alt={"solution-4"} />
+            <img className='multi-image' src={SolutionV} alt={"solution-5"} />
+          </div>
 
-        <img className="single-image" src={StationateryI} alt={"stationatery-1"} />
+          <div className="paragraphs-container">
+            <p className="single-p">Here we can see the possible patterns using the brand and certain color combinations.</p>
+          </div>
 
-        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryI} alt={"stationatery-1"} /> */}
-    
-        <Carousel items={carouselItemsIV} />
+          <Carousel items={carouselItemsI} />
 
-        <div className="paragraphs-container">
-          <p className="single-p">At resume create this rebrand was a really good challenge because always deal with an important brand is a challenge but also an opportunity for show up skills and capacities.</p>
-        </div>
+          <div id="colorPalette" className="paragraphs-container">
+            <p className="single-p">Respect color palette the following was the choosen one. A palette with white, black and some "Argentinian" essential colors.</p>
+          </div>
 
-        <img className="single-image" src={ProjectScreen} alt={"project-screen"} />
+          <img className='single-image' src={ColorI} alt={"color-1"} />
 
-        {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={ProjectScreen} alt={"project-screen"} /> */}
+          <img className='single-image' src={ColorII} alt={"color-2"} />
+
+          <div id="typographyChoosen" className="paragraphs-container">
+            <p className="single-p">About typography two options were choosen. Belgrano as a serif typography family without more than just one variant and Catamaran as a sans-serif typography with 6 variants.</p>
+          </div>
+
+          <Carousel items={carouselItemsII} />
+
+          <img className="single-image" src={StationateryII} alt={"stationatery-2"} />
+          
+          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryII} alt={"stationatery-2"} /> */}
+
+          <div id="afaApplication" className="paragraphs-container">
+            <p className="single-p">In this modern era where social media presency is crutial and very important, I present some elements from the brand applied into this world.</p>
+          </div>
+
+          <Carousel items={carouselItemsIII} />
+
+          <div className="paragraphs-container">
+            <p className="single-p">Finally but not less, the stationatery elements that bring support to the brand will be show right below as examples about how the brand will or could be place in different elements, objects and products.</p>
+          </div>
+
+          <img className="single-image" src={StationateryI} alt={"stationatery-1"} />
+
+          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryI} alt={"stationatery-1"} /> */}
       
-        {/* <Link to={"https://victorreverter.github.io/potusdata/"} target='_blank' className='btn-item'>
-          <div className="container-text">
-            <span>View Live</span>
-          </div>
-          <svg width="13px" height="10px" viewBox="0 0 13 10">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </Link> */}
-      </div>
+          <Carousel items={carouselItemsIV} />
 
+          <div className="paragraphs-container">
+            <p className="single-p">At resume create this rebrand was a really good challenge because always deal with an important brand is a challenge but also an opportunity for show up skills and capacities.</p>
+          </div>
+
+          <img className="single-image" src={ProjectScreen} alt={"project-screen"} />
+
+          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={ProjectScreen} alt={"project-screen"} /> */}
+        
+          {/* <Link to={"https://victorreverter.github.io/potusdata/"} target='_blank' className='btn-item'>
+            <div className="container-text">
+              <span>View Live</span>
+            </div>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </Link> */}
+        </div>
+
+      </div>
     </div>
   )
 }

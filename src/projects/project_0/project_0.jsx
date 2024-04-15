@@ -132,20 +132,6 @@ const Project_0 = () => {
 
   //Syllabus Scroll ===============================
 
-  // const scrollToElement = (id) => {
-    
-  //   const element = document.getElementById(id);
-
-  //   if (element) {
-  //     const offsetTop = element.offsetTop;
-
-  //     window.scrollTo({
-  //       top: offsetTop,
-  //       behavior: 'smooth'
-  //     });
-  //   }   
-  // };
-
   const [currentElement, setCurrentElement] = useState(null);
 
   const scrollToElement = (id) => {
@@ -170,48 +156,37 @@ const Project_0 = () => {
 
   return (
     <div className='project-box'>
-      {/* <div className="syllabus-container">
-        <div className="syllabus-element" onClick={() => scrollToElement('projectHeader')}>
-          Header
-        </div>
-        <div className="syllabus-element" onClick={() => scrollToElement('stationateryII')}>
-          Stationatery II
-        </div>
-        <div className="syllabus-element" onClick={() => scrollToElement('stationateryII')}>
-          Scroll to Element
-        </div>
-      </div> */}
 
       <div className="syllabus-container">
         <div className={getElementClass('projectHeader')} onClick={() => scrollToElement('projectHeader')}>
           Header
         </div>
         <div className={getElementClass('stationateryII')} onClick={() => scrollToElement('stationateryII')}>
-          Stationatery II
+          Step 1
         </div>
         <div className={getElementClass('scrollToElement')} onClick={() => scrollToElement('scrollToElement')}>
-          Scroll to Element
+          Step 2
         </div>
       </div>
 
       <div className='project-container'>
         <div id="projectHeader" className='project-header'>
-          <h2 className='title-project'>AFA Rebrand</h2>
-          <h4 className='description-project'>A branding redesign after the Argentina World Cup's victory in 2022.</h4>
+          <h2 className='title-project'>Title Project</h2>
+          <h4 className='description-project'>An explanatory short paragraph, to show a first llok of this whole project.</h4>
           
           <div className="section-project">
             <h5>Date</h5>
-            <p>2023</p>
+            <p>Year</p>
           </div>
 
           <div className="section-project">
             <h5>Role</h5>
-            <p>Brand Designer</p>
+            <p>Role Element</p>
           </div>
 
           <div className="section-project">
             <h5>Category</h5>
-            <p>Branding</p>
+            <p>Category Element</p>
           </div>
         </div>
 
@@ -222,18 +197,25 @@ const Project_0 = () => {
         </div>
 
         <div className="project-main">
+          {/* <h2 className="title-section">1. Introduction</h2>
+          <h3 className="subtitle-section">Background</h3>
+          <h3 className="sub-subtitle-section">Background</h3> */}
 
-          <div className="paragraphs-container">
-            <p className="single-p">December 2022. Argentina won their 3rd FIFA World Cup, this event reveal the likely possibility of a rebrand of their Federation mark. With the Argentina victory against France on December 18th. The problem is revealed. It is Argentina with these new 3rd star need a rebrand?</p>
+          <div className="element-block">
+            <h3 className="subtitle-elem">#1 Subtitle</h3>
+            <h2 className="title-elem">Head Title</h2>
+
+            <p className="paragraph-elem">So then the first step was the Research process. For that I looked for the whole history of <a href="https://www.afa.com.ar/es/" target="_blank" rel="noopener noreferrer">AFA</a> logos, but also other "3 stars" proposals from Brazil, Italy & Germany when these federations reach the 3rd World Cup win.</p>
+
+            {/* <div className="paragraphs-container">
+              <p className="single-p">Fave is one of Southeast Asia's fintech startup that helps consumers save, while empowering small and medium-sized enterprises to grow in the digital economy. Fave's key offering includes cashless payments, online/offline deals and other offers. Fave has been acquired by PineLabs, an India-based unicorn on April 2021.</p>
+            </div> */}
           </div>
+          
 
           <img className="single-image" src={SubCover} alt={"sub-cover"} />
 
           {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SubCover} alt={"sub-cover"} /> */}
-
-          <div className="paragraphs-container">
-            <p className="single-p">So then the first step was the Research process. For that I looked for the whole history of AFA logos, but also other "3 stars" proposals from Brazil, Italy & Germany when these federations reach the 3rd World Cup win.</p>
-          </div>
 
           <div className="multi-pic-block">
             <img className='multi-image' src={LogoStoryI} alt={"logo-story-1"} />
@@ -245,72 +227,10 @@ const Project_0 = () => {
           </div>
 
           <img className="single-image" src={SolutionI} alt={"solution-1"} />
-
-          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SolutionI} alt={"solution-1"} /> */}
-
-          <div className="paragraphs-container">
-            <div className="split-block">
-              <p className="regular-p">The proposal consist in a clean & all integrated elements logo except the 3 stars that have been placed right above the main part of the logo. Also we choose more vibrant colors and pulished the shapes to give a more modern appearance.</p>
-            </div>
-            <div className="split-block">
-              <p className="regular-p">In other hand I do not only redesign the main logo but also create another alternative based in history. Each proposal have one variant, the AFA has one without stars and one with, meanwhile the main logo has an outline variant.</p>
-            </div>
-          </div>
-
-          <div className="multi-pic-block">
-            <img className='multi-image' src={SolutionII} alt={"solution-2"} />
-            <img className='multi-image' src={SolutionIII} alt={"solution-3"} />
-            <img className='multi-image' src={SolutionIV} alt={"solution-4"} />
-            <img className='multi-image' src={SolutionV} alt={"solution-5"} />
-          </div>
-
-          <div className="paragraphs-container">
-            <p className="single-p">Here we can see the possible patterns using the brand and certain color combinations.</p>
-          </div>
-
-          <Carousel items={carouselItemsI} />
-
-          <div className="paragraphs-container">
-            <p className="single-p">Respect color palette the following was the choosen one. A palette with white, black and some "Argentinian" essential colors.</p>
-          </div>
-
-          <img className='single-image' src={ColorI} alt={"color-1"} />
-
-          <img className='single-image' src={ColorII} alt={"color-2"} />
-
-          <div className="paragraphs-container">
-            <p className="single-p">About typography two options were choosen. Belgrano as a serif typography family without more than just one variant and Catamaran as a sans-serif typography with 6 variants.</p>
-          </div>
-
-          <Carousel items={carouselItemsII} />
-
-          <img id="stationateryII" className="single-image" src={StationateryII} alt={"stationatery-2"} />
-          
-          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryII} alt={"stationatery-2"} /> */}
-
-          <div className="paragraphs-container">
-            <p className="single-p">In this modern era where social media presency is crutial and very important, I present some elements from the brand applied into this world.</p>
-          </div>
-
-          <Carousel items={carouselItemsIII} />
-
-          <div className="paragraphs-container">
-            <p className="single-p">Finally but not less, the stationatery elements that bring support to the brand will be show right below as examples about how the brand will or could be place in different elements, objects and products.</p>
-          </div>
-
-          <img className="single-image" src={StationateryI} alt={"stationatery-1"} />
-
-          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={StationateryI} alt={"stationatery-1"} /> */}
       
           <Carousel items={carouselItemsIV} />
 
-          <div className="paragraphs-container">
-            <p className="single-p">At resume create this rebrand was a really good challenge because always deal with an important brand is a challenge but also an opportunity for show up skills and capacities.</p>
-          </div>
-
           <img className="single-image" src={ProjectScreen} alt={"project-screen"} />
-
-          {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={ProjectScreen} alt={"project-screen"} /> */}
         
           {/* <Link to={"https://victorreverter.github.io/potusdata/"} target='_blank' className='btn-item'>
             <div className="container-text">

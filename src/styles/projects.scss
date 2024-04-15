@@ -71,11 +71,63 @@
     
     .project-main {
         width: 100%;
-        padding-bottom: 4em;
+        padding-bottom: 2em;
+
+        // ==================================
+
+        .element-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em 0;
+        }
+
+        // ==================================
+
+        .title-elem {
+            display: block;
+            width: 95%;
+            margin: 0 auto;
+            padding: 0 0 0.5em;
+
+            font-size: 1.4em;
+            text-align: left;
+            color: $colorText;
+        }
+
+        .subtitle-elem {
+            display: block;
+            width: 95%;
+            margin: 0 auto;
+            padding: 0 0 0.5em;
         
+            font-size: 1em;
+            text-align: left;
+            color: $colorTextAltGray;
+        }
+
+        .paragraph-elem {
+            width: 95%;
+            margin: 0 auto;
+
+            font-size: 1em;
+            line-height: 1.2em;
+            font-weight: 100;
+            text-align: left;
+            color: $colorTextAlt;
+
+            a {
+                color: $colorTextAlt;
+                font-weight: 600;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        // ==================================
         .single-image {
             width: 100%;
-            margin: 0 auto;
+            margin: 0 auto 2.5%;
         }
 
         .split-block {
