@@ -3,6 +3,8 @@
 .project-box {
     display: flex;
     flex-direction: column;
+    max-width: $maxWidth;
+    margin: 0 auto;
 }
 
 .syllabus-container {
@@ -70,21 +72,26 @@
     }
     
     .project-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
         width: 100%;
         padding-bottom: 2em;
 
-        // ==================================
+        // =========== New COMPO =======================
 
-        .element-block {
+        .element-block, .element-compact-block {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 1em 0;
+            width: 100%;
         }
 
-        // ==================================
-
-        .title-elem {
+        .title-elem, .subtitle-elem, .paragraph-elem {
             display: block;
             width: 95%;
             margin: 0 auto;
@@ -96,10 +103,10 @@
         }
 
         .subtitle-elem {
-            display: block;
-            width: 95%;
-            margin: 0 auto;
-            padding: 0 0 0.5em;
+            // display: block;
+            // width: 95%;
+            // margin: 0 auto;
+            // padding: 0 0 0.5em;
         
             font-size: 1em;
             text-align: left;
@@ -107,8 +114,8 @@
         }
 
         .paragraph-elem {
-            width: 95%;
-            margin: 0 auto;
+            // width: 95%;
+            // margin: 0 auto;
 
             font-size: 1em;
             line-height: 1.2em;
@@ -122,13 +129,27 @@
                 text-decoration: underline;
                 cursor: pointer;
             }
+
+            span {
+                font-weight: 600;
+            }
         }
 
-        // ==================================
-        .single-image {
+        .p-elem-contrast {
+            font-weight: 600;
+        }
+
+        .horizontal-image, .vertical-image {
             width: 100%;
             margin: 0 auto 2.5%;
         }
+
+        .vertical-image {
+            width: 75%;
+            // margin: 0 auto 2.5%;
+        }
+        
+        // =========== End New COMPO ===================
 
         .split-block {
             width: 100%;
@@ -221,11 +242,12 @@
     .project-box {
         display: flex;
         flex-direction: row;
+        padding: 77px 0 0;
     }
 
     .syllabus-container {
         display: block;
-        width: 50%;
+        width: 28%;
         padding: 0.5em 2em 0 2em;
         position: fixed;
         
@@ -263,6 +285,27 @@
         }
 
         .project-main {
+            flex-direction: row;
+            justify-content: space-between;
+
+            // =========== New COMPO =======================
+
+            .element-compact-block {
+                width: 50%;
+            }
+
+            .title-elem, .subtitle-elem, .paragraph-elem {
+                // display: block;
+                width: 85%;
+                // margin: 0 auto;
+                // padding: 0 0 0.5em;
+            }
+
+            .vertical-image {
+                width: 50%;
+            }
+
+            // =========== End New COMPO ===================
             
             .single-image {
                 margin: 1em auto;
@@ -324,6 +367,15 @@
             //     right: -25px;
             // }
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .syllabus-container {
+        display: block;
+        width: 25%;
+        padding: 0.5em 2em 0 0;
+        position: fixed;
     }
 }
 

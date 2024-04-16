@@ -12,17 +12,9 @@ import LogoStoryII from './pics/Other_Champions_3_Stars.jpg'
 
 import SolutionI from './pics/Solution_I.jpg'
 
-import SolutionII from './pics/Solution_II.jpg'
-import SolutionIII from './pics/Solution_III.jpg'
-import SolutionIV from './pics/Solution_IV.jpg'
-import SolutionV from './pics/Solution_V.jpg'
-
 import AFASolution6 from './pics/Solution_VI.jpg'
 import AFASolution7 from './pics/Solution_VII.jpg'
 import AFASolution8 from './pics/Solution_VIII.jpg'
-
-import ColorI from './pics/Color_I.jpg'
-import ColorII from './pics/Color_II.jpg'
 
 import TypographyI from './pics/Typography_I.jpg'
 import TypographyII from './pics/Typography_II.jpg'
@@ -33,9 +25,6 @@ import SocialII from './pics/Social_II.jpg'
 import SocialIII from './pics/Social_III.jpg'
 import SocialIV from './pics/Social_IV.jpg'
 
-import StationateryI from './pics/Stationatery_1.jpg'
-import StationateryII from './pics/Stationatery_2.jpg'
-
 import StationateryIII from './pics/Stationatery_3.jpg'
 import StationateryIV from './pics/Stationatery_4.jpg'
 import StationateryV from './pics/Stationatery_5.jpg'
@@ -45,8 +34,9 @@ import StationateryVIII from './pics/Stationatery_8.jpg'
 import StationateryIX from './pics/Stationatery_9.jpg'
 import StationateryX from './pics/Stationatery_10.jpg'
 
-
 import ProjectScreen from './pics/Project_Screen.jpg'
+
+import AFAphone from './pics/WhitePhone.png'
 
 import Carousel from '../../components/Carousel';
 
@@ -205,28 +195,56 @@ const Project_0 = () => {
             <h3 className="subtitle-elem">#1 Subtitle</h3>
             <h2 className="title-elem">Head Title</h2>
 
+            <p className="paragraph-elem p-elem-contrast">Looks new. Feels like home.</p>
+
             <p className="paragraph-elem">So then the first step was the Research process. For that I looked for the whole history of <a href="https://www.afa.com.ar/es/" target="_blank" rel="noopener noreferrer">AFA</a> logos, but also other "3 stars" proposals from Brazil, Italy & Germany when these federations reach the 3rd World Cup win.</p>
 
             {/* <div className="paragraphs-container">
               <p className="single-p">Fave is one of Southeast Asia's fintech startup that helps consumers save, while empowering small and medium-sized enterprises to grow in the digital economy. Fave's key offering includes cashless payments, online/offline deals and other offers. Fave has been acquired by PineLabs, an India-based unicorn on April 2021.</p>
             </div> */}
           </div>
-          
 
-          <img className="single-image" src={SubCover} alt={"sub-cover"} />
+          <img className="vertical-image" src={AFAphone} alt={"afa-phone"} />
+
+          <div className="element-compact-block">
+            <h3 className="subtitle-elem">#2 Subtitle</h3>
+            <h2 className="title-elem">Head 2 Title</h2>
+
+            <p className="paragraph-elem">So then the first step was the Research process. For that I looked for the whole history of <a href="https://www.afa.com.ar/es/" target="_blank" rel="noopener noreferrer">AFA</a> logos, but also other "3 stars" proposals from Brazil, Italy & Germany when these federations reach the 3rd World Cup win.</p>
+          </div>
+
+          <img className="horizontal-image" src={SubCover} alt={"sub-cover"} />
 
           {/* <img ref={targetRef} className={`single-image ${isVisible ? 'visibled' : 'hiddened'}`} src={SubCover} alt={"sub-cover"} /> */}
 
-          <div className="multi-pic-block">
+          <img className='vertical-image' src={LogoStoryI} alt={"logo-story-1"} />
+
+          <div className="element-compact-block">
+            <h3 className="subtitle-elem">#3 Subtitle</h3>
+            <h2 className="title-elem">Head 3 Title</h2>
+
+            <p className="paragraph-elem">So then the first step was the Research process.</p>
+          </div>
+
+          <img className='vertical-image' src={LogoStoryII} alt={"logo-story-2"} />
+
+          <div className="element-compact-block">
+            <h3 className="subtitle-elem">#4 Subtitle</h3>
+            <h2 className="title-elem">Head 4 Title</h2>
+
+            <p className="paragraph-elem">So then the first step was the Research process.</p>
+          </div>
+
+          {/* <div className="multi-pic-block">
             <img className='multi-image' src={LogoStoryI} alt={"logo-story-1"} />
             <img className='multi-image' src={LogoStoryII} alt={"logo-story-2"} />
-          </div>
+          </div> */}
 
-          <div className="paragraphs-container">
+          {/* <div className="paragraphs-container">
             <p className="single-p">Then after these research and many sketches and proposals I pick this one as the new brand for Argentina & AFA.</p>
-          </div>
+          </div> */}
 
-          <img className="single-image" src={SolutionI} alt={"solution-1"} />
+          {/* <img className="single-image" src={SolutionI} alt={"solution-1"} /> */}
       
           <Carousel items={carouselItemsIV} />
 
