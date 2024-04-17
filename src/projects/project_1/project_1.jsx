@@ -35,7 +35,34 @@ const Project_1 = () => {
 
   const [currentElement, setCurrentElement] = useState(null);
 
-  const scrollToElement = (id) => {
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      // Calculate which syllabus element is currently in view
+      const syllabusElements = document.querySelectorAll('.syllabus-element');
+      syllabusElements.forEach(element => {
+        const section = document.getElementById(element.dataset.target);
+        if (
+          section.offsetTop <= scrollPosition + 200 &&
+          section.offsetTop + section.offsetHeight > scrollPosition + 200
+        ) {
+          setCurrentElement(element.dataset.target);
+        }
+      });
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToElement = id => {
     const element = document.getElementById(id);
     if (element) {
       const offsetTop = element.offsetTop;
@@ -47,42 +74,38 @@ const Project_1 = () => {
     }
   };
 
-  const getElementClass = (id) => {
-    if (id === currentElement) {
-      return 'syllabus-element s-e-current';
-    } else {
-      return 'syllabus-element';
-    }
+  const getElementClass = id => {
+    return id === currentElement ? 'syllabus-element s-e-current' : 'syllabus-element';
   };
 
   return (
     <div className="project-box">
       <div className="syllabus-container">
-        <div className={getElementClass('projectHeader')} onClick={() => scrollToElement('projectHeader')}>
+        <div className={getElementClass('projectHeader')} onClick={() => scrollToElement('projectHeader')} data-target="projectHeader">
           Introduction
         </div>
-        <div className={getElementClass('processID')} onClick={() => scrollToElement('processID')}>
+        <div className={getElementClass('processID')} onClick={() => scrollToElement('processID')} data-target="processID">
           Process
         </div>
-        <div className={getElementClass('empathyID')} onClick={() => scrollToElement('empathyID')}>
+        <div className={getElementClass('empathyID')} onClick={() => scrollToElement('empathyID')} data-target="empathyID">
           Empathy
         </div>
-        <div className={getElementClass('#')} onClick={() => scrollToElement('#')}>
+        <div className={getElementClass('#')} onClick={() => scrollToElement('#')} data-target="#">
           Define
         </div>
-        <div className={getElementClass('#')} onClick={() => scrollToElement('#')}>
+        <div className={getElementClass('#')} onClick={() => scrollToElement('#')} data-target="#">
           Ideate
         </div>
-        <div className={getElementClass('#')} onClick={() => scrollToElement('#')}>
+        <div className={getElementClass('#')} onClick={() => scrollToElement('#')} data-target="#">
           Prototype
         </div>
-        <div className={getElementClass('#')} onClick={() => scrollToElement('#')}>
+        <div className={getElementClass('#')} onClick={() => scrollToElement('#')} data-target="#">
           Design Principles
         </div>
-        <div className={getElementClass('#')} onClick={() => scrollToElement('#')}>
+        <div className={getElementClass('#')} onClick={() => scrollToElement('#')} data-target="#">
           Key features
         </div>
-        <div className={getElementClass('#')} onClick={() => scrollToElement('#')}>
+        <div className={getElementClass('#')} onClick={() => scrollToElement('#')} data-target="#">
           Summary
         </div>
       </div>

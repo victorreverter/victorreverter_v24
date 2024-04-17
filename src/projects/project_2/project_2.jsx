@@ -90,7 +90,34 @@ const Project_1 = () => {
 
   const [currentElement, setCurrentElement] = useState(null);
 
-  const scrollToElement = (id) => {
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      // Calculate which syllabus element is currently in view
+      const syllabusElements = document.querySelectorAll('.syllabus-element');
+      syllabusElements.forEach(element => {
+        const section = document.getElementById(element.dataset.target);
+        if (
+          section.offsetTop <= scrollPosition + 200 &&
+          section.offsetTop + section.offsetHeight > scrollPosition + 200
+        ) {
+          setCurrentElement(element.dataset.target);
+        }
+      });
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToElement = id => {
     const element = document.getElementById(id);
     if (element) {
       const offsetTop = element.offsetTop;
@@ -102,39 +129,35 @@ const Project_1 = () => {
     }
   };
 
-  const getElementClass = (id) => {
-    if (id === currentElement) {
-      return 'syllabus-element s-e-current';
-    } else {
-      return 'syllabus-element';
-    }
+  const getElementClass = id => {
+    return id === currentElement ? 'syllabus-element s-e-current' : 'syllabus-element';
   };
 
   return (
     <div className="project-box">
       <div className="syllabus-container">
-        <div className={getElementClass('projectHeader')} onClick={() => scrollToElement('projectHeader')}>
+        <div className={getElementClass('projectHeader')} onClick={() => scrollToElement('projectHeader')} data-target="projectHeader">
           Introduction
         </div>
-        <div className={getElementClass('historyLogos')} onClick={() => scrollToElement('historyLogos')}>
+        <div className={getElementClass('historyLogos')} onClick={() => scrollToElement('historyLogos')} data-target="historyLogos">
           History
         </div>
-        <div className={getElementClass('afaProposal')} onClick={() => scrollToElement('afaProposal')}>
+        <div className={getElementClass('afaProposal')} onClick={() => scrollToElement('afaProposal')} data-target="afaProposal">
           Proposal
         </div>
-        <div className={getElementClass('afaVariations')} onClick={() => scrollToElement('afaVariations')}>
+        <div className={getElementClass('afaVariations')} onClick={() => scrollToElement('afaVariations')} data-target="afaVariations">
           Variations
         </div>
-        <div className={getElementClass('colorPalette')} onClick={() => scrollToElement('colorPalette')}>
+        <div className={getElementClass('colorPalette')} onClick={() => scrollToElement('colorPalette')} data-target="colorPalette">
           Color Palette
         </div>
-        <div className={getElementClass('typographyChoosen')} onClick={() => scrollToElement('typographyChoosen')}>
+        <div className={getElementClass('typographyChoosen')} onClick={() => scrollToElement('typographyChoosen')} data-target="typographyChoosen">
           Typography
         </div>
-        <div className={getElementClass('afaApplication')} onClick={() => scrollToElement('afaApplication')}>
+        <div className={getElementClass('afaApplication')} onClick={() => scrollToElement('afaApplication')} data-target="afaApplication">
           Applications
         </div>
-        <div className={getElementClass('nowWhat')} onClick={() => scrollToElement('nowWhat')}>
+        <div className={getElementClass('nowWhat')} onClick={() => scrollToElement('nowWhat')} data-target="nowWhat">
           Now what?
         </div>
       </div>
