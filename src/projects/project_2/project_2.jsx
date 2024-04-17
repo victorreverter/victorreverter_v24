@@ -86,50 +86,6 @@ const Project_1 = () => {
     // Add more items as needed
   ];
 
-  //Timing Up a Cover Pic ==========================
-  const [coverPic, setCoverPic] = useState(false);
-
-  useEffect(() => {
-    // Simulate setting coverPic after a delay (e.g., fetching data)
-    const timer = setTimeout(() => {
-      setCoverPic(true);
-    }, 300); // Adjust the delay as needed
-
-    return () => clearTimeout(timer);
-  }, []); // empty dependency array ensures useEffect runs once after initial render
-
-  //Showing UP built ===============================
-
-  const targetRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5, // Adjust this threshold as needed
-    };
-
-    const callback = (entries) => {
-      entries.forEach((entry) => {
-        setIsVisible(entry.isIntersecting);
-      });
-    };
-
-    const observer = new IntersectionObserver(callback, options);
-
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
-    }
-
-    // Cleanup the observer when the component is unmounted
-    return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
-      }
-    };
-  }, []);
-
   //Syllabus Scroll ===============================
 
   const [currentElement, setCurrentElement] = useState(null);
@@ -158,7 +114,7 @@ const Project_1 = () => {
     <div className="project-box">
       <div className="syllabus-container">
         <div className={getElementClass('projectHeader')} onClick={() => scrollToElement('projectHeader')}>
-          Header
+          Introduction
         </div>
         <div className={getElementClass('historyLogos')} onClick={() => scrollToElement('historyLogos')}>
           History
@@ -185,7 +141,7 @@ const Project_1 = () => {
 
       <div className='project-container'>
         <div id="projectHeader" className='project-header'>
-          <h2 className='title-project'>AFA Rebrand</h2>
+          <h2 className='title-project'>Rebranding of Argentina National Football Team</h2>
           <h4 className='description-project'>A branding redesign after the Argentina World Cup's victory in 2022.</h4>
           
           <div className="section-project">
@@ -204,10 +160,8 @@ const Project_1 = () => {
           </div>
         </div>
 
-        {/* <img className='cover-image-pro' src={coverImagePro} alt={"about-pic"} /> */}
-
         <div>
-          <img className={`cover-image-pro ${coverPic ? 'cover-pic-visible' : 'cover-pic-hidden'}`} src={coverImagePro} alt={"about-pic"} />
+          <img className="cover-image-pro cover-pic-visible" src={coverImagePro} alt={"about-pic"} />
         </div>
 
         <div className="project-main">

@@ -100,8 +100,20 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  window.addEventListener('scroll', function() {
+      // Your code to handle scroll event goes here
+      // console.log('Page is being scrolled.');
+      const headerMenu = document.getElementById("headContainer");
+
+      if (window.scrollY === 0) {
+          headerMenu.classList.remove("head-container-compact");
+      } else {
+          headerMenu.classList.add("head-container-compact");
+      }
+  });
+
   return (
-    <div className="head-container">
+    <div id="headContainer" className="head-container">
         <Link id="logoHome" className="logo-home" to="/">
           <img id="vr_logo" className="vr-logos vr-logo-open" src={VRLogo} alt="logo_header" ref={logohomeRef} />
           <img id="vr_logo_menu" className="vr-logos" src={VRLogoMenu} alt="logo_header_menu" ref={logohomemenuRef} />
