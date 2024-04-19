@@ -45,11 +45,25 @@ import Wireframe6 from './pics/Wireframe_6.png'
 import Wireframe7 from './pics/Wireframe_7.png'
 import Wireframe8 from './pics/Wireframe_8.png'
 
-//====================================================
+import ReferencesVisual from './pics/References_Visual.avif'
+import ReferenceOne from './pics/Reference_One.avif'
+import ReferenceTwo from './pics/Reference_Two.avif'
+import ReferenceThree from './pics/Reference_Three.avif'
+import ReferenceFour from './pics/Reference_Four.avif'
+import ReferenceFive from './pics/Reference_Five.avif'
 
-import AFASolution6 from './pics/Solution_VI.jpg'
-import AFASolution7 from './pics/Solution_VII.jpg'
-import AFASolution8 from './pics/Solution_VIII.jpg'
+import StyleGuideIntro from './pics/StyleGuideIntro.avif'
+
+import StyleGuideOne from './pics/StyleGuideOne.avif'
+import StyleGuideTwo from './pics/StyleGuideTwo.avif'
+
+import UIKitIntro from './pics/UIKitIntro.avif'
+
+import UIKitOne from './pics/UIKitOne.avif'
+import UIKitTwo from './pics/UIKitTwo.avif'
+import UIKitThree from './pics/UIKitThree.avif'
+
+//====================================================
 
 import ProjectScreen from './pics/Project_Screen.jpg'
 
@@ -63,6 +77,15 @@ const Project_1 = () => {
     { image: Persona3, alt: 'persona-3' },
     { image: Persona4, alt: 'persona-4' },
     { image: Persona5, alt: 'persona-5' },
+    // Add more items as needed
+  ];
+
+  const carouselItemsII = [
+    { image: ReferenceOne, alt: 'reference-1' },
+    { image: ReferenceTwo, alt: 'reference-2' },
+    { image: ReferenceThree, alt: 'reference-3' },
+    { image: ReferenceFour, alt: 'reference-4' },
+    { image: ReferenceFive, alt: 'reference-5' }
     // Add more items as needed
   ];
 
@@ -484,10 +507,83 @@ const Project_1 = () => {
           <img className="horizontal-image" src={Wireframe3} alt={"wireframe-3"} />
 
           <div className="element-block">
+            <p className="subtitle-elem">Searcher I</p>
+
+            <p className="paragraph-elem">The Search Process to find fruits and veggies</p>
+          </div>
+
+          <img className="horizontal-image" src={Wireframe4} alt={"wireframe-4"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Searcher II</p>
+
+            <p className="paragraph-elem">The Search Process to find fruits and veggies</p>
+          </div>
+
+          <img className="horizontal-image" src={Wireframe5} alt={"wireframe-5"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Recipes by product</p>
+
+            <p className="paragraph-elem">The Search Process to find recipes of fruits and vegetables</p>
+          </div>
+
+          <img className="horizontal-image" src={Wireframe6} alt={"wireframe-6"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Recipes by product selected</p>
+
+            <p className="paragraph-elem">The Search Process to find recipes of fruits and vegetables that the user select or type</p>
+          </div>
+
+          <img className="horizontal-image" src={Wireframe7} alt={"wireframe-7"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Supermarket by Product</p>
+
+            <p className="paragraph-elem">The Search Process to find recipes of fruits and vegetables</p>
+          </div>
+
+          <img className="horizontal-image" src={Wireframe8} alt={"wireframe-8"} />
+
+          <div className="element-compact-block">
+            <p className="title-elem">References</p>
+
+            <p className="paragraph-elem">Once the wireframes are defined, we look out for references that help us to create the style guide, the ui kit and the high definition interfaces.</p>
+          </div>
+
+          <img className="vertical-image" src={ReferencesVisual} alt={"references-visual"} />
+
+          <Carousel items={carouselItemsII} />
+
+          <div className="element-compact-block">
+            <p className="title-elem">Style guide</p>
+
+            <p className="paragraph-elem">Once the brand is defined and the structure with the wireframes, style guide set the base for the UI kit and the high definition interfaces.</p>
+          </div>
+
+          <img className="vertical-image" src={StyleGuideIntro} alt={"style-guide-intro"} />
+
+          <img className="horizontal-image" src={StyleGuideOne} alt={"style-guide-one"} />
+          <img className="horizontal-image" src={StyleGuideTwo} alt={"style-guide-two"} />
+
+          <div className="element-compact-block">
+            <p className="title-elem">UI kit</p>
+
+            <p className="paragraph-elem">UI kit is the component base to have the necessary tools to create interfaces under FOT brand.</p>
+          </div>
+
+          <img className="vertical-image" src={UIKitIntro} alt={"ui-kit-intro"} />
+
+          <img className="horizontal-image" src={UIKitOne} alt={"ui-kit-one"} />
+          <img className="horizontal-image" src={UIKitTwo} alt={"ui-kit-two"} />
+          <img className="horizontal-image" src={UIKitThree} alt={"ui-kit-three"} />
+
+          {/* <div className="element-block">
             <p className="title-elem">Immune system needs</p>
 
             <p className="paragraph-elem">X</p>
-          </div>
+          </div> */}
 
           <img className="horizontal-image" src={ProjectScreen} alt={"project-screen"} />
         
