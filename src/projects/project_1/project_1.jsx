@@ -63,6 +63,17 @@ import UIKitOne from './pics/UIKitOne.avif'
 import UIKitTwo from './pics/UIKitTwo.avif'
 import UIKitThree from './pics/UIKitThree.avif'
 
+import MockupIntro from './pics/MockupIntro.avif'
+
+import MockupOne from './pics/Mockup_One.avif'
+import MockupTwo from './pics/Mockup_Two.avif'
+import MockupThree from './pics/Mockup_Three.avif'
+import MockupFour from './pics/Mockup_Four.avif'
+import MockupFive from './pics/Mockup_Five.avif'
+import MockupSix from './pics/Mockup_Six.avif'
+import MockupSeven from './pics/Mockup_Seven.avif'
+import MockupEigth from './pics/Mockup_Eigth.avif'
+
 //====================================================
 
 import ProjectScreen from './pics/Project_Screen.jpg'
@@ -578,6 +589,78 @@ const Project_1 = () => {
           <img className="horizontal-image" src={UIKitOne} alt={"ui-kit-one"} />
           <img className="horizontal-image" src={UIKitTwo} alt={"ui-kit-two"} />
           <img className="horizontal-image" src={UIKitThree} alt={"ui-kit-three"} />
+
+          <div className="element-compact-block">
+            <p className="title-elem">Mockups</p>
+
+            <p className="paragraph-elem">Usign the UI kit the wireframes are now converted in high definition mockups.</p>
+          </div>
+
+          <img className="vertical-image" src={MockupIntro} alt={"mockup-intro"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Login with email validation</p>
+
+            <p className="paragraph-elem">The login process to going Home</p>
+          </div>
+
+          <img className="horizontal-image" src={MockupOne} alt={"mockup-one"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Login with an app account validation</p>
+
+            <p className="paragraph-elem">The login process to going Home</p>
+          </div>
+
+          <img className="horizontal-image" src={MockupTwo} alt={"mockup-two"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Sign Up</p>
+
+            <p className="paragraph-elem">The sign up process to going Home</p>
+          </div>
+
+          <img className="horizontal-image" src={MockupThree} alt={"mockup-three"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Searcher I</p>
+
+            <p className="paragraph-elem">The Search Process to find fruits and veggies</p>
+          </div>
+
+          <img className="horizontal-image" src={MockupFour} alt={"mockup-four"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Searcher II</p>
+
+            <p className="paragraph-elem">The Search Process to find fruits and veggies</p>
+          </div>
+
+          <img className="horizontal-image" src={MockupFive} alt={"mockup-five"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Recipes by product</p>
+
+            <p className="paragraph-elem">The Search Process to find recipes of fruits and vegetables</p>
+          </div>
+
+          <img className="horizontal-image" src={MockupSix} alt={"mockup-six"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Recipes by product selected</p>
+
+            <p className="paragraph-elem">The Search Process to find recipes of fruits and vegetables that the user select or type</p>
+          </div>
+
+          <img className="horizontal-image" src={MockupSeven} alt={"mockup-seven"} />
+
+          <div className="element-block">
+            <p className="subtitle-elem">Supermarket by Product</p>
+
+            <p className="paragraph-elem">The Search Process to find recipes of fruits and vegetables</p>
+          </div>
+
+          <img className="horizontal-image" src={MockupEigth} alt={"mockup-eight"} />
 
           {/* <div className="element-block">
             <p className="title-elem">Immune system needs</p>
