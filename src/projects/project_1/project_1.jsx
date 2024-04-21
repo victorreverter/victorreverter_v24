@@ -74,6 +74,10 @@ import MockupSix from './pics/Mockup_Six.avif'
 import MockupSeven from './pics/Mockup_Seven.avif'
 import MockupEigth from './pics/Mockup_Eigth.avif'
 
+import DarkModeOne from './pics/DarkMode_One.avif'
+import DarkModeTwo from './pics/DarkMode_Two.avif'
+import DarkModeThree from './pics/DarkMode_Three.avif'
+
 //====================================================
 
 import ProjectScreen from './pics/Project_Screen.jpg'
@@ -97,6 +101,13 @@ const Project_1 = () => {
     { image: ReferenceThree, alt: 'reference-3' },
     { image: ReferenceFour, alt: 'reference-4' },
     { image: ReferenceFive, alt: 'reference-5' }
+    // Add more items as needed
+  ];
+
+  const carouselItemsIII = [
+    { image: DarkModeOne, alt: 'dark-mode-1' },
+    { image: DarkModeTwo, alt: 'dark-mode-2' },
+    { image: DarkModeThree, alt: 'dark-mode-3' }
     // Add more items as needed
   ];
 
@@ -661,6 +672,20 @@ const Project_1 = () => {
           </div>
 
           <img className="horizontal-image" src={MockupEigth} alt={"mockup-eight"} />
+
+          <div className="element-block">
+            <p className="title-elem">A dark mode to contrast</p>
+
+            <p className="paragraph-elem">In an effort to improve accessibility to the app, we have included a dark mode, which can be seen in the following screens.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="title-elem">A dark mode to contrast</p>
+
+            <p className="paragraph-elem">In contrast with the light version here we see some of the dark mode screens and UI changes</p>
+          </div>
+
+          <Carousel items={carouselItemsIII} />
 
           {/* <div className="element-block">
             <p className="title-elem">Immune system needs</p>
