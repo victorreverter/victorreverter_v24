@@ -34,14 +34,5 @@
     "image": "project_1",
     "alt_text": "project_1",
     "categories": "Product Design"
-  },
-  {
-    "id": 0,
-    "title": "Test App",
-    "date": "-",
-    "description": "Test title text",
-    "image": "project_0",
-    "alt_text": "project_0",
-    "categories": "Category"
-  }  
+  }
 ]

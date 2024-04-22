@@ -3,47 +3,47 @@ import { Link } from 'react-router-dom'
 import '../../styles/global.css'
 import '../../styles/projects.css'
 
-import coverImagePro from './pics/Cover.jpg'
+import coverImagePro from './pics/Cover.avif'
 
-import IntroBackground from './pics/Intro_Background.jpg'
-import IntroAudience from './pics/Intro_Audience.png'
-import IntroSolution from './pics/Intro_Solution.jpg'
+import IntroBackground from './pics/IntroBackground.avif'
+import IntroAudience from './pics/IntroAudience.avif'
+import IntroSolution from './pics/IntroSolution.avif'
 
-import DesignProcess from './pics/Design_Process.png'
+import DesignProcess from './pics/DesignProcess.avif'
 
-import TheEnvironment from './pics/2.1_The_Environment.png'
-import TwoKeyProblem from './pics/2.1_Two_Key_Problem.png'
+import TheEnvironment from './pics/TheEnvironment.avif'
+import TwoKeyProblem from './pics/TwoKeyProblems.avif'
 
-import HealthBenefitOne from './pics/2.1_User_Research_1.png'
-import HealthBenefitTwo from './pics/2.1_User_Research_2.png'
-import HealthBenefitThree from './pics/2.1_User_Research_3.png'
-import HealthBenefitFour from './pics/2.1_User_Research_4.png'
+import HealthBenefitOne from './pics/UserResearchOne.avif'
+import HealthBenefitTwo from './pics/UserResearchTwo.avif'
+import HealthBenefitThree from './pics/UserResearchThree.avif'
+import HealthBenefitFour from './pics/UserResearchFour.avif'
 
-import DefineImage from './pics/2.2_Define.png'
+import DefineImage from './pics/Define.avif'
 
-import IdeationImage from './pics/Ideation.png'
+import IdeationImage from './pics/Ideation.avif'
 
-import Persona1 from './pics/User_Persona_1.jpg'
-import Persona2 from './pics/User_Persona_2.jpg'
-import Persona3 from './pics/User_Persona_3.jpg'
-import Persona4 from './pics/User_Persona_4.jpg'
-import Persona5 from './pics/User_Persona_5.jpg'
+import Persona1 from './pics/UserPersonaOne.avif'
+import Persona2 from './pics/UserPersonaTwo.avif'
+import Persona3 from './pics/UserPersonaThree.avif'
+import Persona4 from './pics/UserPersonaFour.avif'
+import Persona5 from './pics/UserPersonaFive.avif'
 
-import UserflowImage from './pics/Userflow.png'
+import UserflowImage from './pics/Userflow.avif'
 
-import BrandElements from './pics/Brand_Elements.png'
-import BrandCreation from './pics/BrandCreation.png'
-import BrandColor1 from './pics/Brand_Color_1.png'
-import BrandColor2 from './pics/Brand_Color_2.png'
+import BrandElements from './pics/BrandElements.avif'
+import BrandCreation from './pics/BrandCreation.avif'
+import BrandColor1 from './pics/BrandColorOne.avif'
+import BrandColor2 from './pics/BrandColorTwo.avif'
 
-import Wireframe1 from './pics/Wireframe_1.png'
-import Wireframe2 from './pics/Wireframe_2.png'
-import Wireframe3 from './pics/Wireframe_3.png'
-import Wireframe4 from './pics/Wireframe_4.png'
-import Wireframe5 from './pics/Wireframe_5.png'
-import Wireframe6 from './pics/Wireframe_6.png'
-import Wireframe7 from './pics/Wireframe_7.png'
-import Wireframe8 from './pics/Wireframe_8.png'
+import Wireframe1 from './pics/WireframeOne.avif'
+import Wireframe2 from './pics/WireframeTwo.avif'
+import Wireframe3 from './pics/WireframeThree.avif'
+import Wireframe4 from './pics/WireframeFour.avif'
+import Wireframe5 from './pics/WireframeFive.avif'
+import Wireframe6 from './pics/WireframeSix.avif'
+import Wireframe7 from './pics/WireframeSeven.avif'
+import Wireframe8 from './pics/WireframeEight.avif'
 
 import ReferencesVisual from './pics/References_Visual.avif'
 import ReferenceOne from './pics/Reference_One.avif'
@@ -77,6 +77,21 @@ import MockupEigth from './pics/Mockup_Eigth.avif'
 import DarkModeOne from './pics/DarkMode_One.avif'
 import DarkModeTwo from './pics/DarkMode_Two.avif'
 import DarkModeThree from './pics/DarkMode_Three.avif'
+
+import PrototypeOne from './pics/Prototype_1.gif'
+import PrototypeTwo from './pics/Prototype_2.gif'
+import PrototypeThree from './pics/Prototype_3.gif'
+import PrototypeFour from './pics/Prototype_4.gif'
+import PrototypeFive from './pics/Prototype_5.gif'
+import PrototypeSix from './pics/Prototype_6.gif'
+
+import DesignPrinciplesOne from './pics/DesignPrinciplesOne.avif'
+import DesignPrinciplesTwo from './pics/DesignPrinciplesTwo.avif'
+import DesignPrinciplesThree from './pics/DesignPrinciplesThree.avif'
+
+import KeyFeaturesOne from './pics/KeyFeaturesOne.avif'
+import KeyFeaturesTwo from './pics/KeyFeaturesTwo.avif'
+import KeyFeaturesThree from './pics/KeyFeaturesThree.avif'
 
 //====================================================
 
@@ -176,18 +191,18 @@ const Project_1 = () => {
         <div className={getElementClass('ideateID')} onClick={() => scrollToElement('ideateID')} data-target="ideateID">
           Ideate
         </div>
-        {/* <div className={getElementClass('prototypeID')} onClick={() => scrollToElement('prototypeID')} data-target="prototypeID">
+        <div className={getElementClass('prototypeID')} onClick={() => scrollToElement('prototypeID')} data-target="prototypeID">
           Prototype
-        </div> */}
-        {/* <div className={getElementClass('designPrinciples')} onClick={() => scrollToElement('designPrinciples')} data-target="designPrinciples">
+        </div>
+        <div className={getElementClass('designPrinciples')} onClick={() => scrollToElement('designPrinciples')} data-target="designPrinciples">
           Design Principles
-        </div> */}
-        {/* <div className={getElementClass('keyFeatures')} onClick={() => scrollToElement('keyFeatures')} data-target="keyFeatures">
+        </div>
+        <div className={getElementClass('keyFeatures')} onClick={() => scrollToElement('keyFeatures')} data-target="keyFeatures">
           Key features
-        </div> */}
-        {/* <div className={getElementClass('summaryID')} onClick={() => scrollToElement('summaryID')} data-target="summaryID">
+        </div>
+        <div className={getElementClass('summaryID')} onClick={() => scrollToElement('summaryID')} data-target="summaryID">
           Summary
-        </div> */}
+        </div>
       </div>
 
       <div className='project-container'>
@@ -434,7 +449,7 @@ const Project_1 = () => {
           </div>
 
           <div id="defineID" className="element-block">
-            <p className="title-elem">2.1 Definition scenario</p>
+            <p className="title-elem">2.2 Definition scenario</p>
 
             <p className="paragraph-elem">With the research insights, the needs of EUFIC, and the goals defined at the beginning of this process, the most suitable solution for this scenario is a mobile app. This app aims to provide as many people as possible with greater access to the "seasoned information".</p>
           </div>
@@ -449,7 +464,7 @@ const Project_1 = () => {
           </div>
 
           <div id="ideateID" className="element-block">
-            <p className="title-elem">2.2 Ideation phase</p>
+            <p className="title-elem">2.3 Ideation phase</p>
 
             <p className="paragraph-elem">With the problem identified, and the research and definition phases completed, we now progress to the ideation phase. This is a phase where we must properly address the requirements of this new app and strive to deliver it in the best possible way.</p>
           </div>
@@ -676,16 +691,145 @@ const Project_1 = () => {
           <div className="element-block">
             <p className="title-elem">A dark mode to contrast</p>
 
-            <p className="paragraph-elem">In an effort to improve accessibility to the app, we have included a dark mode, which can be seen in the following screens.</p>
-          </div>
-
-          <div className="element-block">
-            <p className="title-elem">A dark mode to contrast</p>
-
-            <p className="paragraph-elem">In contrast with the light version here we see some of the dark mode screens and UI changes</p>
+            <p className="paragraph-elem">In contrast with the light version here we see some of the dark mode screens and UI changes.</p>
           </div>
 
           <Carousel items={carouselItemsIII} />
+
+          <div id="prototypeID" className="element-block">
+            <p className="title-elem">2.4 Prototyping phase</p>
+
+            <p className="paragraph-elem">With the style guide, UI kit, and mockups defined, the moment for prototyping has arrived. This phase allows us to see the product in an early production phase live and identify the changes that must be made, if required.</p>
+
+            <p className="paragraph-elem">The login or sign up flows of the app are shown here.</p>
+          </div>
+
+          <img className="tercial-image" src={PrototypeOne} alt={"prototype-one"} />
+          <img className="tercial-image" src={PrototypeTwo} alt={"prototype-two"} />
+          <img className="tercial-image" src={PrototypeThree} alt={"prototype-three"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem">The search, recipes and market flows of the app are shown here.</p>
+          </div>
+
+          <img className="tercial-image" src={PrototypeFour} alt={"prototype-four"} />
+          <img className="tercial-image" src={PrototypeFive} alt={"prototype-five"} />
+          <img className="tercial-image" src={PrototypeSix} alt={"prototype-six"} />
+
+          <div id="designPrinciples" className="element-block">
+            <p className="title-elem">Design Principles</p>
+
+            <p className="paragraph-elem">In the following screens, we will showcase the design principles that have been followed in this process.</p>
+          </div>
+
+          <div className="element-compact-block">
+            <p className="subtitle-elem">Simplicity and Clarity</p>
+
+            <p className="paragraph-elem">Strive for a clean and uncluttered interface that prioritizes ease of use. Avoid overwhelming users with too many options or complex navigation structures.</p>
+          </div>
+
+          <img className="vertical-image" src={DesignPrinciplesOne} alt={"design-principles-one"} />
+
+          <div className="element-compact-block">
+            <p className="subtitle-elem">User-Friendly Search Function</p>
+
+            <p className="paragraph-elem">Implement a robust search function that allows users to filter and refine their searches based on various criteria, such as season, type of fruit or vegetable, cuisine, and dietary restrictions.</p>
+          </div>
+
+          <img className="vertical-image" src={DesignPrinciplesTwo} alt={"design-principles-two"} />
+
+          <div className="element-compact-block">
+            <p className="subtitle-elem">Visual Appeal and Relevance</p>
+
+            <p className="paragraph-elem">The app's visual design should be appealing and consistent with the brand identity. Use high-quality images, typography, and color palettes to create a visually engaging experience. Ensure that the visual elements are relevant to the app's purpose and content.</p>
+          </div>
+
+          <img className="vertical-image" src={DesignPrinciplesThree} alt={"design-principles-three"} />
+
+          <div id="keyFeatures" className="element-block">
+            <p className="title-elem">Key features</p>
+
+            <p className="paragraph-elem">In the following screens, we will showcase the key features of the app and how they address to the target audience.</p>
+          </div>
+
+          <img className="vertical-image" src={KeyFeaturesOne} alt={"key-features-one"} />
+
+          <div className="element-compact-block">
+            <p className="subtitle-elem">Search</p>
+
+            <p className="paragraph-elem">Understanding the needs of the users and the base product that EUFIC already has, it becomes clear that a search is the key element around which everything revolves.</p>
+          </div>
+
+          <img className="vertical-image" src={KeyFeaturesTwo} alt={"key-features-two"} />
+
+          <div className="element-compact-block">
+            <p className="subtitle-elem">Recipes</p>
+
+            <p className="paragraph-elem">In an effort to create a more usable and profitable product, a new recipe section has been added. The goal is to eventually enrich it with more recipes.</p>
+          </div>
+
+          <img className="vertical-image" src={KeyFeaturesThree} alt={"key-features-three"} />
+
+          <div className="element-compact-block">
+            <p className="subtitle-elem">Market</p>
+
+            <p className="paragraph-elem">Just like in the recipes area, adding markets where users can obtain their seasonal products is very relevant. However, this is a section in the app that has more room for further development.</p>
+          </div>
+
+          <div id="summaryID" className="element-block">
+            <p className="title-elem">Summary</p>
+
+            <p className="paragraph-elem">To summarize now we can see the key points of the study, the lessons learned and next possible steps with Food on Time (FOT).</p>
+          </div>
+
+          <div className="element-block">
+            <p className="subtitle-elem">Key points of the study</p>
+
+            <p className="p-elem-contrast">Health and Economic problems that seasoned fruits could aliviate</p>
+            <p className="paragraph-elem">As we see in the research process, health and economic issues can be significantly alleviated with seasonal fruits and vegetables, due to their proximity and fresh nutrients, among other benefits.</p>
+
+            <p className="p-elem-contrast">Why an Eufic app amplify the audience and the use of the information</p>
+            <p className="paragraph-elem">FOT app is a way to help Eufic organization to reach more audience and provide the information for the sake of europeans for now.</p>
+
+            <p className="p-elem-contrast">The App is connected with supermarkets</p>
+            <p className="paragraph-elem">To provide more than just search and recipes, we have added the option to connect with supermarkets. Here, you’ll be able to purchase some of the seasonal fruits and vegetables, depending on the country.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="title-elem">Lessons learned</p>
+
+            <p className="paragraph-elem">Lessons learned that will serve to improve or iterate the product in the future or will help me to improve in the analysis and execution of future product designs.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Needs of save recipes</p>
+            <p className="paragraph-elem">After create the whole app, we realized that users sometimes want to save their favorite recipes, so this could be an extra to have in consideration for the future.</p>
+
+            <p className="p-elem-contrast">Supermarket options can be scaled up</p>
+            <p className="paragraph-elem">At the moment we connect the app with markets filtered by countries, we understand the vast possibilities this option could offer in a future scaling process. Options like selecting multiple products in the FOT app and proceeding to the market app to purchase this curated list.</p>
+
+            <p className="p-elem-contrast">Make it simple to the user</p>
+            <p className="paragraph-elem">Specifically in this product, the easy language and consistency through the whole app is crucial to not overwhelm the user.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="title-elem">Next possible steps for FOT product</p>
+
+            <p className="p-elem-contrast">Redesign the website</p>
+            <p className="paragraph-elem">Once we have a published app design, one of the future steps is to provide an update to the official Eufic website.</p>
+
+            <p className="p-elem-contrast">Create a web browser app version</p>
+            <p className="paragraph-elem">Although the app is the primary accessible way for users to use this product, another method to reach a wider audience is to create a browser version of the new FOT app.</p>
+
+            <p className="p-elem-contrast">Extend the product to other areas or continents</p>
+            <p className="paragraph-elem">Due to the demand for a product like this, expanding its application to other areas would not only be interesting but also, at some point, necessary.</p>
+          </div>
+
+          <div className="divider-elem"></div>
+
+          <div className="element-block">
+            <p className="paragraph-elem">Thank you for reading through! Hope you enjoyed learning about my design and thought process.</p>
+          </div>
 
           {/* <div className="element-block">
             <p className="title-elem">Immune system needs</p>

@@ -3,50 +3,49 @@ import { Link } from 'react-router-dom'
 import '../../styles/global.css'
 import '../../styles/projects.css'
 
-import coverImagePro from './pics/Cover.jpg'
+import coverImagePro from './pics/Cover.avif'
 
-import SubCover from './pics/WorldCupWin.jpg'
+import SubCover from './pics/WorldCupWin.avif'
 
-import LogoStoryI from './pics/Previous_AFA_Logos.jpg'
-import LogoStoryII from './pics/Other_Champions_3_Stars.jpg'
+import LogoStoryI from './pics/PreviousAFALogo.avif'
+import LogoStoryII from './pics/OtherChampions3Stars.avif'
 
-import SolutionI from './pics/Solution_I.jpg'
+import SolutionI from './pics/SolutionI.avif'
 
-import SolutionII from './pics/Solution_II.jpg'
-import SolutionIII from './pics/Solution_III.jpg'
-import SolutionIV from './pics/Solution_IV.jpg'
-import SolutionV from './pics/Solution_V.jpg'
+import SolutionII from './pics/SolutionII.avif'
+import SolutionIII from './pics/SolutionIII.avif'
+import SolutionIV from './pics/SolutionIV.avif'
+import SolutionV from './pics/SolutionV.avif'
 
-import AFASolution6 from './pics/Solution_VI.jpg'
-import AFASolution7 from './pics/Solution_VII.jpg'
-import AFASolution8 from './pics/Solution_VIII.jpg'
+import AFASolution6 from './pics/SolutionVI.avif'
+import AFASolution7 from './pics/SolutionVII.avif'
+import AFASolution8 from './pics/SolutionVIII.avif'
 
-import ColorI from './pics/Color_I.jpg'
-import ColorII from './pics/Color_II.jpg'
+import ColorI from './pics/ColorI.avif'
+import ColorII from './pics/ColorII.avif'
 
-import TypographyI from './pics/Typography_I.jpg'
-import TypographyII from './pics/Typography_II.jpg'
-import TypographyIII from './pics/Typography_III.jpg'
+import TypographyI from './pics/TipographyI.avif'
+import TypographyII from './pics/TipographyII.avif'
+import TypographyIII from './pics/TipographyIII.avif'
 
-import SocialI from './pics/Social_I.jpg'
-import SocialII from './pics/Social_II.jpg'
-import SocialIII from './pics/Social_III.jpg'
-import SocialIV from './pics/Social_IV.jpg'
+import SocialI from './pics/SocialI.avif'
+import SocialII from './pics/SocialII.avif'
+import SocialIII from './pics/SocialIII.avif'
+import SocialIV from './pics/SocialIV.avif'
 
-import StationateryI from './pics/Stationatery_1.jpg'
-import StationateryII from './pics/Stationatery_2.jpg'
+import StationateryI from './pics/StationateryOne.avif'
+import StationateryII from './pics/StationateryTwo.avif'
 
-import StationateryIII from './pics/Stationatery_3.jpg'
-import StationateryIV from './pics/Stationatery_4.jpg'
-import StationateryV from './pics/Stationatery_5.jpg'
-import StationateryVI from './pics/Stationatery_6.jpg'
-import StationateryVII from './pics/Stationatery_7.jpg'
-import StationateryVIII from './pics/Stationatery_8.jpg'
-import StationateryIX from './pics/Stationatery_9.jpg'
-import StationateryX from './pics/Stationatery_10.jpg'
+import StationateryIII from './pics/StationateryThree.avif'
+import StationateryIV from './pics/StationateryFour.avif'
+import StationateryV from './pics/StationateryFive.avif'
+import StationateryVI from './pics/StationaterySix.avif'
+import StationateryVII from './pics/StationaterySeven.avif'
+import StationateryVIII from './pics/StationateryEight.avif'
+import StationateryIX from './pics/StationateryNine.avif'
+import StationateryX from './pics/StationateryTen.avif'
 
-
-import ProjectScreen from './pics/Project_Screen.jpg'
+import ProjectScreen from './pics/ProjectScreen.avif'
 
 import Carousel from '../../components/Carousel';
 
