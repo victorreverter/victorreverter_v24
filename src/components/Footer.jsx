@@ -11,7 +11,7 @@ const Footer = () => {
       <div id="footer-container">
         <div className='descriptive-container'>
           <img className="footer-pic" src={FooterLogo} alt="logo_header" />
-          <h4 className='explicative-text'>Product, Brand and Frontend Designer with the rational intention of design or redesign the problems of today for a better tomorrow using my passion and evolving skills.</h4>
+          <h4 className='explicative-text'>Full Stack Designer with the rational intention of design or redesign the problems of today for a better tomorrow using my passion and evolving skills.</h4>
         </div>
         <div className="menu-footer-links">
           <Link to="/">Home</Link>
