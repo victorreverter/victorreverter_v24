@@ -189,7 +189,7 @@ const Project_1 = () => {
         <div className="project-main">
 
           <div className="element-block">
-            <h2 className="title-elem">Intro</h2>
+            <h2 className="title-elem">Introduction</h2>
 
             <p className="paragraph-elem"><span>In December 2022,</span> Argentina won their 3rd FIFA World Cup, this event reveal the likely possibility of a rebrand of their Federation mark. With the Argentina victory against France on December 18th. The problem is revealed. It is Argentina with these new 3rd star need a rebrand?</p>
           </div>

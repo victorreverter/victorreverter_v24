@@ -1,20 +1,20 @@
 [
   {
     "id": 3,
-    "title": "Selec Project 3",
-    "date": "2022",
-    "description": "Description of Project 3.",
+    "title": "Design System for Spain Government",
+    "date": "2024",
+    "description": "Building a cohesive Government experience for spanish citizens.",
     "image": "project_3_big",
     "alt_text": "project_3_big",
-    "categories": "Branding"
+    "categories": "Product Design"
   },
   {
     "id": 2,
     "title": "Rebranding of Argentina National Football Team",
     "date": "2023",
     "description": "A redesign after the Argentina World Cup's victory in 2022.",
-    "image": "project_2",
-    "alt_text": "project_2",
+    "image": "project_2_big",
+    "alt_text": "project_2_big",
     "categories": "Branding"
   },
   {
@@ -22,8 +22,8 @@
     "title": "Developing the app for a food on time information service",
     "date": "2022",
     "description": "Food on time is a seasoned fruits and veggies app for a better life.",
-    "image": "project_1",
-    "alt_text": "project_1",
+    "image": "project_1_big",
+    "alt_text": "project_1_big",
     "categories": "Product Design"
   }
 ]
