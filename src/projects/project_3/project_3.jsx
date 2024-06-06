@@ -45,7 +45,7 @@ import gridsThree from './pics/grids_3.avif'
 
 // COMPONENTS ZONE ====================================
 
-import componentsBlock from './pics/components.avif'
+import componentsBlock from './pics/components-pic.avif'
 
 import accordion from './pics/components/accordion.avif'
 import button from './pics/components/button.avif'
