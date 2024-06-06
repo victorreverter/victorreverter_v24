@@ -13,18 +13,75 @@ import PainPoints from './pics/pain_points.avif'
 import GovUK from './pics/gov_uk_ref.avif'
 import GovCanada from './pics/gov_canada_ref.avif'
 
+// STYLES ZONE ====================================
+
+import stylesBlock from './pics/styles.avif'
+
+import brandBlock from './pics/brand.avif'
+import brandOne from './pics/brand_1.avif'
+import brandTwo from './pics/brand_2.avif'
+import brandThree from './pics/brand_3.avif'
+import brandFour from './pics/brand_4.avif'
+import brandFive from './pics/brand_5.avif'
+
+import typographyBlock from './pics/typography.avif'
+import typographyOne from './pics/typography_1.avif'
+import typographyTwo from './pics/typography_2.avif'
+
+import colourBlock from './pics/colour.avif'
+import colourOne from './pics/colour_1.avif'
+import colourTwo from './pics/colour_2.avif'
+
+import imageBlock from './pics/images.avif'
+import imageOne from './pics/images_1.avif'
+
+import spacingBlock from './pics/spacing.avif'
+import spacingOne from './pics/spacing_1.avif'
+
+import gridsBlock from './pics/grids.avif'
+import gridsOne from './pics/grids_1.avif'
+import gridsTwo from './pics/grids_2.avif'
+import gridsThree from './pics/grids_3.avif'
+
+// COMPONENTS ZONE ====================================
+
+import componentsBlock from './pics/components.avif'
+
+import accordion from './pics/components/accordion.avif'
+import button from './pics/components/button.avif'
+import iconset from './pics/components/iconset.avif'
+import backlink from './pics/components/backlink.avif'
+import breadcrumbs from './pics/components/breadcrumbs.avif'
+import charactercount from './pics/components/charactercount.avif'
+import checkboxes from './pics/components/checkboxes.avif'
+import details from './pics/components/details.avif'
+import cookieBanner from './pics/components/cookiebanner.avif'
+import dateInput from './pics/components/dateinput.avif'
+import errorMessage from './pics/components/errormessage.avif'
+import errorSummary from './pics/components/errorsummary.avif'
+
+// MOCKUPS ZONE =======================================
+
 import ProjectScreen from './pics/project_screen.avif'
 
 import Carousel from '../../components/Carousel';
 
 const Project_3 = () => {
 
-  // const carouselItemsI = [
-  //   { image: AFASolution6, alt: 'solution-6' },
-  //   { image: AFASolution7, alt: 'solution-7' },
-  //   { image: AFASolution8, alt: 'solution-8' },
-  //   // Add more items as needed
-  // ];
+  const carouselItemsI = [
+    { image: brandTwo, alt: 'brand-two' },
+    { image: brandThree, alt: 'brand-three' },
+    { image: brandFour, alt: 'brand-four' },
+    { image: brandFive, alt: 'brand-five' }
+    // Add more items as needed
+  ];
+
+  const carouselItemsII = [
+    { image: gridsOne, alt: 'grids-one' },
+    { image: gridsTwo, alt: 'grids-two' },
+    { image: gridsThree, alt: 'grids-three' }
+    // Add more items as needed
+  ];
 
   //Timing Up a Cover Pic ==========================
   const [coverPic, setCoverPic] = useState(false);
@@ -106,6 +163,12 @@ const Project_3 = () => {
         </div>
         <div className={getElementClass('competitiveAnalysis')} onClick={() => scrollToElement('competitiveAnalysis')}>
           Competitive Analysis
+        </div>
+        <div className={getElementClass('stylesBlock')} onClick={() => scrollToElement('stylesBlock')}>
+          Styles
+        </div>
+        <div className={getElementClass('componentsBlock')} onClick={() => scrollToElement('componentsBlock')}>
+          Components
         </div>
       </div>
 
@@ -280,6 +343,172 @@ const Project_3 = () => {
             <p className="paragraph-elem">Adapting Canada's focus on plain language to ensure clear communication within Spanish government websites.</p>
             <p className="paragraph-elem">Leveraging their responsive design principles to make all Spanish government websites mobile-friendly.</p>
           </div>
+
+          <div className="element-block">
+            <p className="title-elem">Identifying successful components</p>
+            <p className="paragraph-elem">While the UK Government Design System and Canada.ca offer valuable inspiration,  Spain has its own unique needs and considerations. Here's how we can adapt successful components and best practices.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Successful Components to Adopt</p>
+            <p className="paragraph-elem">Core UI Components: A core library of reusable UI components (buttons, forms, navigation elements) adapted to Spanish visual language and cultural norms (e.g., font styles, color palettes) can ensure consistency across all government websites.</p>
+            <p className="paragraph-elem">Accessibility Features: Implementing accessibility best practices from established Design Systems is crucial. This includes features like clear text hierarchy, high color contrast, and keyboard navigation to cater to users with disabilities.</p>
+            <p className="paragraph-elem">Responsive Design Principles: Ensuring all websites are responsive and deliver an optimal user experience across desktop, tablet, and mobile devices is vital for a mobile-first society like Spain.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Best Practices to Adapt</p>
+            <p className="paragraph-elem">User-Centered Design: Like Canada.ca, a strong focus on user research and iterative design would ensure the Spanish Design System supply to the specific needs of Spanish citizens.</p>
+            <p className="paragraph-elem">Clear and Concise Language: Adapting Canada's focus on plain language is key. Government websites should use clear and concise Spanish, avoiding bureaucratic jargon as much as possible, to ensure all users can easily understand the information presented.</p>
+            <p className="paragraph-elem">Collaborative Approach: Considering a collaborative approach like the UK system could foster collaboration and continuous improvement within the Spanish government and developer team.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Potential Areas for Improvement</p>
+            <p className="paragraph-elem">Cultural Considerations: While adopting core components, there's room for customization. Color palettes and design elements should reflect Spanish cultural sensibilities while maintaining accessibility standards.</p>
+            <p className="paragraph-elem">Legacy Systems Integration: Existing government websites might use outdated technologies. The Design System should be flexible enough to integrate with legacy systems while paving the way for future modernization.</p>
+            <p className="paragraph-elem">Multilingual Support: Spain has a multilingual population. While Spanish would be the primary language, exploring options for offering content in other regional languages could enhance inclusivity. Like English, French, Castillian, Català, Valencià, Galego and Euskera.</p>
+          </div>
+
+          <img id="stylesBlock" className="horizontal-image" src={stylesBlock} alt={"styles-block"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Styles elements created</p>
+            <p className="paragraph-elem">On this phase of the project the visual elements must be created to eventually use them in the component creation's phase.</p>
+          </div>
+
+          <img className="horizontal-image" src={brandBlock} alt={"brand-block"} />
+
+          <img className="horizontal-image" src={brandOne} alt={"brand-one"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">The Brand</p>
+            <p className="paragraph-elem">The brand proposal in this case was fundamentally oriented to create a clean and full functional elements to use where it is required.</p>
+          </div>
+
+          <Carousel items={carouselItemsI} />
+
+          <img className="horizontal-image" src={typographyBlock} alt={"typography-block"} />
+
+          <img className="horizontal-image" src={typographyOne} alt={"typography-one"} />
+
+          <img className="horizontal-image" src={typographyTwo} alt={"typography-two"} />
+
+          <img className="horizontal-image" src={colourBlock} alt={"colour-block"} />
+
+          <img className="horizontal-image" src={colourOne} alt={"colour-one"} />
+
+          <img className="horizontal-image" src={colourTwo} alt={"colour-two"} />
+
+          <img className="horizontal-image" src={imageBlock} alt={"image-block"} />
+
+          <img className="horizontal-image" src={imageOne} alt={"image-one"} />
+
+          <img className="horizontal-image" src={spacingBlock} alt={"spacing-block"} />
+
+          <img className="horizontal-spacing" src={spacingOne} alt={"image-one"} />
+
+          <img className="horizontal-image" src={gridsBlock} alt={"grids-block"} />
+
+          <Carousel items={carouselItemsII} />
+
+          <img id="componentsBlock" className="horizontal-image" src={componentsBlock} alt={"components-block"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Components elements created</p>
+            <p className="paragraph-elem">On this phase of the project the Design System's components were made. The process begins with some sketches to see the whole base of components that will be required to this Spain Government proposal.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Accordion</span></p>
+            <p className="paragraph-elem">A vertically stacked set of interactive headings that each reveal an associated section of content.</p>
+          </div>
+
+          <img className="horizontal-image" src={accordion} alt={"accordion"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Button</span></p>
+            <p className="paragraph-elem">An interactive element that users can click to perform an action or submit data. This component is fundamental in user interfaces, providing a clear and accessible way to trigger events, such as form submissions, navigation, or initiating processes. Buttons are often styled to stand out and include descriptive text or icons to indicate their function.</p>
+          </div>
+
+          <img className="horizontal-image" src={button} alt={"button"} />
+          
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Icon Set</span></p>
+            <p className="paragraph-elem">The whole set require for this Design System. Even when the main purpose is try to be less visual system because of the misunderstanding of only visual elements, the icons represent a relevant part of every app construction process nowadays.</p>
+          </div>
+
+          <img className="horizontal-image" src={iconset} alt={"iconset"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Back Link</span></p>
+            <p className="paragraph-elem">A navigational element that allows users to return to the previous page or section they were viewing.</p>
+          </div>
+
+          <img className="horizontal-image" src={backlink} alt={"backlink"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Breadcrumbs</span></p>
+            <p className="paragraph-elem">A horizontal trail of links that displays the hierarchical path from the homepage to the current page. With the purpose of help users understand their location within the site’s structure and easily navigate back to previous pages.</p>
+          </div>
+
+          <img className="horizontal-image" src={breadcrumbs} alt={"breadcrumbs"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Character count</span></p>
+            <p className="paragraph-elem">A dynamic indicator that shows the number of characters entered in a text field. This component is useful for forms and text areas where character limits are enforced, ensuring users are aware of how much content they can input.</p>
+          </div>
+
+          <img className="horizontal-image" src={charactercount} alt={"charactercount"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Checkboxes</span></p>
+            <p className="paragraph-elem">Interactive square boxes that users can check or uncheck to make binary selections, typically in forms or surveys. This component allows for the selection of multiple options from a list, providing flexibility in user choices.</p>
+          </div>
+
+          <img className="horizontal-image" src={checkboxes} alt={"checkboxes"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Details</span></p>
+            <p className="paragraph-elem">Interactive elements that allow users to expand and collapse sections of content. This component is often used to hide and reveal additional information on a page, improving content organization and user experience by keeping pages uncluttered.</p>
+          </div>
+
+          <img className="horizontal-image" src={details} alt={"details"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Cookie Banner</span></p>
+            <p className="paragraph-elem">A notification element that informs users about the website’s use of cookies and typically requests their consent. This component is essential for compliance with privacy regulations and helps users understand how their data will be used.</p>
+          </div>
+
+          <img className="horizontal-image" src={cookieBanner} alt={"cookiebanner"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Date input</span></p>
+            <p className="paragraph-elem">A form field designed for entering dates. This component ensures date data is collected in a consistent format, reducing errors and improving the accuracy of date-related information.</p>
+          </div>
+
+          <img className="horizontal-image" src={dateInput} alt={"dateinput"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Error message</span></p>
+            <p className="paragraph-elem">A notification that informs users of an issue or mistake that has occurred. Must appear near the source of the error and provides clear, specific guidance on how to correct it, enhancing the user experience by facilitating problem resolution.</p>
+          </div>
+
+          <img className="horizontal-image" src={errorMessage} alt={"errormessage"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Error summary</span></p>
+            <p className="paragraph-elem">A consolidated list of errors presented at the top of a form or page. This component provides an overview of all issues that need attention, allowing users to quickly identify and navigate to each problem area, thereby improving the efficiency of error correction.</p>
+          </div>
+
+          <img className="horizontal-image" src={errorSummary} alt={"errorsummary"} />
+          
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Text</span></p>
+            <p className="paragraph-elem">Descrip</p>
+          </div>
+
+          <img className="horizontal-image" src={accordion} alt={"accordion"} />
 
           {/* <div className="element-compact-block">
             <h3 className="subtitle-elem">#4 Subtitle</h3>
