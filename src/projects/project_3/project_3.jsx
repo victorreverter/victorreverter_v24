@@ -59,6 +59,25 @@ import cookieBanner from './pics/components/cookiebanner.avif'
 import dateInput from './pics/components/dateinput.avif'
 import errorMessage from './pics/components/errormessage.avif'
 import errorSummary from './pics/components/errorsummary.avif'
+import fieldset from './pics/components/fieldset.avif'
+import footer from './pics/components/footer.avif'
+import header from './pics/components/header.avif'
+import insettext from './pics/components/insettext.avif'
+import notificationbanner from './pics/components/notificationbanner.avif'
+import pagination from './pics/components/pagination.avif'
+import panel from './pics/components/panel.avif'
+import passwordinput from './pics/components/passwordinput.avif'
+import radios from './pics/components/radios.avif'
+import select from './pics/components/select.avif'
+import summarylist from './pics/components/summarylist.avif'
+import table from './pics/components/table.avif'
+import tabs from './pics/components/tabs.avif'
+import tag from './pics/components/tag.avif'
+import tasklist from './pics/components/tasklist.avif'
+import textarea from './pics/components/textarea.avif'
+import textinput from './pics/components/textinput.avif'
+import uploadfile from './pics/components/uploadfile.avif'
+import warningtext from './pics/components/warningtext.avif'
 
 // MOCKUPS ZONE =======================================
 
@@ -504,11 +523,137 @@ const Project_3 = () => {
           <img className="horizontal-image" src={errorSummary} alt={"errorsummary"} />
           
           <div className="element-block">
-            <p className="paragraph-elem"><span>Text</span></p>
-            <p className="paragraph-elem">Descrip</p>
+            <p className="paragraph-elem"><span>Fieldset</span></p>
+            <p className="paragraph-elem">A group of inputs accompanied by a legend. This component helps organize complex forms by visually grouping related fields, enhancing readability and usability.</p>
           </div>
 
-          <img className="horizontal-image" src={accordion} alt={"accordion"} />
+          <img className="horizontal-image" src={fieldset} alt={"fieldset"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Footer</span></p>
+            <p className="paragraph-elem">The bottom section of a webpage, this component could provides a consistent location for important but non-primary content across the site.</p>
+          </div>
+
+          <img className="horizontal-image" src={footer} alt={"footer"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Header</span></p>
+            <p className="paragraph-elem">The top section of a webpage that usually includes branding, navigation links, and sometimes a search bar. This component provides a consistent and accessible area for essential site-wide elements, helping users navigate and understand the site’s structure.</p>
+          </div>
+
+          <img className="horizontal-image" src={header} alt={"header"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Inset text</span></p>
+            <p className="paragraph-elem">A highlighted block of text set off from the main content, often with a distinct background color or border. This component is used to draw attention to important information or provide supplementary details, enhancing the readability and emphasis of critical messages.</p>
+          </div>
+
+          <img className="horizontal-image" src={insettext} alt={"insettext"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Notification banner</span></p>
+            <p className="paragraph-elem">A prominent message area displayed at the top or bottom of a page, used to convey important information or alerts to users. This component is effective for delivering urgent updates, warnings, or confirmation messages that require immediate attention.</p>
+          </div>
+
+          <img className="horizontal-image" src={notificationbanner} alt={"notificationbanner"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Pagination</span></p>
+            <p className="paragraph-elem">A navigation control that divides content into discrete pages and provides links to move between them. This component is essential for managing large datasets or content collections, improving load times and usability by allowing users to navigate through information in manageable chunks.</p>
+          </div>
+          
+          <img className="horizontal-image" src={pagination} alt={"pagination"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Panel</span></p>
+            <p className="paragraph-elem">A container element that groups related content or interface elements together within a distinct section of a page. This component helps organize information, providing a clear structure and improving the overall user experience by segmenting content into logical areas.</p>
+          </div>
+
+          <img className="horizontal-image" src={panel} alt={"panel"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Password input</span></p>
+            <p className="paragraph-elem">A specialized form field designed for entering passwords, featuring obscured text to enhance security and privacy. This component typically includes additional functionalities like visibility toggles, strength indicators, and validation to ensure that the password meets security requirements and is entered correctly.</p>
+          </div>
+
+          <img className="horizontal-image" src={passwordinput} alt={"passwordinput"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Radios</span></p>
+            <p className="paragraph-elem">A set of circular selection buttons that allow users to choose one option from a list of mutually exclusive choices. This component is commonly used in forms and surveys where only a single selection is permitted, ensuring clear and distinct choices.</p>
+          </div>
+
+          <img className="horizontal-image" src={radios} alt={"radios"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Select</span></p>
+            <p className="paragraph-elem">A dropdown menu that allows users to choose one option from a predefined list. This component is useful for forms and interfaces where space is limited, providing a compact and user-friendly way to make selections from a large number of options.</p>
+          </div>
+
+          <img className="horizontal-image" src={select} alt={"select"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Summary list</span></p>
+            <p className="paragraph-elem">A structured list that presents key pieces of information in a clear, concise format. Each item typically includes a label and a corresponding value, making it easy to review and understand essential details at a glance.</p>
+          </div>
+
+          <img className="horizontal-image" src={summarylist} alt={"summarylist"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Table</span></p>
+            <p className="paragraph-elem">A grid of rows and columns used to display data in an organized manner. This component allows for easy comparison of information, facilitating the presentation of structured data such as schedules, statistics, or lists. text</p>
+          </div>
+
+          <img className="horizontal-image" src={table} alt={"table"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Tabs</span></p>
+            <p className="paragraph-elem">A navigational component that divides content into multiple sections, with each section accessible via a labeled tab. This component helps organize related content within a single page, allowing users to switch between sections without leaving the page, thereby enhancing user experience and content accessibility.</p>
+          </div>
+
+          <img className="horizontal-image" src={tabs} alt={"tabs"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Tag</span></p>
+            <p className="paragraph-elem">A small, clickable label that categorizes or highlights items with specific attributes or statuses. This component is often used to filter content, indicate metadata, or manage items in lists, helping users quickly identify and interact with related content.</p>
+          </div>
+
+          <img className="horizontal-image" src={tag} alt={"tag"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Tasklist</span></p>
+            <p className="paragraph-elem">An organized list of actionable items or steps, often accompanied by checkboxes to mark completion. This component helps users manage and track progress on tasks, providing a clear and interactive way to handle to-do items or project steps.</p>
+          </div>
+
+          <img className="horizontal-image" src={tasklist} alt={"tasklist"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Textarea</span></p>
+            <p className="paragraph-elem">A multi-line input field that allows users to enter large amounts of text. This component is ideal for collecting detailed information, such as comments or descriptions, and often includes features like word count and resizing to enhance usability.</p>
+          </div>
+
+          <img className="horizontal-image" src={textarea} alt={"textarea"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Text input</span></p>
+            <p className="paragraph-elem">A single-line field where users can enter text. This component is widely used in forms for collecting short pieces of information, such as names, email addresses, or search queries, and often includes validation and formatting features.</p>
+          </div>
+
+          <img className="horizontal-image" src={textinput} alt={"textinput"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Upload file</span></p>
+            <p className="paragraph-elem">An element that allows users to select and upload files from their device. This component typically includes a button to browse for files and displays the selected file name, facilitating the process of submitting documents, images, or other files.</p>
+          </div>
+
+          <img className="horizontal-image" src={uploadfile} alt={"uploadfile"} />
+
+          <div className="element-block">
+            <p className="paragraph-elem"><span>Warning text</span></p>
+            <p className="paragraph-elem">A highlighted message that alerts users to important information or potential issues. This component is typically displayed with a distinct style, such as bold text or a colored background, to ensure it captures attention and conveys the urgency or significance of the warning.</p>
+          </div>
+
+          <img className="horizontal-image" src={warningtext} alt={"warningtext"} />
 
           {/* <div className="element-compact-block">
             <h3 className="subtitle-elem">#4 Subtitle</h3>
