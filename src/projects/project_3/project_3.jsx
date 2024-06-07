@@ -80,6 +80,25 @@ import uploadfile from './pics/components/uploadfile.avif'
 import warningtext from './pics/components/warningtext.avif'
 
 // MOCKUPS ZONE =======================================
+import mockupsBlock from './pics/mockups-pic.avif'
+
+import mockupMobile1 from './pics/mockups/mobilemockup1.avif'
+import mockupMobile2 from './pics/mockups/mobilemockup2.avif'
+import mockupMobile3 from './pics/mockups/mobilemockup3.avif'
+import mockupMobile4 from './pics/mockups/mobilemockup4.avif'
+
+import mockupsDesktop1 from './pics/mockups/desktopmockup1.avif'
+import mockupsDesktop2 from './pics/mockups/desktopmockup2.avif'
+import mockupsDesktop3 from './pics/mockups/desktopmockup3.avif'
+import mockupsDesktop4 from './pics/mockups/desktopmockup4.avif'
+import mockupsDesktop5 from './pics/mockups/desktopmockup5.avif'
+import mockupsDesktop6 from './pics/mockups/desktopmockup6.avif'
+import mockupsDesktop7 from './pics/mockups/desktopmockup7.avif'
+import mockupsDesktop8 from './pics/mockups/desktopmockup8.avif'
+import mockupsDesktop9 from './pics/mockups/desktopmockup9.avif'
+
+import benefitsDesignSystem from './pics/benefits_design_systems.avif'
+import benefitsSpainGov from './pics/benefits_for_spain_government.avif'
 
 import ProjectScreen from './pics/project_screen.avif'
 
@@ -99,6 +118,14 @@ const Project_3 = () => {
     { image: gridsOne, alt: 'grids-one' },
     { image: gridsTwo, alt: 'grids-two' },
     { image: gridsThree, alt: 'grids-three' }
+    // Add more items as needed
+  ];
+
+  const carouselItemsIII = [
+    { image: mockupMobile1, alt: 'mockup-mobile-1' },
+    { image: mockupMobile2, alt: 'mockup-mobile-2' },
+    { image: mockupMobile3, alt: 'mockup-mobile-3' },
+    { image: mockupMobile4, alt: 'mockup-mobile-4' }
     // Add more items as needed
   ];
 
@@ -188,6 +215,12 @@ const Project_3 = () => {
         </div>
         <div className={getElementClass('componentsBlock')} onClick={() => scrollToElement('componentsBlock')}>
           Components
+        </div>
+        <div className={getElementClass('mockupsBlock')} onClick={() => scrollToElement('mockupsBlock')}>
+          Mockups
+        </div>
+        <div className={getElementClass('impactValue')} onClick={() => scrollToElement('impactValue')}>
+          Impact & Value
         </div>
       </div>
 
@@ -654,6 +687,98 @@ const Project_3 = () => {
           </div>
 
           <img className="horizontal-image" src={warningtext} alt={"warningtext"} />
+
+          <img id="mockupsBlock" className="horizontal-image" src={mockupsBlock} alt={"mockups-block"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Mockups created</p>
+            <p className="paragraph-elem">During this phase of the project, mockups were created using the components of the Design System. The process was conceived with the intention of providing examples of what government websites could look like.</p>
+          </div>
+
+          <Carousel items={carouselItemsIII} />
+
+          <img className="horizontal-image" src={mockupsDesktop1} alt={"mockups-desktop-1"} />
+
+          <img className="horizontal-image" src={mockupsDesktop2} alt={"mockups-desktop-2"} />
+
+          <img className="horizontal-image" src={mockupsDesktop3} alt={"mockups-desktop-3"} />
+
+          <img className="horizontal-image" src={mockupsDesktop4} alt={"mockups-desktop-4"} />
+
+          <img className="horizontal-image" src={mockupsDesktop5} alt={"mockups-desktop-5"} />
+
+          <img className="horizontal-image" src={mockupsDesktop6} alt={"mockups-desktop-6"} />
+
+          <img className="horizontal-image" src={mockupsDesktop7} alt={"mockups-desktop-7"} />
+
+          <img className="horizontal-image" src={mockupsDesktop8} alt={"mockups-desktop-8"} />
+
+          <img className="horizontal-image" src={mockupsDesktop9} alt={"mockups-desktop-9"} />
+
+          <div id="impactValue" className="element-block">
+            <h2 className="title-elem">Impact & Value in the proposition</h2>
+
+            <p className="paragraph-elem">While the exact figures would depend on a full implementation and data collection, research suggests that Design Systems offer significant benefits across various areas like the following ones.</p>
+          </div>
+
+          <img className="horizontal-image" src={benefitsDesignSystem} alt={"benefits-design-system"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">1 · Increased User Satisfaction:</p>
+            <p className="paragraph-elem"><span>Reduced Frustration:</span> A consistent and user-friendly design across all government websites can significantly reduce user frustration and improve overall satisfaction. Studies by Nielsen Norman Group report that consistent interfaces can lead to a 20% increase in task completion rates.</p>
+            <p className="paragraph-elem"><span>Improved Trust:</span> A cohesive visual language builds trust with users, as it conveys professionalism and a commitment to user experience.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">2 · Reduced Development Time:</p>
+            <p className="paragraph-elem"><span>Reusable Components:</span> A library of pre-built and tested UI components (buttons, forms) eliminates the need for developers to recreate them from scratch for each website. This can lead to time savings of up to 37% according to research by Zeroheight.</p>
+            <p className="paragraph-elem"><span>Streamlined Workflow:</span> Clear design guidelines and code snippets within the Design System empower developers to focus on building functionality instead of reinventing the design wheel.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">3 · Cost Savings:</p>
+            <p className="paragraph-elem"><span>Reduced Maintenance Costs:</span> Maintaining a single Design System is significantly less expensive than managing the design and code of disparate government websites.</p>
+            <p className="paragraph-elem"><span>Improved Efficiency:</span> Streamlined workflows and reduced development times translate to cost savings for the Spanish government.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">4 · Additional Benefits</p>
+            <p className="paragraph-elem"><span>Improved Accessibility:</span> A well-designed Design System prioritizes accessibility best practices, ensuring all users, including those with disabilities, can easily interact with government websites.</p>
+            <p className="paragraph-elem"><span>Enhanced Brand Identity:</span> A consistent visual language across all platforms strengthens the Spanish government's brand identity and fosters user recognition.</p>
+          </div>
+
+          <div id="impactValue" className="element-block">
+            <h2 className="title-elem">Value in the proposition for Spain Government</h2>
+
+            <p className="paragraph-elem">The current landscape of Spanish government websites presents a challenge for citizens and the government itself. Inconsistent interfaces, redundant information, and a lack of user-friendliness frustrate citizens and hinder efficient service delivery.</p>
+
+            <p className="paragraph-elem">As a well-designed Design System this one must offers a compelling value proposition:</p>
+          </div>
+
+          <img className="horizontal-image" src={benefitsSpainGov} alt={"benefits-spain-gov"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">1 · Improved User Experience:</p>
+            <p className="paragraph-elem"><span>Increased User Satisfaction:</span> A consistent and user-friendly experience across all government websites leads to happier and less frustrated citizens. This translates to higher trust in the government and a more positive perception of its services.</p>
+            <p className="paragraph-elem"><span>Enhanced Accessibility:</span> By prioritizing accessibility best practices, the Design System ensures all citizens, regardless of ability, can navigate and access government services. This fosters inclusivity and promotes equal access to information.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">2 · Cost Savings & Efficiency:</p>
+            <p className="paragraph-elem"><span>Reduced Development Time:</span> Reusable UI components and clear design guidelines significantly decrease the time and resources needed to develop and maintain government websites. Developers can focus on building functionalities instead of reinventing the design each time.</p>
+            <p className="paragraph-elem"><span>Streamlined Maintenance:</span> Managing a single Design System is far more cost-effective than maintaining the design and code of numerous independent websites.</p>
+            <p className="paragraph-elem"><span>Improved Staff Productivity:</span> Clear documentation and guidelines within the Design System empower government staff to make informed decisions about website content and presentation, reducing the need for external design resources.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">3 · Additional Benefits:</p>
+            <p className="paragraph-elem"><span>Stronger Brand Identity:</span> A cohesive visual language across platforms reinforces the Spanish government's brand and fosters user recognition. This builds trust and strengthens the perception of a professional and efficient government.</p>
+            <p className="paragraph-elem"><span>Reduced Risk of Errors:</span> Consistent design principles minimize the possibility of inconsistencies and errors across different websites, leading to a more reliable and trustworthy user experience.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="paragraph-elem">Investing in a Spanish Design System is an investment in its citizens. It empowers them to navigate government services with ease, fosters trust in the government, and delivers significant cost savings and efficiency gains. This approach creates a win-win situation for both Spanish citizens and the government.</p>
+          </div>
 
           {/* <div className="element-compact-block">
             <h3 className="subtitle-elem">#4 Subtitle</h3>
