@@ -47,6 +47,11 @@ import gridsThree from './pics/grids_3.avif'
 
 import componentsBlock from './pics/components-pic.avif'
 
+import compoSketch1 from './pics/componentssketch1.avif'
+import compoSketch2 from './pics/componentssketch2.avif'
+import compoSketch3 from './pics/componentssketch3.avif'
+import compoSketch4 from './pics/componentssketch4.avif'
+
 import accordion from './pics/components/accordion.avif'
 import button from './pics/components/button.avif'
 import iconset from './pics/components/iconset.avif'
@@ -100,6 +105,13 @@ import mockupsDesktop9 from './pics/mockups/desktopmockup9.avif'
 import benefitsDesignSystem from './pics/benefits_design_systems.avif'
 import benefitsSpainGov from './pics/benefits_for_spain_government.avif'
 
+import conclusion1 from './pics/conclusion_1.avif'
+import conclusion2 from './pics/conclusion_2.avif'
+
+import userTestingProcess from './pics/user_testing_process.avif'
+import iterationProcess from './pics/iteration_process.avif'
+
+
 import ProjectScreen from './pics/project_screen.avif'
 
 import Carousel from '../../components/Carousel';
@@ -126,6 +138,14 @@ const Project_3 = () => {
     { image: mockupMobile2, alt: 'mockup-mobile-2' },
     { image: mockupMobile3, alt: 'mockup-mobile-3' },
     { image: mockupMobile4, alt: 'mockup-mobile-4' }
+    // Add more items as needed
+  ];
+
+  const carouselItemsIV = [
+    { image: compoSketch1, alt: 'components-sketch-1' },
+    { image: compoSketch2, alt: 'components-sketch-2' },
+    { image: compoSketch3, alt: 'components-sketch-3' },
+    { image: compoSketch4, alt: 'components-sketch-4' }
     // Add more items as needed
   ];
 
@@ -221,6 +241,12 @@ const Project_3 = () => {
         </div>
         <div className={getElementClass('impactValue')} onClick={() => scrollToElement('impactValue')}>
           Impact & Value
+        </div>
+        <div className={getElementClass('TestingIteration')} onClick={() => scrollToElement('TestingIteration')}>
+          Testing & Iteration
+        </div>
+        <div className={getElementClass('ConclusionNextSteps')} onClick={() => scrollToElement('ConclusionNextSteps')}>
+          Conclusion & Next steps
         </div>
       </div>
 
@@ -469,6 +495,12 @@ const Project_3 = () => {
           <div className="element-block">
             <p className="p-elem-contrast">Components elements created</p>
             <p className="paragraph-elem">On this phase of the project the Design System's components were made. The process begins with some sketches to see the whole base of components that will be required to this Spain Government proposal.</p>
+          </div>
+
+          <Carousel items={carouselItemsIV} />
+
+          <div className="element-block">
+            <p className="paragraph-elem">And after some sketches the creation of pulished components in digital version.</p>
           </div>
 
           <div className="element-block">
@@ -778,6 +810,147 @@ const Project_3 = () => {
 
           <div className="element-block">
             <p className="paragraph-elem">Investing in a Spanish Design System is an investment in its citizens. It empowers them to navigate government services with ease, fosters trust in the government, and delivers significant cost savings and efficiency gains. This approach creates a win-win situation for both Spanish citizens and the government.</p>
+          </div>
+
+          <div id="TestingIteration" className="element-block">
+            <h2 className="title-elem">Testing and the value on it</h2>
+
+            <h2 className="paragraph-elem">The phase of testing and iteration must be essential, even when this is a simulated project. We take time to develop the process and methodology to make effective this phase.</h2>
+
+            <p className="paragraph-elem">We would primarily use usability testing to evaluate the effectiveness, efficiency, and user satisfaction of the proposed Design System components.</p>
+          </div>
+
+          <img className="horizontal-image" src={userTestingProcess} alt={"user-testing-process"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Recruiting Participants:</p>
+            <p className="paragraph-elem"><span>·</span> We would recruit a diverse group of Spanish citizens who frequently interact with government websites.</p>
+            <p className="paragraph-elem"><span>·</span> The group would represent different age ranges, technical abilities, and geographic locations.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Testing Setup:</p>
+            <p className="paragraph-elem"><span>·</span> We'd create high-fidelity prototypes of the core Design System components (e.g., forms, buttons) using design tools like Figma or Adobe XD.</p>
+            <p className="paragraph-elem"><span>·</span> Ideally, these prototypes would be in Spanish and accessible from various devices (desktop, mobile) to reflect real-world scenarios.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Testing Tasks:</p>
+            <p className="paragraph-elem"><span>·</span> Participants would be given a set of realistic tasks to complete using the Design System components.</p>
+            <p className="paragraph-elem"><span>·</span> These tasks would simulate common actions users would perform on government websites, such as searching for information, filling out forms, or navigating to specific services.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Data Collection Techniques:</p>
+            <p className="paragraph-elem"><span>Think-aloud protocol:</span> We'd encourage participants to verbalize their thoughts and feelings while completing the tasks. This allows us to understand their thought process and identify potential areas of confusion.</p>
+            <p className="paragraph-elem"><span>Screen recordings:</span> Recording user interactions with the prototypes helps analyze user behavior and pinpoint usability issues.</p>
+            <p className="paragraph-elem"><span>Post-test interviews:</span> A short interview after each session allows users to elaborate on their experience and provide specific feedback on the Design System components.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Analyzing Results:</p>
+            <p className="paragraph-elem">We'd analyze the collected data (think-aloud transcripts, screen recordings, interview notes) to identify recurring themes and user pain points.</p>
+            <p className="paragraph-elem">By analyzing task completion times, error rates, and user feedback, we can gauge the effectiveness and efficiency of the Design System components.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Benefits of User Testing:</p>
+            <p className="paragraph-elem"><span>·</span> User testing allows us to identify and address usability issues early in the design process.</p>
+            <p className="paragraph-elem"><span>·</span> It ensures the Design System components are intuitive and meet the needs of Spanish users.</p>
+            <p className="paragraph-elem"><span>·</span> By iterating based on user feedback, we can create a user-centered Design System that empowers citizens to efficiently navigate government services.</p>
+            <p className="paragraph-elem">This user testing plan showcases a proactive approach to design and would be crucial for refining the Spanish Design System before a full-scale implementation.</p>
+          </div>
+
+          <div className="element-block">
+            <h2 className="title-elem">Iteration process</h2>
+
+            <h2 className="paragraph-elem">This user testing plan showcases a proactive approach to design and would be crucial for refining the Spanish Design System before a full-scale implementation.</h2>
+          </div>
+
+          <img className="horizontal-image" src={iterationProcess} alt={"iteration-process"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">1 · Analyzing User Feedback</p>
+            <p className="paragraph-elem"><span>·</span> Users struggling to find specific information on a form due to unclear labeling.</p>
+            <p className="paragraph-elem"><span>·</span> Difficulty completing tasks on mobile devices due to small buttons or unresponsive layouts.</p>
+            <p className="paragraph-elem"><span>·</span> Confusion around the meaning of certain icons used in the navigation elements.</p>
+          </div>
+
+
+          <div className="element-block">
+            <p className="p-elem-contrast">2 · Prioritizing Refinements:</p>
+            <p className="paragraph-elem">Based on the frequency and severity of issues identified, we'd prioritize which components require the most significant changes.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">3 · Refining Design Components:</p>
+            <p className="paragraph-elem">Here's how user feedback might translate into specific refinements:</p>
+            <p className="paragraph-elem"><span>· Clarity over Confusion:</span> Clarity over Confusion: If users found form labels unclear, we'd revise them using simpler and more concise language in Spanish.</p>
+            <p className="paragraph-elem"><span>· Mobile-First Optimization:</span> Based on user testing on mobile devices, buttons might be enlarged, and layouts adjusted to ensure a responsive and user-friendly experience.</p>
+            <p className="paragraph-elem"><span>· Iconography with Meaning:</span> If certain icons were confusing, we'd consider replacing them with more universally understood symbols or adding tooltips with explanations when hovering over the icons.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">4 · Iterative Testing & Refinement:</p>
+            <p className="paragraph-elem">We wouldn't stop at just one round of testing.  The revised components would be presented to a new group of users for further feedback. This iterative process ensures the Spanish Design System is continuously refined to meet the evolving needs of Spanish citizens.</p>
+          </div>
+
+          <div id="ConclusionNextSteps" className="element-block">
+            <h2 className="title-elem">Conclusion and next steps</h2>
+
+            <p className="paragraph-elem">By analyzing successful Design Systems from other countries, we identified valuable components and best practices that could be adapted to the Spanish context.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">Here are the key takeaways</p>
+            <p className="paragraph-elem"><span>User-Centered Design:</span> Prioritizing user research and iterative design would ensure the Spanish Design System addresses the specific needs and frustrations of Spanish citizens.</p>
+            <p className="paragraph-elem"><span>Accessibility and Mobile-First:</span> The system should prioritize accessibility best practices and ensure a responsive and user-friendly experience across all devices.</p>
+            <p className="paragraph-elem"><span>Clarity and Consistency:</span>  Clear and concise communication in Spanish, combined with consistent UI components, would create a seamless user experience.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="paragraph-elem">Implementing a Spanish Design System offers significant potential benefits. Increased user satisfaction, improved accessibility, and streamlined development processes would lead to cost savings and a more efficient government.  Ultimately, a unified Design System empowers Spanish citizens to navigate government services with ease and fosters trust in the government's commitment to user experience.</p>
+            <p className="paragraph-elem">While this project explored the potential of a Spanish Design System, further development and implementation require a more concrete plan. Here's a roadmap for the next steps:</p>
+          </div>
+
+          <img className="horizontal-image" src={conclusion1} alt={"conclusion-1"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">1 · Stakeholder Buy-in</p>
+            <p className="paragraph-elem">Secure the support of key stakeholders within the Spanish government, highlighting the potential benefits of a Design System (improved user experience, cost savings, efficiency).</p>
+            <p className="paragraph-elem">Build a cross-functional team including designers, developers, user experience specialists, and government representatives to champion the project.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">2 · Comprehensive User Research</p>
+            <p className="paragraph-elem">Conduct in-depth user research with real Spanish citizens who frequently interact with government websites. This could involve user interviews, usability testing, and surveys to gather detailed feedback on current pain points and user needs.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">3 · Design & Development</p>
+            <p className="paragraph-elem">Based on user research findings, create a comprehensive Design System library with reusable UI components (buttons, forms, navigation elements) tailored to the Spanish context.</p>
+            <p className="paragraph-elem">Develop clear and concise design guidelines outlining best practices for typography, color palettes, information architecture, and accessibility.</p>
+            <p className="paragraph-elem">Establish a code library with reusable components and ensure compatibility with existing government web technologies.</p>
+          </div>
+
+          <img className="horizontal-image" src={conclusion2} alt={"conclusion-2"} />
+
+          <div className="element-block">
+            <p className="p-elem-contrast">4 · Testing & Iteration</p>
+            <p className="paragraph-elem">Conduct usability testing with a new group of users to evaluate the effectiveness and user-friendliness of the Design System components.</p>
+            <p className="paragraph-elem">Iterate on the design and code based on user feedback, ensuring a seamless and user-centered experience.</p>
+          </div>
+          
+          <div className="element-block">
+            <p className="p-elem-contrast">5 · Implementation & Training</p>
+            <p className="paragraph-elem">Develop a rollout plan for the Design System, outlining how different government agencies will adopt and integrate it into their existing websites.</p>
+            <p className="paragraph-elem">Provide training and workshops for government web developers and content creators on how to effectively utilize the Design System.</p>
+          </div>
+
+          <div className="element-block">
+            <p className="p-elem-contrast">6 · Maintenance & Evolution</p>
+            <p className="paragraph-elem">Establish a governance model for the Design System, outlining roles and responsibilities for ongoing maintenance and updates.</p>
+            <p className="paragraph-elem">Continuously gather feedback from users and stakeholders to identify areas for improvement and ensure the Design System remains relevant and effective.</p>
           </div>
 
           {/* <div className="element-compact-block">
