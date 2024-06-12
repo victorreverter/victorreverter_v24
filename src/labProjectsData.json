@@ -1,0 +1,38 @@
+[
+  {
+    "id": 4,
+    "title": "POTUS Data",
+    "date": "2020 last update",
+    "description": "POTUS as the acronym of President of the United States is a data showcase of some interesting data of every President of the States.",
+    "image": "lab_cover4",
+    "alt_text": "lab_cover4",
+    "url": "https://victorreverter.github.io/potusdata/"
+  },
+  {
+    "id": 3,
+    "title": "Periodic Table",
+    "date": "2020",
+    "description": "A periodic table where you can see the atomic weight, the correspondent link to the article in wikipedia of the selected element. Also can select and see the group of chemical elements in the whole table.",
+    "image": "lab_cover3",
+    "alt_text": "lab_cover3",
+    "url": "https://victorreverter.github.io/periodic-grid-table/"
+  },
+  {
+    "id": 2,
+    "title": "The Movie Database",
+    "date": "2019",
+    "description": "A movie searcher where to see not only movies but also series and celebrities. When a trailer is available is possible to see it.",
+    "image": "lab_cover2",
+    "alt_text": "lab_cover2",
+    "url": "https://victorreverter.github.io/datamovie-app/"
+  },
+  {
+    "id": 1,
+    "title": "A Wikipedia searcher",
+    "date": "2019",
+    "description": "A multilingual (English, Español, Français, Português, Italiano, Deutsch) wikipedia searcher, that also can show to you a random article in the selected language.",
+    "image": "lab_cover1",
+    "alt_text": "lab_cover1",
+    "url": "https://victorreverter.github.io/wikipedia-searcher/"
+  }
+]

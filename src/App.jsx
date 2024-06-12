@@ -10,6 +10,7 @@ import Header from './components/Header';
 
 import Home from './pages/Home';
 import Work from './pages/Work';
+import Lab from './pages/Lab';
 import About from './pages/About';
 
 import Footer from './components/Footer';
@@ -69,8 +70,9 @@ const App = () => {
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/lab" element={<Lab />} />
+        <Route path="/about" element={<About />} />
 
         {/* <Route path="/project_1" element={<Project1 />} /> */}
 

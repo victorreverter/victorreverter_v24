@@ -137,6 +137,9 @@ const Header = () => {
                 <Link to="/work" onClick={handleMobileLinkClick}>Work</Link>
               </li>
               <li className="link-menu">
+                <Link to="/lab" onClick={handleMobileLinkClick}>Lab</Link>
+              </li>
+              <li className="link-menu">
                 <Link to="/about" onClick={handleMobileLinkClick}>About</Link>
               </li>
               <li className="link-menu">
@@ -161,6 +164,7 @@ const Header = () => {
           <ul className="links-container-desktop">
               <li className="link-menu"><Link to="/">Home</Link></li>
               <li className="link-menu"><Link to="/work">Work</Link></li>
+              <li className="link-menu"><Link to="/lab">Lab</Link></li>
               {/* <li className="link-menu"><Link to="/projects/:id">Projects</Link></li> */}
               <li className="link-menu"><Link to="/about">About</Link></li>
               <li className="link-menu"><Link to="https://medium.com/thereverter" target='_blank'>Blog</Link></li>
