@@ -1,5 +1,14 @@
 [
   {
+    "id": 4,
+    "title": "PlaceSure, an enhance travel experience with AI",
+    "date": "2024",
+    "description": "A mobile app designed to enhance the experience of tourists and travelers, through their trips through cities around the world.",
+    "image": "project_4",
+    "alt_text": "project_4",
+    "categories": "Product Design"
+  },
+  {
     "id": 3,
     "title": "Design System for Spain Government",
     "date": "2024",
@@ -7,15 +16,6 @@
     "image": "project_3_big",
     "alt_text": "project_3_big",
     "categories": "Product Design"
-  },
-  {
-    "id": 2,
-    "title": "Rebranding of Argentina National Football Team",
-    "date": "2023",
-    "description": "A redesign after the Argentina World Cup's victory in 2022. Required because of the third star that has had to be added.",
-    "image": "project_2_big",
-    "alt_text": "project_2_big",
-    "categories": "Branding"
   },
   {
     "id": 1,

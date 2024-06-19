@@ -267,7 +267,7 @@ const Project_3 = () => {
 
           <div className="section-project">
             <h5>Category</h5>
-            <p>Product Designt</p>
+            <p>Product Design</p>
           </div>
         </div>
 
