@@ -43,7 +43,7 @@
 
                 color: $colorTextAlt;
                 font-weight: 100;
-                text-align: justify;
+                text-align: left;
                 line-height: 1.4em;
 
                 span {
@@ -55,7 +55,7 @@
                 padding: 0 0 1em;
 
                 color: $colorTextGray;
-                text-align: justify;
+                text-align: left;
                 font-weight: 100;
                 line-height: 1.4em;
             }
@@ -282,7 +282,7 @@
         padding: $desktopMargin 20px 50px;
 
         .description-about {
-            font-size: 1.5em;
+            font-size: 1.2em;
             text-align: start;
         }
 

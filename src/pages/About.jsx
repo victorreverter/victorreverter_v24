@@ -133,7 +133,7 @@ const About = () => {
         </ul>
       </div>
 
-      <div className="block-container tools-container">
+      {/* <div className="block-container tools-container">
         <h4>Tools</h4>
 
         <ul>
@@ -147,7 +147,7 @@ const About = () => {
           <li>Jira <span className='tool-item jira'></span></li>
           <li>Notion <span className='tool-item notion'></span></li>
         </ul>
-      </div>
+      </div> */}
 
       {/* <Footer /> */}
     </div>
