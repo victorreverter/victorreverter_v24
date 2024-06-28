@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/victorreverter_v24/static/css/main.870a71a1.css",
-    "main.js": "/victorreverter_v24/static/js/main.a6cc699b.js",
+    "main.js": "/victorreverter_v24/static/js/main.a52491c0.js",
     "static/js/787.7259fa08.chunk.js": "/victorreverter_v24/static/js/787.7259fa08.chunk.js",
     "static/media/Prototype_2.gif": "/victorreverter_v24/static/media/Prototype_2.03359529361cef539025.gif",
     "static/media/project_3_big.jpg": "/victorreverter_v24/static/media/project_3_big.9609250d138bd2a19dc9.jpg",
@@ -229,11 +229,11 @@
     "static/media/slick.woff": "/victorreverter_v24/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/victorreverter_v24/index.html",
     "main.870a71a1.css.map": "/victorreverter_v24/static/css/main.870a71a1.css.map",
-    "main.a6cc699b.js.map": "/victorreverter_v24/static/js/main.a6cc699b.js.map",
+    "main.a52491c0.js.map": "/victorreverter_v24/static/js/main.a52491c0.js.map",
     "787.7259fa08.chunk.js.map": "/victorreverter_v24/static/js/787.7259fa08.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.870a71a1.css",
-    "static/js/main.a6cc699b.js"
+    "static/js/main.a52491c0.js"
   ]
 }
