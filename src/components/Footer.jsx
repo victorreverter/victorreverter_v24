@@ -25,7 +25,7 @@ const Footer = () => {
             <Link to="https://www.instagram.com/victorreverter/" target='_blank'>Instagram</Link>
             <Link to="https://www.behance.net/VictorReverter" target='_blank'>Behance</Link>
         </div>
-        <p className='copyright'>&copy; 2024 Victor Reverter. All rights reserved.</p>
+        <p className='copyright'>Victor Reverter - 2024 version</p>
       </div>
     </footer>
   );
