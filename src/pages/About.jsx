@@ -39,7 +39,7 @@ const About = () => {
 
           {/* <h4 className='description-about'>Currently working as Web Design Manager at Telecoming, and when I am not designing I am running Half Marathons, reading, playing chess and more.</h4> */}
 
-          <Link to={'https://drive.google.com/file/d/1vUXojOHmnRJawYW4jfEjJAq8jgVKXLYL/view?usp=drive_link'} className='cv-link-btn' target="_blank">
+          <Link to={'https://drive.google.com/file/d/1ClPbDrPxWyjAw1WFMrJjEhJUUdqwFw1M/view?usp=drive_link'} className='cv-link-btn' target="_blank">
             <div className="container-text">
               <span>My Resume</span>
             </div>
