@@ -142,9 +142,11 @@ const Header = () => {
               <li className="link-menu">
                 <Link to="/about" onClick={handleMobileLinkClick}>About</Link>
               </li>
-              <li className="link-menu">
+      
+              {/* <li className="link-menu">
                 <Link to="https://medium.com/thereverter" onClick={handleMobileLinkClick} target='_blank'>Blog</Link>
-              </li>
+              </li> */}
+
               <li className="link-menu">
                 <Link to="mailto:victorreverterdesign@gmail.com" onClick={handleMobileLinkClick}>Contact</Link>
               </li>
@@ -167,7 +169,7 @@ const Header = () => {
               <li className="link-menu"><Link to="/lab">Lab</Link></li>
               {/* <li className="link-menu"><Link to="/projects/:id">Projects</Link></li> */}
               <li className="link-menu"><Link to="/about">About</Link></li>
-              <li className="link-menu"><Link to="https://medium.com/thereverter" target='_blank'>Blog</Link></li>
+              {/* <li className="link-menu"><Link to="https://medium.com/thereverter" target='_blank'>Blog</Link></li> */}
               <li className="link-menu">
                 <Link className='btn-view-allpro-txt' to="mailto:victorreverterdesign@gmail.com">
                   <div className="container-text">
